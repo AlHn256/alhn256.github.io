@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function timedText()
+{
+var t1=setTimeout("document.getElementById('txt').value='3 секунды!'",2000);
+var t2=setTimeout("document.getElementById('txt').value='2 секунды!'",4000);
+var t3=setTimeout("document.getElementById('txt').value='1!'",6000);
+var t4=setTimeout("document.getElementById('txt').value='Пуск!'",8000);
+setTimeout("alert('Boom!');", 10000);
+setTimeout("alert('Baraboom!');", 12000);
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Показать временной текст!" onclick="timedText()" />
+<input type="text" id="txt" />
+</form>
+<p>Дави на батон.</p>
+</body>
+</html>

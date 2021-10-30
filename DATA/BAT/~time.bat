@@ -1,0 +1,1 @@
+w32tm /resync /rediscover

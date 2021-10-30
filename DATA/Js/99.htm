@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function Text() {
+    const elm = document.createElement('div');
+    elm.innerHTML = (document.getElementById('txt').value);
+    document.body.appendChild(elm);
+	document.qwe.appendChild(elm);
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="Показать временной текст!" onclick="Text()" />
+<input type="text" id="txt" value="99" />
+<div id="qwe">
+<BR>Test<BR>
+</div>
+</body>
+</html>

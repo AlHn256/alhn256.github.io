@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www-sbras.nsc.ru/win/docs/html-gd/meta.html -->
+<HTML><HEAD><TITLE>Язык HTML -- META tag</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=Windows-1251">
+<META http-equiv=EXPIRES content="Mar 04, 1997 10:07:01 GMT">
+<META content=1.0 name=Version>
+<META content=ru name=Language>
+<META content="MSHTML 6.00.2900.2802" name=GENERATOR></HEAD>
+<BODY vLink=#666666 link=#ff0000 bgColor=#ffffff leftMargin=8>
+<CENTER>
+<H2><A name=meta>Описание HTML документов.</A></H2>
+<H3>Использование метаданных (команда META) при создании HTML 
+документов</H3></CENTER>
+<HR noShade>
+<A name=start><B>Содержание</B></A> 
+<UL>
+  <LI><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#1">Команда 
+  META</A> 
+  <LI><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#2">Атрибут 
+  HTTP-EQUIV</A> 
+  <UL>
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Expires">Значение: 
+    Expires</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Pragma">Значение: 
+    Pragma</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Content-Type">Значение: 
+    Content-Type</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Content-language">Значение: 
+    Content-language</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#auto">Значение: 
+    Refresh</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Window-target">Значение: 
+    Window-target</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Ext-cache">Значение: 
+    Ext-cache</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#PICS-Label">Значение: 
+    PICS-Label</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Cache-Control">Значение: 
+    Cache-Control</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Vary">Значение: 
+    Vary</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Lotus">Значение: 
+    Lotus</A> </LI></UL>
+  <LI><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#3">Атрибут 
+  NAME</A> 
+  <UL>
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Robots">Значение: 
+    Robots</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Description">Значение: 
+    Description</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Keywords">Значение: 
+    Keywords</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Document-state">Значение: 
+    Document-state</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#URL">Значение: 
+    URL</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Author">Значение: 
+    Author</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Generator">Значение: 
+    Generator</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Copyright">Значение: 
+    Copyright</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Distribution">Значение: 
+    Distribution</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#Resource-type">Значение: 
+    Resource-type</A> 
+    <LI><A 
+    href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#others">Прочие 
+    значения</A> </LI></UL>
+  <LI><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#8">Список 
+  литературы</A> </LI></UL>
+<P>
+<CENTER><A name=1></A>
+<H3>Команда META</H3></CENTER>
+<P>Команда META (тэг) имеют два возможных атрибута 
+<P>&lt;META HTTP-EQUIV="имя" CONTENT="содержимое"&gt; <BR>&lt;META NAME="имя" 
+CONTENT="содержимое"&gt; 
+<P align=justify>META команды (описания-инструкции) должны находиться в 
+заголовке HTML-документа между инструкциями &lt;HEAD&gt; и &lt;/HEAD&gt; 
+(особенно это важно для документов, использующих фреймы). 
+<P><A name=2><B>Атрибут HTTP-EQUIV</B></A> 
+<P align=justify>META-команда с атрибутом HTTP-EQUIV эквивалентна HTTP-заголовку 
+ответа HTTP сервера (некоторые HTTP серверы, могут использовать эти команды для 
+формирования реальных <A 
+href="http://www-sbras.nsc.ru/win/fedotov/inter/http/ent.html#entityheader">HTTP-заголовков</A>). 
+Обычно они управляют действиями браузеров и могут быть использованы для 
+совершенствования информации, выдаваемой обычными заголовками. Команды META 
+могут дать такой же эффект, что и реальный HTTP-заголовок ответа сервера. 
+Описание HTTP-заголовка ответа дано в <A 
+href="ftp://ftp.nsc.ru/pub/rfc/rfc1945.txt">RFC1945</A> (протокол HTTP/1.0) и <A 
+href="ftp://ftp.nsc.ru/pub/rfc/rfc2068.txt">RFC2068</A> (протокол HTTP/1.1). 
+<P align=justify>HTTP-заголовки формируются сервером, как правило, согласно 
+информации, заданной в <A 
+href="http://www-sbras.nsc.ru/win/docs/web/access.html">конфигурационных 
+файлах</A>, но могут быть сгенерированы и с помощью <A 
+href="http://www-sbras.nsc.ru/win/fedotov/inter/cgi.html">CGI-скриптов</A>. Это 
+позволяют сделать серверы <A 
+href="http://www.ict.nsc.ru/docs/apache/manual/">Apache</A>, Netscape, CERN, 
+NCSA и некоторые другие. Существуют серверы, которые используют другие механизмы 
+генерирования заголовков (например, через специальный дизайнер, как это сделано 
+в сервере MS IIS). Некоторые генерируемые сервером поля заголовков не могут быть 
+подменены значениями из содержания команды META (в частности Date), другие 
+подменяются только при ненормальном (ошибочном) <A 
+href="http://www-sbras.nsc.ru/win/fedotov/inter/http/httprespns.html#statuscod">статус-коде</A> 
+HTTP-ответа (&lt;&gt;200). Если информация, заданная в заголовках (HTTP и META) 
+противоречит друг другу, то значение HTTP-заголовка превалирует над значением 
+команды META (по протоколу, но не все просмотрщики это соблюдают). 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><A name=Expires><B>Значение: Expires</B></A> 
+<P>Источник: HTTP/1.1 (<A 
+href="ftp://ftp.nsc.ru/pub/rfc/rfc2068.txt">RFC2068</A>) 
+<P align=justify>Дата устаревания документа. Управление кэшированием у клиента в 
+HTTP/1.0. В Netscape Navigator это выглядит следующим образом: если указанная 
+дата прошла, то очередной запрос этого документа вызывает повторный сетевой 
+запрос, а не подгрузку документа из кэша. Дата со значением "0" интерпретируется 
+как "текущее_время". Такое значение заставляет браузер каждый раз при запросе 
+проверять - изменялся ли этот документ. Это, кстати относится и к 
+прокси-агентам. Поисковые роботы могут либо совсем не индексировать такой 
+документ, либо постоянно "просматривать" его. 
+<P>Дата должна быть задана в формате, описанном в <A 
+href="ftp://ftp.nsc.ru/pub/rfc/rfc850.txt">RFC850</A> (стандартная запись Даты 
+для UNIX систем), 
+<P>&lt;META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT"&gt; 
+<P>что эквивалентно HTTP-заголовку 
+<P>Expires: Wed, 26 Feb 1997 08:21:57 GMT 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Pragma>Значение: Pragma</A></B> 
+<P align=justify>Контроль кэширования для протокола HTTP/1.0. Значение может 
+быть только одно "no-cache" (не кэшировать данный документ). 
+<P><B><A name=Content-Type>Значение:</A> <A 
+href="http://vesta.ict.nsc.ru/win/fedotov/inter/http/ent.html#contenttype">Content-Type</A></B> 
+
+<P>Источник: HTTP/1.0 (<A 
+href="ftp://ftp.nsc.ru/pub/rfc/rfc1045.txt">RFC1045</A>) 
+<P align=justify>Указание <A 
+href="http://www-sbras.nsc.ru/win/docs/web/mime.html">MIME-типа</A> документа. 
+Может быть расширено указанием <A 
+href="http://www-sbras.nsc.ru/win/inter/rus-code.html">кодовой страницы</A> 
+документа (<A 
+href="http://www-sbras.nsc.ru/win/inter/mime-code.html"><TT>charset</TT></A>). 
+Если же указывать charset в содержании команды META, то Netscape Navigator и 
+MSIE выводят данный документ уже в заданном charset. Однако будьте аккуратны, 
+если текст документа в кодировке Windows имеет значение <TT>charset=KOI8-r</TT>, 
+то никакими силами пользователь не сможет поменять <TT>encoding</TT>, чтобы 
+увидеть <I><B>нормальный русский текст!</I></B> 
+<P>&lt;META HTTP-EQUIV="Content-type" CONTENT="text/html; 
+charset=ISO-8859-5"&gt; 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Content-language>Значение: Content-language</A></B> 
+<P>Источник: HTTP/1.0 
+<P align=justify>Указание языка документа. Может использоваться поисковыми 
+машинами при индексировании страниц. Комбинация поля <TT>Accept-Language</TT> 
+(посылаемого *броузером) с содержимым <TT>Content-language</TT> может быть 
+условием выбора сервером того или иного языка. 
+<P>&lt;META HTTP-EQUIV="Content-language" CONTENT="en-GB"&gt; 
+<P>что эквивалентно HTTP-заголовку 
+<P>Content-language: en-GB 
+<P align=justify>Язык описывается парой значений (язык-диалект). В примере: 
+Английский-Великобритания. Можно использовать только фиксированные коды языков, 
+например: <PRE>    en - английский
+    fr - французский
+    de - немецкий
+    it - итальянский
+    ru - русский
+</PRE>
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><A name=auto><B>Значение: Refresh</B></A> 
+<P>Источники: Netscape (Автоматическая перезагрузка документа) 
+<P align=justify>Определение задержки в секундах, после которой браузер 
+автоматически обновляет документ. Дополнительная возможность - автоматическая 
+загрузка другого документа. 
+<P>&lt;META HTTP-EQUIV="Refresh" Content="3; 
+URL=http://www.name.com/page.html"&gt; 
+<P>что эквивалентно HTTP-заголовку 
+<P>Refresh: 3; URL=http://www.name.com/page.html 
+<P align=justify>В Netscape Navigator это дает такой же эффект, что и нажатие на 
+кнопку Reload. 
+<P>Спецификация протокола HTTP <FONT size=+1><TT>"Refresh"</TT></FONT> 
+автоматически загружает в окно просмотрщика новый документ. 
+<P><B>Пример</B> 
+<TABLE bgColor=aqua>
+  <TBODY>
+  <TR>
+    <TD><PRE>&lt;META HTTP-EQUIV="Refresh" CONTENT="12; URL=webpage.html"&gt;</PRE></TD></TR></TBODY></TABLE>Если 
+данная команда указана в заголовке документа, то через 12 секунд просмотрщик 
+автоматически заменяет текущий документ на документ, указанный атрибутом URL. 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Window-target>Значение: Window-target</A></B> 
+<P align=justify>Определяет окно текущей страницы; может быть использован для 
+прекращения появления новых окон браузера при применении фреймовых структур. 
+Действует для многих (но не для всех) браузеров. 
+<P>&lt;META HTTP-EQUIV="Window-target" CONTENT="_top"&gt; 
+<P>что эквивалентно HTTP-заголовку 
+<P>Window-target: _top 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Ext-cache>Значение: Ext-cache</A></B> 
+<P align=justify>Определяет имя альтернативного кэша для просмотрщика 
+<P>&lt;META HTTP-EQUIV="Ext-cache" CONTENT="name=/some/path/index.db; 
+istructions=User Instructions"&gt; 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=PICS-Label>Значение: PICS-Label</A></B> 
+<P><A href="http://www.w3.org/PICS/">Platform for Internet Content Selection</A> 
+(Platform-Independant Content rating Scheme). Обычно используется для 
+определения рейтинга "взрослости" (adult) содержания (sex,violence, ...):-)) 
+однако это довольно гибкая схема и может использоваться для других целей. 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Cache-Control>Значение: Cache-Control</A></B> 
+<P>Источники: HTTP/1.1 
+<P align=justify>Определяет действия кэша по отношению к данному документу. 
+Возможные значения: 
+<UL>
+  <LI>Public - документ кэшируется в доступных для всех кэшах 
+  <LI>Private - только в частном кэше 
+  <LI>no-cache - не может быть кэширован 
+  <LI>no-store - может быть кэширован, но не сохраняется </LI></UL>
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Vary>Значение: Vary</A></B> 
+<P>Источники: HTTP/1.1 
+<P align=justify>Определяет доступные альтернативы для указанных в CONTENT полей 
+HTTP-заголовка. 
+<P>&lt;META HTTP-EQUIV="Vary" CONTENT="Content-language"&gt; 
+<P>что эквивалентно HTTP-заголовку 
+<P>Vary: Content-language 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Lotus>Значение: Lotus</A></B> 
+<P align=justify>Lotus-редакторы генерируют свои собственные поля Bulletin-Date 
+и Bulletin-Text атрибуты. Bulletin-Text содержит описание документа 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P>
+<P><A name=3></A>
+<H3>Атрибут NAME</H3>
+<P align=justify>Команда META с атрибутом NAME используются в случаях, когда 
+поля не соотносятся с HTTP-заголовками. Принципиально нет никаких ограничений на 
+использования значений этого атрибута, за исключением того, что существует 
+негласная договоренность между создателями поисковых машин и роботов о том как 
+использовать некоторые из них. Ниже приводятся наиболее употребимые значения 
+этого атрибута. 
+<P>META с атрибутом NAME это поля, содержащие описание документа, или поля, 
+предназначенные для интерпретации поисковыми машинами (роботами). Иногда 
+некоторые поисковые агенты могут интерпретировать значение "Keywords" описанный 
+как NAME, другие - как HTTP-EQUIV 
+<P><B><A name=Robots>Значение: Robots</A></B> 
+<P align=justify>Управление индексацией страницы для поисковых роботов. 
+<P>&lt;META NAME="Robots" CONTENT="NOINDEX,FOLLOW"&gt; 
+<P>Возможные значения: 
+<UL>
+  <LI>ALL 
+  <LI>NONE 
+  <LI>INDEX 
+  <LI>NOINDEX 
+  <LI>FOLLOW 
+  <LI>NOFOLLOW </LI></UL>
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Description>Значение: Description</A></B> 
+<P>Источники: Spidering, Altavista, Infoseek 
+<P align=justify>Краткая аннотация содержания документа. Используется поисковыми 
+системами для описания документа. Задание этого значения полезено в случаях, 
+когда в документе мало текста, когда это управляющий фреймами файл (frameset) 
+или в начале документа используются скрипты. Длина текста до 100 символов. 
+<P>&lt;META NAME="Description" CONTENT="Документ содержит словарь 
+META-тагов"&gt; 
+<P>Подробнее см. в документе <A 
+href="http://www-sbras.nsc.ru/win/docs/html-gd/meta_what.html">Поиск в 
+Интернет</A> 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Keywords>Значение: Keywords</A></B> 
+<P>Источники: Altavista, Infoseek 
+<P align=justify>Используется поисковыми системами для индексирования документа. 
+Обычно здесь указываются синонимы к словам в заголовке (title) или 
+альтернативный заголовок. Длина списка до 1000 символов. Не допускается 
+использование одного и того же ключевого слова более 7 раз, поисковые системы 
+просто будут игнорировать это слово. 
+<P>&lt;META NAME="Keywords" CONTENT="таги,тэги,метаданные,список"&gt; 
+<P>Подробнее см. в документе <A 
+href="http://www-sbras.nsc.ru/win/docs/html-gd/meta_what.html">Поиск в 
+Интернет</A> 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Document-state>Значение: Document-state</A></B> 
+<P align=justify>Управление индексацией страницы для поисковых роботов. 
+Определяет частоту индексации - или один раз индексировать, или реиндексировать 
+документ регулярно. 
+<P>&lt;META NAME="Document-state" CONTENT="Static"&gt; 
+<P>Возможные значения: 
+<UL>
+  <LI>Static 
+  <LI>Dynamic </LI></UL>
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=URL>Значение: URL</A></B> 
+<P align=justify>Управление индексацией страницы для поисковых роботов. 
+Определяет частоту индексации - или один раз индексировать, или реиндексировать 
+документ регулярно. 
+<P>&lt;META NAME="URL" CONTENT="absolute_url"&gt; 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Author>Значение: Author</A></B> 
+<P>Обычно имя автора, формат произвольный. 
+<P><B><A name=Generator>Значение: Generator</A></B> 
+<P>
+<P align=justify>Обычно название и версия редактора, с помощью которого создана 
+эта страница. Может быть использована для определения доли рынка, занимаемого 
+тем или иным продуктом. 
+<P><B><A name=Copyright>Значение: Copyright</A></B> 
+<P align=justify>Обычно описание авторских прав на документ в произвольном 
+формате. 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=Distribution>Значение: Distribution</A></B> 
+<P>Возможные значения 
+<UL>
+  <LI>global 
+  <LI>local 
+  <LI>iu (internal use) </LI></UL>
+<P><B><A name=Resource-type>Значение: Resource-type</A></B> 
+<P align=justify>Текущее состояние данного файла. Важен для поисковых систем, 
+т.е. если его значение document, то поисковая система приступает к его 
+индексированию. 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><B><A name=others>Прочие значения</A></B> 
+<UL>
+  <LI>Classification 
+  <LI>Formatter 
+  <LI>Site-languages 
+  <LI>Language 
+  <LI>Version 
+  <LI>Template 
+  <LI>Operator 
+  <LI>Rating 
+  <LI>Creation 
+  <LI>Host 
+  <LI>Document 
+  <LI>Subject 
+  <LI>Build 
+  <LI>Random text </LI></UL>
+<P align=justify>Помимо перечисленных более или менее стандартных значений 
+данного атрибута существует еще множество других специализированных, например, 
+для конкретной поисковой машины. 
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P><A name=8>
+<CENTER>
+<H3>Список литературы</H3></CENTER></A>
+<OL>
+  <LI><A href="http://vancouver-webpages.com/META/">META, REL and REV Tags</A> 
+  <LI><A href="http://www.lyceum.com/meta.htm">META Tags</A> 
+  <LI><A href="http://www.tagnet.org/publish/meta.html">TAGnet META Tags</A> 
+  <LI><A href="http://www.tiesoft.com/kwiug/search41.htm">Getting Listed on the 
+  Search Engines</A> <!-- http://www.w3.org/Metadata/Activity.html --></LI></OL>
+<P><A href="http://www-sbras.nsc.ru/win/docs/html-gd/meta.html#start"><IMG 
+src="Язык HTML -- META tag.files/up.gif" border=0></A> 
+<P>
+<HR noShade SIZE=4>
+<A href="http://www.ict.nsc.ru/"><IMG alt=ИВТ 
+src="Язык HTML -- META tag.files/ict-logo.gif" align=right border=0></A> 
+<B><I>Федотов А.М.</I> <A 
+href="http://www-sbras.nsc.ru/win/fedotov/inter/internet.html#conten" 
+target=_top>Введение в Internet</A></B><BR><A 
+href="http://www-sbras.nsc.ru/win/docs/" target=_top>Документация по Интернет 
+технологиям</A>
+<P>Начало создания курса: Mondy, 19-Aug-1996 10:12:15 NOVST<BR>Дата последней 
+модификации: Thursday, 12-Oct-2000 14:09:31 NOVST <BR>© 1996 - 2001, <A 
+href="mailto:fedotov@ict.nsc.ru">А.М.Федотов</A> <BR>© 1996 - 2001, Институт 
+вычислительных технологий СО РАН, Новосибирск 
+<HR noShade SIZE=4>
+</BODY></HTML>

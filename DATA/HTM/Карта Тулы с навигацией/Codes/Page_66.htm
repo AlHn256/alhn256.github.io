@@ -1,0 +1,69 @@
+<html><head><title></title>
+<script language="JavaScript">
+<!--
+var Cnt = 0;
+Labels = new Array(5);
+function LoadFile(Name,File) {
+  Labels[Cnt] = new Array(3);
+  Labels[Cnt][0] = Name;
+  Labels[Cnt][1] = new Image();
+  Labels[Cnt][1].src = "../Images/"+File+"_bl.gif";
+  Labels[Cnt][2] = new Image();
+  Labels[Cnt][2].src = "../Images/"+File+"_rd.gif";
+  Cnt++;
+}
+function Preload(){
+  LoadFile("ul1","ul");
+  LoadFile("up1","up");
+  LoadFile("up2","up");
+  LoadFile("up3","up");
+  LoadFile("ur1","ur");
+  LoadFile("lf1","lf");
+  LoadFile("rt1","rt");
+  LoadFile("lf2","lf");
+  LoadFile("rt2","rt");
+  LoadFile("lf3","lf");
+  LoadFile("rt3","rt");
+  LoadFile("dl1","dl");
+  LoadFile("dn1","dn");
+  LoadFile("dn2","dn");
+  LoadFile("dn3","dn");
+  LoadFile("dr1","dr");
+}
+Preload();
+function Red(Num){document.images[Labels[Num][0]].src = Labels[Num][2].src;}
+function Blue(Num){document.images[Labels[Num][0]].src = Labels[Num][1].src;}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF"><center>
+<p><a href="../Index.htm">Вернуться к общей карте</a></p>
+<table border=0 cellspacing=0 cellpadding=5>
+  <tr>
+    <td><a href="Page_61.htm" onMouseOver="Red(0)"; onMouseOut="Blue(0)";><img name="ul1" src="../Images/ul_bl.gif" border=0 height=47 width=47></a></td>
+    <td align=center><a href="Page_62.htm" onMouseOver="Red(1)"; onMouseOut="Blue(1)";><img name="up1" src="../Images/up_bl.gif" border=0 height=47 width=66></a></td>
+    <td align=center><a href="Page_62.htm" onMouseOver="Red(2)"; onMouseOut="Blue(2)";><img name="up2" src="../Images/up_bl.gif" border=0 height=47 width=66></a></td>
+    <td align=center><a href="Page_62.htm" onMouseOver="Red(3)"; onMouseOut="Blue(3)";><img name="up3" src="../Images/up_bl.gif" border=0 height=47 width=66></a></td>
+    <td><a href="Page_63.htm" onMouseOver="Red(4)"; onMouseOut="Blue(4)";><img name="ur1" src="../Images/ur_bl.gif" border=0 height=47 width=47></a></td></tr>
+  <tr>
+    <td valign=center><a href="Page_65.htm" onMouseOver="Red(5)"; onMouseOut="Blue(5)";><img name="lf1" src="../Images/lf_bl.gif" border=0 height=66 width=47></a></td>
+    <td colspan=3 rowspan=3>
+      <table border=5 cellspacing=5 cellpadding=0>
+        <tr><td><img src="../Pages/t_k66.jpg" border=0></td></tr></table></td>
+    <td valign=center><a href="Page_67.htm" onMouseOver="Red(6)"; onMouseOut="Blue(6)";><img name="rt1" src="../Images/rt_bl.gif" border=0 height=66 width=47></a></td></tr>
+  <tr>
+    <td valign=center><a href="Page_65.htm" onMouseOver="Red(7)"; onMouseOut="Blue(7)";><img name="lf2" src="../Images/lf_bl.gif" border=0 height=66 width=47></a></td>
+    <td valign=center><a href="Page_67.htm" onMouseOver="Red(8)"; onMouseOut="Blue(8)";><img name="rt2" src="../Images/rt_bl.gif" border=0 height=66 width=47></a></td></tr>
+  <tr>
+    <td valign=center><a href="Page_65.htm" onMouseOver="Red(9)"; onMouseOut="Blue(9)";><img name="lf3" src="../Images/lf_bl.gif" border=0 height=66 width=47></a></td>
+    <td valign=center><a href="Page_67.htm" onMouseOver="Red(10)"; onMouseOut="Blue(10)";><img name="rt3" src="../Images/rt_bl.gif" border=0 height=66 width=47></a></td></tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align=center>&nbsp;</td>
+    <td align=center>&nbsp;</td>
+    <td align=center>&nbsp;</td>
+    <td>&nbsp;</a></td></tr></table>
+<p><a href="../Index.htm">Вернуться к общей карте</a></p>
+</center>
+</body>
+</html>

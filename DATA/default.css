@@ -1,0 +1,201 @@
+BODY {
+	FONT-SIZE: 75%; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 75%; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+A {
+	COLOR: #005a99; TEXT-DECORATION: none
+}
+.blue {
+	COLOR: #005a99; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.v_topleft {
+	BACKGROUND: url(../i/_topbgl.gif) repeat-x
+}
+.v_topright {
+	BACKGROUND: url(../i/_topbgr.gif) repeat-x
+}
+.mt10 {
+	MARGIN-TOP: 10px
+}
+.mt5 {
+	MARGIN-TOP: 5px
+}
+.topmenu {
+	MARGIN-BOTTOM: 3px; BACKGROUND-COLOR: #e7faff
+}
+.lineLeft1 {
+	BACKGROUND: url(../i/line_bg1_1.gif) no-repeat
+}
+.linecCenter {
+	BACKGROUND: url(../i/line_center1_1.gif) repeat-x
+}
+.lineRight1 {
+	BACKGROUND: url(../i/line_bg1_2.gif) no-repeat
+}
+.topMenu2 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.topMenuOn {
+	FONT-WEIGHT: bold; COLOR: #424242
+}
+.topMenuOff {
+	COLOR: #005a99
+}
+.middot {
+	MARGIN-TOP: 1px; FONT-SIZE: 13px; COLOR: #a8ad0e; MARGIN-RIGHT: 4px
+}
+.middotSmall {
+	MARGIN-TOP: 1px; FONT-SIZE: 10px; COLOR: #a8ad0e; MARGIN-RIGHT: 4px
+}
+.topmenu3 {
+	MARGIN-TOP: 1px; BACKGROUND-COLOR: #afe8f8
+}
+.topMenu4 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.lineLeft2 {
+	BACKGROUND: url(../i/line_bg2_1.gif) no-repeat 50% bottom
+}
+.lineRight2 {
+	BACKGROUND: url(../i/line_bg2_2.gif) no-repeat 50% bottom
+}
+.headTopLine {
+	BACKGROUND-COLOR: #ff9b0c
+}
+.head {
+	BORDER-RIGHT: #ff9b0c 0px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ff9b0c 1px solid; PADDING-LEFT: 7px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ff9b0c 0px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ff9b0c 0px solid; BACKGROUND-COLOR: #fef4b1
+}
+.head1 {
+	FONT-WEIGHT: bold; COLOR: #424242
+}
+.head1SubTitle {
+	COLOR: #424242
+}
+.head2Table {
+	MARGIN: 3px 0px 1px
+}
+.head2 {
+	BACKGROUND-COLOR: #3598d3
+}
+.head2Corner {
+	BACKGROUND-COLOR: #3598d3
+}
+.head2Title {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px
+}
+.head2Corner {
+	BACKGROUND: url(../i/corner_head2.gif) no-repeat 50% top
+}
+.head2SubTitle {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 8px; BACKGROUND: url(../i/bg_head2.gif) repeat-x; PADDING-BOTTOM: 0px; COLOR: #676767; PADDING-TOP: 3px
+}
+.opros {
+	BORDER-RIGHT: #fade6d 1px solid; BORDER-TOP: #fade6d 1px solid; FONT-SIZE: 75%; BORDER-LEFT: #fade6d 1px solid; BORDER-BOTTOM: #fade6d 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #fefded
+}
+.bgStatus1 {
+	BACKGROUND-COLOR: #c0ebff
+}
+.bgStatus2 {
+	BORDER-RIGHT: #c0ebff 0px solid; BORDER-TOP: #c0ebff 1px solid; BORDER-LEFT: #c0ebff 0px solid; BORDER-BOTTOM: #c0ebff 1px solid; BACKGROUND-COLOR: #e8f8ff
+}
+.bgStatus3 {
+	BACKGROUND: url(../i/bg_status_right.gif) #e8f8ff repeat-y right 50%
+}
+.middot {
+	MARGIN-TOP: 1px; FONT-SIZE: 13px; MARGIN-LEFT: 4px; COLOR: #a8ad0e; MARGIN-RIGHT: 2px
+}
+.form {
+	FONT-SIZE: 14px
+}
+.formbut {
+	FONT-SIZE: 9pt
+}
+.m1 {
+	FONT-SIZE: 9pt; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+.trans {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+.search {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+.txt {
+	FONT-SIZE: 12px
+}
+.radios {
+	BACKGROUND-COLOR: #3366cc
+}
+.hdr {
+	FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+.rub1 {
+	COLOR: #000000; FONT-FAMILY: Arial Cyr,Arial,Helvetica,sans-serif
+}
+.sdata {
+	FONT-WEIGHT: bold; FONT-SIZE: 75%; FONT-FAMILY: Arial; BACKGROUND-COLOR: #edddb7
+}
+.stime {
+	FONT-WEIGHT: bold; FONT-SIZE: 75%; FONT-FAMILY: Arial
+}
+.srazd {
+	FONT-SIZE: 13pt; MARGIN-LEFT: 10px
+}
+.scateg {
+	COLOR: #707070
+}
+.sacateg {
+	COLOR: #707070
+}
+.sfinddf {
+	COLOR: #707070
+}
+.sauthor {
+	FONT-SIZE: 80%; COLOR: #707070
+}
+.titleres {
+	FONT-SIZE: 110%
+}
+.smalldescr {
+	FONT-SIZE: x-small
+}
+.fs85 {
+	FONT-SIZE: 85%
+}
+.othertime {
+	FONT-FAMILY: Arial
+}
+.othertime .sdata {
+	BACKGROUND-COLOR: #ffffff
+}
+.city {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 3px; COLOR: #000000; BORDER-BOTTOM: #c0ebff 1px solid; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #e8f8ff
+}
+.chanblock {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 3px; COLOR: #000000; BORDER-BOTTOM: #c0ebff 1px solid; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #e8f8ff
+}
+.city {
+	WIDTH: 16px
+}
+.tbltitle TD.title {
+	PADDING-LEFT: 15px; FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+.tbltitle TD.step {
+	FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, Sans-serif
+}
+.tbltitle TD.step .cnt {
+	FONT-WEIGHT: bold; BORDER-BOTTOM: #3366cc 1px solid; BACKGROUND-COLOR: #bddef7
+}
+.blktitle {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 5px; COLOR: #000000; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, Sans-serif; BACKGROUND-COLOR: #e8f8ff
+}
+.lch {
+	FONT-SIZE: 95%; MARGIN-BOTTOM: 15px; COLOR: #000000
+}
+.lch INPUT {
+	MARGIN-RIGHT: 5px
+}

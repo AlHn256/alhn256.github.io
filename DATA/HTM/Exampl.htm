@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cool Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--обязательно добавьте стилевые правила, чтобы сайт был отформатированным и выглядел уникально-->
+  <style>
+.navbar, .container-fluid {min-width:490px;}
+   .container-fluid {
+    text-align:center;
+    background-color:#FF8C00;
+    text-shadow: 1px 1px 2px #111, 3px 3px 2px #000, 0 0 7px #222;
+    color:#fef;
+    height:179px;
+}
+.footer {height: 65px; margin-top: 15px; background-color:#FF8C00;}
+  .affix {
+      top: 0;
+      border-color:  #010;
+      width: 100%;
+    background-color: #FFD700;
+    transition: all .6s ease-in;
+    -webkit-transition: all .6s ease-in;
+}
+ 
+.affix a {
+    padding: 15px !important;
+    font-weight: 900 !important;
+    -webkit-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
+img{ max-height: 650px; }
+.affix a:hover {text-shadow: 0 0 5px black;}
+.affix-top a {padding: 29px !important;}
+  #page1{padding:65px;   margin-top: -21px; height: 900px; background-color: rgba(254, 254,0, .5);}
+  #page2{padding:65px;  margin-top: 15px; height: 900px;background-color: rgba(254, 254,0, .5);}
+  #page3{padding:65px;  margin-top: 15px; height: 900px;background-color: rgba(254, 254,0, .5);}
+ 
+  </style>
+</head>
+<body>
+ 
+<div class="container-fluid" >
+  <h1>Туристическое агенство "GoTravel"</h1>
+  <h3>Для каждого клиента подберем уникальный и выгодный маршрут</h3>
+  <h3>Звонить по телефону: ХХХ-ХХХ-ХХ-ХХ</h3>
+</div>
+ 
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="178">
+ <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navb">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<div class="collapse navbar-collapse" id="Navb">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">О нас</a></li>
+    <li><a href="#page1">Один</a></li>
+    <li><a href="#page2">Два</a></li>
+    <li><a href="#page3">Три</a></li>
+  </ul>
+</div>
+</nav>	
+ 
+<div id="page1" class="container-fluid">
+  <h1>Отдохни на Мальдивах</h1>
+<img src="http://ht.kz/fls/upload/maldiv-2.jpg" alt="Maldivy">
+<h3>Бронзовый загар, незабываемые впечатления и шикарный отдых обеспечит поездка на Мальдивы.</h3>
+ </div>
+<div id="page2" class="container-fluid">
+  <h1>Вена, Австрия</h1>
+<img src="http://politeka.net/wp-content/uploads/2016/09/291424.jpg" alt="Vena">
+<h3>Старинная архитектура, богатая история и удивительные пейзажи запомнятся на всю жизнь с отпуском в Вене.</h3>
+</div>
+<div id="page3" class="container-fluid">
+  <h1>Венеция, Италия</h1>
+<img src="http://www.fotoshtora.ru/pictures/tovar/original/sun_venezia_2.jpg" alt="Venecia">
+<h3>Дивный город на воде, чарующий язык и атмосфера романтики сделают незабываемым любой медовый месяц.</h3></div>
+<footer class="container-fluid footer">
+  <h3>Все права защищены</h3>
+</footer>
+</body>
+</html>

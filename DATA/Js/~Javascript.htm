@@ -1,0 +1,618 @@
+<META HTTP-EQUIV="Page-Enter" Content="BlendTrans(Duration=10.0)">
+<META HTTP-EQUIV="Refresh" Content="215">
+
+<HTML>
+<HEAD> 
+<TITLE>Javascript</TITLE>
+<BODY alink="#FF0000" link="#00FF00" Vlink="#AAAA00" text="#007700" bottommargin=100px leftmargin=50px 
+rightmargin=50px topmargin=100px bgcolor="#AA9900" bgProperties=fixed background=..\IMG\TEMP_35.JPG BACKGROUND-POSITION: 10% top>
+
+<style>
+<!-- {
+background-repeat: no-repeat;
+background-position: top;}
+a.anav {
+text-decoration: none;
+font-weight: bold;
+color: #00CC01; 
+background-color: transparent;}
+a.anav:hover {
+font-weight: bold;
+color: #FF0000; 
+background-color: transparent;}
+-->
+</style>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+ns=(document.layers)?1:0;
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff')
+
+yBase=0;
+xBase=0;
+step=3;
+currStep = 0;
+Ypos=0;
+Xpos=0;
+X=0;
+Y=0;
+
+if (ns)
+	{
+	for (i = 0; i < 30; i++)document.write('<LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"></LAYER>');
+	window.captureEvents(Event.MOUSEMOVE); 
+	function nMouse(evnt)
+		{
+		Ypos = evnt.pageY;
+		Xpos = evnt.pageX;
+		}
+	window.onMouseMove=nMouse;
+	}
+else
+	{
+	document.write('<div style="position:absolute;top:0;left:0"><div style="position:relative">');
+	for (i=0; i < 30; i++)
+		{
+		document.write('<div id="me" style="position:absolute;top:0;left:0;width:'+2+';height:'+1+';font-size:'+2+'"></div>')
+		}
+	document.write('</div></div>');
+	function iMouse() 
+		{
+		Ypos = event.y+document.body.scrollTop;
+		Xpos = event.x+document.body.scrollLeft;
+		}
+	document.onmousemove = iMouse;
+	}
+
+function Comet() 
+	{
+	var yBase=(document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;
+	var xBase=(document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;
+	for (i=0; i<30; i++)
+		{
+		var randCol = Math.round(Math.random()*8);
+		var layer = (document.layers)?document.layers['n'+i]:me[i].style;
+		X=0;
+		
+		if (i==21||i==22||i==23||i==24||i==25||i==26||i==27||i==28||i==29)	
+			{
+			layer.top =Ypos + yBase*Math.sin((currStep-i*4)/22)*Math.cos(0.7-currStep/200)/2;
+			layer.left=Xpos + xBase*Math.cos((currStep-i*3)/22)*Math.sin(8.2-currStep/400)/2;
+			X=1;
+			}
+		if (i==5||i==6||i==7||i==8||i==9||i==10||i==11||i==12)	
+			{
+			layer.top =Ypos + yBase*Math.cos((currStep+i*4)/14)*Math.sin(0.7+currStep/200)/3;
+			layer.left=Xpos + xBase*Math.sin((currStep+i*3)/14)*Math.cos(8.2+currStep/400)/3;
+			X=1;
+			}
+		if (i==15||i==16||i==17||i==18||i==19||i==20)
+			{
+			layer.top =Ypos + yBase*Math.cos((currStep-i*4)/11)*Math.sin(0.7-currStep/200)/4;
+			layer.left=Xpos + xBase*Math.sin((currStep-i*3)/11)*Math.cos(8.2-currStep/400)/4;
+			X=1;
+			}
+		if (i==0||i==1||i==2||i==3||i==4)	
+			{
+			layer.top =Ypos + yBase*Math.sin((currStep+i*4)/7)*Math.cos(0.7+currStep/200)/5;
+			layer.left=Xpos + xBase*Math.cos((currStep+i*3)/7)*Math.sin(8.2+currStep/400)/5;
+			X=1;
+			}
+		if(X==0)
+			{
+			layer.top=Ypos-6;
+			layer.left=Xpos-3;
+			}
+		if (ns) layer.bgColor = Clrs[randCol];
+		else layer.background = Clrs[randCol];
+		}
+	currStep += step/1;
+	setTimeout("Comet()",10);
+	}
+window.onload = Comet;
+</script>
+
+<CENTER>
+<FONT size=1 color="#990001"><B><B>
+<Table RULES=NONE  Border=1  width="80%" bordercolor="red"><TR><TH>
+<CENTER>
+<Table Border=1>
+  <TR>
+	<TH><A class="anav" HREF="99.htm">99</A></TH>
+	<TH><A class="anav" HREF="ActiveXObject.htm">ActiveXObject</A></TH>
+	<TH><A class="anav" HREF="AddDeleteLi.htm">AddDeleteLi</A></TH>
+	<TH><A class="anav" HREF="Autoclick.htm">Autoclick</A></TH>
+	<TH><A class="anav" HREF="Cookie.htm">Cookie</A></TH>
+	<TH><A class="anav" HREF="Cookie2.htm">Cookie2</A></TH>
+	<TH><A class="anav" HREF="Clock.htm">Clock</A></TH>
+	<TH><A class="anav" HREF="changing-terrain-experiment\index.html">Changing-terrain-experiment</A></TH>
+
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF="Date.htm">Date</A></TH>
+	<TH><A class="anav" HREF="dispatch.htm">Dispatch</A></TH>
+	<TH><A class="anav" HREF="document.body.childNodes.htm">document.body.childNodes</A></TH>
+	<TH><A class="anav" HREF="document.write.htm">document.write</A></TH>
+	<TH><A class="anav" HREF="File API.htm">File API</A></TH>
+	<TH><A class="anav" HREF="File open.htm">File open</A></TH>
+	<TH><A class="anav" HREF="File2.htm">File2</A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF="flex-panels-image-gallery\index.html">Flex-panels-image-gallery</A></TH>
+	<TH><A class="anav" HREF="for.htm">for</A></TH>
+	<TH><A class="anav" HREF="for2.htm">for2</A></TH>
+	<TH><A class="anav" HREF="for3.htm">for3</A></TH>
+	<TH><A class="anav" HREF="for4.htm">for4</A></TH>
+	<TH><A class="anav" HREF="function.htm">function</A></TH>
+	<TH><A class="anav" HREF="function2.htm">function2</A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF="function3.htm">function3</A></TH>
+	<TH><A class="anav" HREF="getElementById.htm">getElementById</A></TH>
+	<TH><A class="anav" HREF="If...Else.htm">If...Else</A></TH>
+	<TH><A class="anav" HREF="Image.onLoad.htm">Image.onLoad</A></TH>
+	<TH><A class="anav" HREF="Image.onLoad2.htm">Image.onLoad2</A></TH>
+	<TH><A class="anav" HREF="json.htm">json</A></TH>
+	<TH><A class="anav" HREF="Load Accamplished.htm">Load Accamplished</A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF="muzik - bgsound.htm">muzik - bgsound</A></TH>
+	<TH><A class="anav" HREF="muzik.htm">muzik</A></TH>
+	<TH><A class="anav" HREF="muzik2.htm">muzik2</A></TH>
+	<TH><A class="anav" HREF="muzik3.htm">muzik3</A></TH>
+	<TH><A class="anav" HREF="password.htm">password</A></TH>
+	<TH><A class="anav" HREF="promise ajax.htm">promise ajax</A></TH>
+	<TH><A class="anav" HREF="promise ajax2.htm">promise ajax2</A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF="promise.htm">promise</A></TH>
+	<TH><A class="anav" HREF="rabbit.htm">rabbit</A></TH>
+	<TH><A class="anav" HREF="random.htm">random</A></TH>
+	<TH><A class="anav" HREF="react menu.htm">react menu</A></TH>
+	<TH><A class="anav" HREF="react timer.htm">react timer</A></TH>
+	<TH><A class="anav" HREF="React поиск.htm">React поиск</A></TH>
+	<TH><A class="anav" HREF="React menu\react menu2.htm">react menu2</A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF=".htm">5</A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF=".htm">5</A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+  </TR>
+  <TR>
+	<TH><A class="anav" HREF=".htm">5</A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+	<TH><A class="anav" HREF=".htm"></A></TH>
+  </TR>
+</TH></TR></Table><BR>
+
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01">Та фигня около мыши.</FONT><FONT FACE="Arial" size=1 color="#00DF01">(работает только IE)</FONT><BR>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR></CENTER>
+
+<BR>
+&lt;SCRIPT LANGUAGE="JavaScript"&gt;<BR>
+&lt;!-- Begin<BR>
+ns=(document.layers)?1:0;<BR>
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff')<BR>
+<BR>
+yBase=0;<BR>
+xBase=0;<BR>
+step=3;<BR>
+currStep = 0;<BR>
+Ypos=0;<BR>
+Xpos=0;<BR>
+X=0;<BR>
+Y=0;<BR>
+<BR>
+if (ns)<BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; for (i = 0; i &lt; 30; i++)document.write('&lt;LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"&gt;&lt;/LAYER&gt;');<BR>
+&nbsp; &nbsp; window.captureEvents(Event.MOUSEMOVE); <BR>
+&nbsp; &nbsp; function nMouse(evnt)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; Ypos = evnt.pageY;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; Xpos = evnt.pageX;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; window.onMouseMove=nMouse;<BR>
+&nbsp; &nbsp; }<BR>
+else<BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; document.write('&lt;div style="position:absolute;top:0;left:0"&gt;&lt;div style="position:relative"&gt;');<BR>
+&nbsp; &nbsp; for (i=0; i &lt; 30; i++)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; document.write('&lt;div id="me" style="position:absolute;top:0;left:0;width:'+2+';height:'+1+';font-size:'+2+'"&gt;&lt;/div&gt;')<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; document.write('&lt;/div&gt;&lt;/div&gt;');<BR>
+&nbsp; &nbsp; function iMouse() <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; Ypos = event.y+document.body.scrollTop;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; Xpos = event.x+document.body.scrollLeft;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; document.onmousemove = iMouse;<BR>
+&nbsp; &nbsp; }<BR>
+<BR>
+function Comet() <BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; var yBase=(document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;<BR>
+&nbsp; &nbsp; var xBase=(document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;<BR>
+&nbsp; &nbsp; for (i=0; i&lt;30; i++)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; var randCol = Math.round(Math.random()*8);<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; var layer = (document.layers)?document.layers['n'+i]:me[i].style;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; X=0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if (i==21||i==22||i==23||i==24||i==25||i==26||i==27||i==28||i==29)&nbsp; &nbsp; <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.top =Ypos + yBase*Math.sin((currStep-i*4)/22)*Math.cos(0.7-currStep/200)/2;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.left=Xpos + xBase*Math.cos((currStep-i*3)/22)*Math.sin(8.2-currStep/400)/2;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X=1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if (i==5||i==6||i==7||i==8||i==9||i==10||i==11||i==12)&nbsp; &nbsp; <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.top =Ypos + yBase*Math.cos((currStep+i*4)/14)*Math.sin(0.7+currStep/200)/3;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.left=Xpos + xBase*Math.sin((currStep+i*3)/14)*Math.cos(8.2+currStep/400)/3;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X=1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if (i==15||i==16||i==17||i==18||i==19||i==20)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.top =Ypos + yBase*Math.cos((currStep-i*4)/11)*Math.sin(0.7-currStep/200)/4;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.left=Xpos + xBase*Math.sin((currStep-i*3)/11)*Math.cos(8.2-currStep/400)/4;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X=1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if (i==0||i==1||i==2||i==3||i==4)&nbsp; &nbsp; <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.top =Ypos + yBase*Math.sin((currStep+i*4)/7)*Math.cos(0.7+currStep/200)/5;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.left=Xpos + xBase*Math.cos((currStep+i*3)/7)*Math.sin(8.2+currStep/400)/5;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X=1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if(X==0)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.top=Ypos-6;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layer.left=Xpos-3;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if (ns) layer.bgColor = Clrs[randCol];<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; else layer.background = Clrs[randCol];<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; currStep += step/1;<BR>
+&nbsp; &nbsp; setTimeout("Comet()",10);<BR>
+&nbsp; &nbsp; }<BR>
+<BR>
+window.onload = Comet;<BR>
+// End --&gt;<BR>
+&lt;/script&gt;<BR>
+<CENTER><IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01"><a class="anav" href="Video.html">Viedeo</a></FONT><BR>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<BR>
+
+
+<OBJECT classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' VIEWASTEXT>
+<PARAM NAME='EnableContextMenu' VALUE='0'>
+<PARAM NAME='ShowControls' VALUE='1'>
+<PARAM NAME='ShowDisplay' VALUE='0'>
+<PARAM NAME='ShowStatusBar' VALUE='0'>
+<PARAM NAME='AutoSize' VALUE='1'>
+<PARAM NAME='Filename' value='Spiders.wmv'>           
+</OBJECT>
+<BR><BR> 
+</CENTER>
+&lt;OBJECT classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' VIEWASTEXT&gt;<BR>
+&lt;PARAM NAME='EnableContextMenu' VALUE='0'&gt;<BR>
+&lt;PARAM NAME='ShowControls' VALUE='1'&gt;<BR>
+&lt;PARAM NAME='ShowDisplay' VALUE='0'&gt;<BR>
+&lt;PARAM NAME='ShowStatusBar' VALUE='0'&gt;<BR>
+&lt;PARAM NAME='AutoSize' VALUE='1'&gt;<BR>
+&lt;PARAM NAME='Filename' value='<FONT color="#00CC01">Video</FONT>'&gt;<BR>
+&lt;/OBJECT&gt;<BR>
+
+
+<CENTER>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01"><a class="anav" href="Script.htm" >Этот скрипт задает положение окна на экране и его размеры.</a></FONT><BR>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR></CENTER>
+&lt;html&gt;<BR>
+&lt;title&gt;SCRIPT&lt;/title&gt;<BR>
+&lt;head&gt;
+		
+&nbsp; &nbsp; &lt;script language="JavaScript" src="..\IMG\<FONT color="#00FF01">Var.js</FONT>"&gt;<BR>
+&nbsp; &nbsp; &lt;/script&gt;<BR>	
+&nbsp; &nbsp; &lt;script language="JavaScript"&gt;<BR>
+&nbsp; &nbsp; function OpenDriver()<BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; var w,h,X1,Y1;<BR>
+&nbsp; &nbsp; if(screen.width > 1023)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; w=1024;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; h=768;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; X1=(screen.width - w)/2;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; Y1=(screen.height - h)/2;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; else<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; if(screen.width > 790)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; w=800;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h=600;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X1=(screen.width - w)/2;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y1=(screen.height - h)/2;<BR>		
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; else<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; w=640;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h=480;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X1=0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y1=0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; resizeTo(w,h);<BR>
+&nbsp; &nbsp; moveTo(X1,Y1);<BR>
+&nbsp; &nbsp; document.title=CD_Ver;<BR>
+&nbsp; &nbsp; window.location='FRAME.HTM';<BR>
+&nbsp; &nbsp; }<BR>	
+&nbsp; &nbsp; &lt;/script&gt;<BR>
+&lt;/head&gt;<BR>
+&lt;body onLoad="OpenDriver()"&gt;<BR>
+&lt;/body&gt;<BR>
+&lt;/html&gt;<BR>
+
+<center>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01">
+<BUTTON id=oDiv onmouseover="fnToggle(); style.color='yellow'" 
+style="BORDER-RIGHT: #8b0505 2px solid; BORDER-TOP: #8b0505 2px solid; FILTER: progid:DXImageTransform.Microsoft.gradientWipe(duration=0.5, gradientsize=2); 
+BORDER-LEFT: #8b0505 2px solid; COLOR: #8b0505; BORDER-BOTTOM: #8b0505 2px solid" 
+onclick="javascript:HighlightAll('form1.code')" 
+onmouseout="fnToggle(); style.color='#8B0505'"> &nbsp; Кнопки &nbsp; </BUTTON>
+</FONT><BR>
+<IMG  src="..\IMG\color2b.gif" border=0><IMG  src="..\IMG\color2b.gif" border=0><BR></CENTER>
+
+
+<SCRIPT>
+var bToggle = 0;
+function fnToggle() 
+	{
+    oDiv.filters[0].Apply();                   
+    if (bToggle) 
+		{                                                        
+        bToggle = 0;
+        oDiv.style.backgroundColor="#FF0000";
+		}
+    else 
+		{
+        bToggle = 1;
+        oDiv.style.backgroundColor="#8B0505";
+		oDiv.style.Color="#FFFFFF";
+		}  
+    oDiv.filters[0].Play();
+	}
+var bToggle2 = 0;
+function fnToggle2() 
+	{
+    oDiv2.filters[0].Apply();                   
+    if (bToggle2) 
+		{
+        bToggle2 = 0;
+        oDiv2.style.backgroundColor="#FFFFFF";
+		}
+    else 
+		{
+        bToggle2 = 1;
+        oDiv2.style.backgroundColor="#8B0505";
+		oDiv2.style.Color="#FFFFFF";
+		}  
+    oDiv2.filters[0].Play();
+	}
+var bToggle3 = 0;
+function fnToggle3() 
+	{
+    oDiv3.filters[0].Apply();                   
+    if (bToggle3) 
+		{
+        bToggle3 = 0;
+        oDiv3.style.backgroundColor="#FFFFFF";
+		}
+    else 
+		{
+        bToggle3 = 1;
+        oDiv3.style.backgroundColor="#8B0505";
+		oDiv3.style.Color="#FFFFFF";
+		}  
+    oDiv3.filters[0].Play();
+	}
+var bToggle4 = 0;
+function fnToggle4() 
+	{
+    oDiv4.filters[0].Apply();
+    if (bToggle4) 
+		{
+        bToggle4 = 0;
+        oDiv4.style.backgroundColor="#FFFFFF";
+		}
+    else 
+		{
+        bToggle4 = 1;
+        oDiv4.style.backgroundColor="#8B0505";
+		oDiv4.style.Color="#FFFFFF";
+		}  
+    oDiv4.filters[0].Play();
+	}
+</SCRIPT>
+
+
+&lt;BUTTON id=oDiv onmouseover="fnToggle(); style.color='yellow'" <BR>
+style="BORDER-RIGHT: #8b0505 2px solid; BORDER-TOP: #8b0505 2px solid; FILTER: progid:DXImageTransform.Microsoft.gradientWipe(duration=0.5, gradientsize=2); <BR>
+BORDER-LEFT: #8b0505 2px solid; COLOR: #8b0505; BORDER-BOTTOM: #8b0505 2px solid" <BR>
+onclick="javascript:HighlightAll('form1.code')" <BR>
+onmouseout="fnToggle(); style.color='#8B0505'"&gt; &nbsp; Пуск &nbsp; &lt;/BUTTON&gt;<BR>
+&lt;SCRIPT&gt;<BR>
+var bToggle = 0;<BR>
+function fnToggle() <BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; oDiv.filters[0].Apply();                   <BR>
+&nbsp; &nbsp; if (bToggle) <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {                                                        <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle = 0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv.style.backgroundColor="#FF0000";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; else <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle = 1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv.style.backgroundColor="#8B0505";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv.style.Color="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }  <BR>
+&nbsp; &nbsp; oDiv.filters[0].Play();<BR>
+&nbsp; &nbsp; }<BR>
+var bToggle2 = 0;<BR>
+function fnToggle2() <BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; oDiv2.filters[0].Apply();                   <BR>
+&nbsp; &nbsp; if (bToggle2) <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {                                                        <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle2 = 0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv2.style.backgroundColor="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; else <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle2 = 1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv2.style.backgroundColor="#8B0505";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv2.style.Color="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }  <BR>
+&nbsp; &nbsp; oDiv2.filters[0].Play();<BR>
+&nbsp; &nbsp; }<BR>
+var bToggle3 = 0;<BR>
+function fnToggle3() <BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; oDiv3.filters[0].Apply();                   <BR>
+&nbsp; &nbsp; if (bToggle3) <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {                                                        <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle3 = 0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv3.style.backgroundColor="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; else <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle3 = 1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv3.style.backgroundColor="#8B0505";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv3.style.Color="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }  <BR>
+&nbsp; &nbsp; oDiv3.filters[0].Play();<BR>
+&nbsp; &nbsp; }<BR>
+var bToggle4 = 0;<BR>
+function fnToggle4() <BR>
+&nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; oDiv4.filters[0].Apply();                   <BR>
+&nbsp; &nbsp; if (bToggle4) <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {                                                        <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle4 = 0;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv4.style.backgroundColor="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }<BR>
+&nbsp; &nbsp; else <BR>
+&nbsp; &nbsp; &nbsp; &nbsp; {<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; bToggle4 = 1;<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv4.style.backgroundColor="#8B0505";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; oDiv4.style.Color="#FFFFFF";<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; }  <BR>
+&nbsp; &nbsp; oDiv4.filters[0].Play();<BR>
+&nbsp; &nbsp; }<BR>
+&lt;/SCRIPT&gt;<BR>
+
+<CENTER>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01">Date</FONT><BR>
+<SCRIPT>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+   year+=1900
+   var day=mydate.getDay()
+   var month=mydate.getMonth()
+   var daym=mydate.getDate()
+   if (daym<10)daym="0"+daym
+       var dayarray=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота")
+       var montharray=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря")
+       document.write("<span style=' text-decoration:underline;color:#8B0505; font-size: 10px; font-family:Verdana, Arial, Helvetica, sans-serif; '><B>"+dayarray[day]+", "+ daym+" "+montharray[month]+" "+ year+" года"+"</span>")
+</SCRIPT><BR>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+</CENTER>
+
+&lt;SCRIPT&gt;<BR>
+var mydate=new Date()<BR>
+var year=mydate.getYear()<BR>
+if (year &lt; 1000)<BR>
+ &nbsp; &nbsp;year+=1900<BR>
+ &nbsp; &nbsp;var day=mydate.getDay()<BR>
+ &nbsp; &nbsp;var month=mydate.getMonth()<BR>
+ &nbsp; &nbsp;var daym=mydate.getDate()<BR>
+ &nbsp; &nbsp;if (daym&lt;10)daym="0"+daym<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp;var dayarray=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота")<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp;var montharray=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря")<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp;document.write("&lt;span style=' text-decoration:underline;color:#8B0505;  font-size: 10px; font-family:Verdana, Arial, Helvetica, sans-serif; '&gt;&lt;B&gt;"+dayarray[day]+", "+ daym+" "+montharray[month]+" "+ year+" года"+"&lt;/span&gt;")<BR>
+&lt;/SCRIPT&gt;
+
+
+<CENTER>
+<IMG  src="..\IMG\color2b.gif" border=0> <IMG  src="..\IMG\color2b.gif" border=0><BR>
+<FONT FACE="Arial" size=4 color="#00CC01">
+<BUTTON id=Copy  " onclick="javascript:HighlightAll('form1.code')" onmouseout="fnToggle();">Копировать код</BUTTON>
+</FONT><BR>
+
+<SCRIPT language=Javascript>
+function HighlightAll(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+if (document.all)
+	{
+	therange=tempval.createTextRange()
+	therange.execCommand("Copy")
+	setTimeout("window.status=''",1800)
+	}
+}
+</SCRIPT>
+<A name=p1></A>
+<FORM name=form1 method=post><TEXTAREA onmouseover="this.className='onMouseOver'" style=" WIDTH: 100%;  HEIGHT: 100px;  scroll: auto" onclick=focus(this.code) onmouseout="this.className='onMouseOut'" name=code>
+&lt;BUTTON id=Copy  " onclick="javascript:HighlightAll('form1.code')" onmouseout="fnToggle();"&gt;Копировать код&lt;/BUTTON&gt;<BR>
+
+&lt;SCRIPT language=Javascript&gt;
+function HighlightAll(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+if (document.all)
+&nbsp; &nbsp; {
+&nbsp; &nbsp; therange=tempval.createTextRange()
+&nbsp; &nbsp; therange.execCommand("Copy")
+&nbsp; &nbsp; setTimeout("window.status=''",1800)
+&nbsp; &nbsp; }
+}
+&lt;/SCRIPT&gt;
+&lt;A name=p1&gt;&lt;/A&gt;
+&lt;FORM name=form1 method=post&gt;&lt;TEXTAREA onmouseover="this.className='onMouseOver'" style=" WIDTH: 100%;  HEIGHT: 100px;  scroll: auto" onclick=focus(this.code) onmouseout="this.className='onMouseOut'" name=code&gt;<BR>
+TXT
+&lt;/TEXTAREA&gt;&lt;/FORM&gt;
+</TEXTAREA></FORM><BR></CENTER>
+
+<CENTER><BR>
+<FONT FACE="Arial" size=4 color="#00CC01"><a class="anav" href="Script.htm" ></a></FONT><BR>
+<BR></CENTER>
+</TH></TR></Table>
+</B></FONT>
+</HEAD>
+</BODY>
+</HTML> 

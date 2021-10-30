@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-framework="react">
+	<head>
+		<meta charset="utf-8">
+		<title>React • TodoMVC</title>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+	</head>
+	<body>
+	
+		<section id="todoapp"></section>
+		<script src="node_modules/todomvc-common/base.js"></script>
+		<script src="node_modules/react/dist/react-with-addons.js"></script>
+		<script src="node_modules/classnames/index.js"></script>
+		<script src="node_modules/react/dist/JSXTransformer.js"></script>
+		<script src="node_modules/director/build/director.js"></script>
+	
+		<script type="text/jsx">
+		/*
+			class RotateComponent extends React.Component{
+				constructor(props){
+					super(props);
+					this.animate = false;
+					this.degrees = 0;
+					this.refelem = null;
+				}
+				
+				render(){
+					return(
+						<div>
+							hello
+						</div>
+					);
+				}
+
+				componentdidMount(){
+					this.animate  = true;
+				}
+				
+				componentWillUnmount(){
+					this.animate = false;
+				}
+				
+			}
+			
+			function render() {
+				React.render(
+					<RotateComponent/>
+					document.getElementsByClassName('todoapp')[0]
+				);
+			}
+			*/
+			
+			class Myapp extends React.Component {
+			  constructor(props){
+				super(props);
+				this.animate = false;
+				this.degrees = 0;
+				this.refelem = null;
+			  }
+			  
+			  animateMe(elm, deg) {
+				  elm.style.position = "relative";
+				  elm.style.display = "block";
+				  elm.style.webkitTransform = "rotate("+deg+"deg)";
+				  elm.style.msTransform = "rotate("+deg+"deg)";
+				  elm.style.oTransform = "rotate("+deg+"deg)";
+				  elm.style.mozTransform = "rotate("+deg+"deg)";
+				  elm.style.transform = "rotate("+deg+"deg)";
+			  }
+			  
+			  componentDidMount(){
+					this.animate = true;
+
+					const executor = () => ((new Promise((resolve, reject)=>{
+						if (this.animate){
+							this.animateMe(this.refelem, this.degrees);
+							this.degrees = (this.degrees + 1) % 360;
+							requestAnimationFrame(resolve);
+						}else{
+							reject();
+						}
+					})).then(executor));
+					
+					executor();
+				}
+				
+				componentWillUnmount(){
+					this.animate = false;
+				}
+			  
+			  render() {    
+				return (
+				    <div ref={(elm) => (this.refelem = elm.getDOMNode())}>
+					    {this.props.children}
+					</div>
+				);
+		      }
+			}
+			
+			window.onload = function() {
+			    const elm = document.getElementById("todoapp")
+			    React.render((
+			    	  <Myapp>
+					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>					  <div>111</div>
+					  <div>222</div>
+					  <div>333</div>
+					  </Myapp>
+			      ),
+			      elm
+			    );
+			}
+		</script>
+	</body>
+</html>

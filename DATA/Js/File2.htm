@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+function func()
+{
+var text = 'как записать строку в файл ".txt" с помощью js?';
+document.write('<a href="data:text/plain;charset=utf-8,%EF%BB%BF' + encodeURIComponent(text) + '" download="txt.txt">txt.txt</a>');
+}
+</script> 
+</head>
+
+<body>
+<p id="test">Текст абзаца.</p>
+<input type="submit" onclick="func()">
+
+</body>
+</html>
+

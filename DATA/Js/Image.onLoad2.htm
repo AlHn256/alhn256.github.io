@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<script language = "JavaScript">
+function preloader2(id,url) {
+		img_id = new Image();
+		img_id.src = url;
+		img_id.onload = function() {document.getElementById(id).src = url; }
+		img_id.onError= function() {document.getElementById(id).src = "https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png"; }
+}
+</script>
+</head>
+
+<body>
+<img id="img01" src="https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png" onload="preloader2(this.id,'http://www.php.net/images/logo.php')"><BR>
+<img id="img02" src="https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png" onload="preloader2(this.id,'http://www.kartinki24.ru/uploads/gallery/comthumb/1/kartinki24_ru_3d_201.jpg')"><BR>
+<img id="img03" src="https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png" onload="preloader2(this.id,'http://www.kartinki24.ru/uploads/gallery/comthumb/1/kartinki24_ru_3d_200.jpg')"><BR>
+<img id="img04" src="https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png" onload="preloader2(this.id,'http://www.kartinki24.ru/uploads/gallery/comthumb/1/kartinki24_ru_3d_199.jpg')"><BR>
+</body>
+
+</html>

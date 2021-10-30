@@ -1,0 +1,41 @@
+aquasheep: Super sheep = aqua sheep
+crateshower: Frequent Crate showers
+cratespy: Crate content knowledge
+david: David and Goliath mode
+doubletrouble: Double damage mode
+dropsonly: No weapons, crates only
+earthquake: Stay away from the edge
+eoe: Energy or Enemy
+falldamage: Don't slip mode
+fort: Fort mode
+guessmyweapon: Guess my special weapon
+handtohand: NOT USED
+health bonanza: Health crates aplenty
+highfriction: Sticky mode
+image1: No mode selected
+lowfriction: Slippy mode
+no retreat no surrender: No retreat time
+on the moon: Low Gravity (NOT USED)
+onehealth: One shot, one kill
+only drown: God mode
+pfw: Points for weapons mode
+poweranimals: Extra powered animals
+powercluster: Extra powered clusters
+powerexplosive: Extra powered explosives
+powerfire: Extra powered firearms
+powerhandtohand: Extra powered handheld weapons
+quickfire: Turn doesn't end go mode
+redblood: Enable blood effects
+sheepcrates: All crates contain sheep
+specialist: Specialist Worm mode
+super rope: Super Rope mode
+superanimals: High damage animals
+supercluster: High damage clusters
+superengineer: High powered engineers
+superexplosive: High damage explosives
+superfirearms: High damage firearms
+superfire: High damage fire weapons
+superhandtohand: High damage handheld weapons
+wind: Wind effects more weapons
+x2clusters: More clusters mode
+

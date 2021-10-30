@@ -1,0 +1,38 @@
+<html>
+<head>
+<Script type = "text/javascript" src = formScript.js>
+</script>
+</head>
+<body>
+	<form id = "myForm">
+		<table id = "myTable" border="5" style = "border-color: green;" cellpadding = "10" cellspacing="0" bgcolor = "#4EAEC1">
+			<tr align = "center" bgcolor = "green" >
+				<td Width = 180>
+					<input type="button" value="Расширенная форма" ONCLICK="isMore();" id = "myIn"/>
+				</td>
+				<td Width = 200>
+					<input type="submit"  value="Зарегистрироваться" METHOD="POST"/> <!--поставьте здесь атрибут action-->
+				</td>
+			</tr>
+			<tr align = "center">
+				<td>Имя:</td>
+				<td>
+					<input type="text" name="name" id = "prName"/>
+				</td>
+			</tr>
+			<tr align = "center">
+				<td>E-mail:</td> 
+				<td>
+					<input type="text" name="email" id = "prEmail" />
+				</td>
+			</tr>
+			<tr align = "center">
+				<td>Пароль:</td> 
+				<td>
+					<input type="password" name="psw" id = "prPsw" >
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

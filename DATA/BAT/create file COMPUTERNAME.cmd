@@ -1,0 +1,2 @@
+
+@echo %COMPUTERNAME%>%COMPUTERNAME%.txt

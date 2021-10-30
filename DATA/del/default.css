@@ -1,0 +1,32 @@
+
+.tableHeaderText {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: white
+}
+.tableHeaderText2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.4em; BACKGROUND: #1fd79d; COLOR: white
+}
+.tableHeaderTextComments {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: white
+}
+.tableHeaderNewsTopText {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.5em; BACKGROUND: #1fd79d; COLOR: #317326
+}
+.tableBorder {
+	BORDER-RIGHT: #013da4 1px solid; BORDER-TOP: #013da4 1px solid; BORDER-LEFT: #013da4 1px solid; BORDER-BOTTOM: #013da4 1px solid
+}
+.tableBorderHeader {
+	BORDER-RIGHT: #013da4 1px solid; BORDER-TOP: #013da4 1px solid; BORDER-LEFT: #013da4 1px solid; BORDER-BOTTOM: #013da4 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.tableBorderLeft {
+	BORDER-RIGHT: #013da4 1px solid; BORDER-TOP: #013da4 1px solid; BORDER-LEFT: #013da4 1px solid; BORDER-BOTTOM: #013da4 1px solid; BACKGROUND-COLOR: #daffff
+}
+.tableBorderGreen {
+	BORDER-RIGHT: #013da4 1px solid; BORDER-TOP: #013da4 1px solid; BORDER-LEFT: #013da4 1px solid; BORDER-BOTTOM: #013da4 1px solid; BACKGROUND-COLOR: #fb7cff
+}
+.tableBorderContent {
+	BORDER-RIGHT: #013da4 1px solid; BORDER-TOP: #013da4 1px solid; BORDER-LEFT: #013da4 1px solid; BORDER-BOTTOM: #013da4 1px solid
+}
+.tableBorderComments {
+	BORDER-RIGHT: #0007fc 1px solid; BORDER-TOP: #0007fc 1px solid; BORDER-LEFT: #0007fc 1px solid; BORDER-BOTTOM: #0007fc 1px solid; BACKGROUND-COLOR: #daffff
+}
+

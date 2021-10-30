@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Таймер на React</title>
+  <style>
+   * {
+    padding:0;
+    margin:0;
+}
+
+html{
+    font:14px normal Arial, sans-serif;
+    color:#626771;
+}
+
+body{
+    padding:60px;
+    text-align: center;
+}
+  </style>
+
+<script src="https://fb.me/react-0.14.5.js"></script>
+<script src="https://fb.me/react-dom-0.14.5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+</head>
+
+<body>
+<div id="sample"></div>
+<script type="text/babel">
+// Создание пользовательского компонента 
+// с помощью вызова React.createClass
+
+var TimerExample = React.createClass({
+
+  getInitialState: function(){
+    // Вызывается до нашей render-функции. Объект, 
+    // который возвращается, присваивается this.state, 
+    // поэтому мы можем использовать его позже.
+    return { elapsed: 0 };
+  },
+  componentDidMount: function(){
+    // componentDidMount запускается по умолчанию 
+    // после того, как компонент примонтирован к 
+    // DOM. Мы можем установить интервал здесь:
+    this.timer = setInterval(this.tick, 50);
+  },
+  componentWillUnmount: function(){
+    // Этот метод вызывается непосредственно перед 
+    // удалением компонента со страницы и уничтожением. 
+    // Мы можем удалить интервал здесь:
+    clearInterval(this.timer);
+  },
+  tick: function(){
+    // Эта функция вызывается каждые 50 мс. и обновляет
+    // счетчик. Вызов setState заставляет компонент 
+    // перерисовываться
+    this.setState({elapsed: new Date() - this.props.start});
+  },
+
+  render: function() {
+    var elapsed = Math.round(this.state.elapsed/100);
+    //  Это даст нам число с одной цифрой после запятой (xx.x):
+    var seconds = (elapsed / 10).toFixed(1);    
+    // Хотя мы возвращаем весь элемент <p>, react обновит 
+    // только измененные части, содержащие переменную seconds.
+
+    return <p>Этот пример запущен <b>{seconds} сек.</b> назад.</p>;
+  }
+});
+
+ReactDOM.render(
+    <TimerExample start={Date.now()} />,
+    document.getElementById("sample")
+);
+</script>
+</body>
+</html>

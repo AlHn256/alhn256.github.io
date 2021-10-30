@@ -1,0 +1,58 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function ActiveX()
+{
+try 
+	{
+	if (window.XMLHttpRequest) 
+		{
+		var req = new XMLHttpRequest();
+		// some versions of Moz do not support the readyState property and the onreadystate event so we patch it!
+		if (req.readyState == null) 
+			{
+                        req.readyState = 1;
+                        req.addEventListener("load",
+                        function () 
+				{
+                                req.readyState = 4;
+                                if (typeof req.onreadystatechange == "function")
+                                req.onreadystatechange();
+                          	},
+			false);
+                    	}
+              	return req;
+                }
+                if (window.ActiveXObject)return new ActiveXObject(SOAPClient._getXmlHttpProgID());
+	}
+catch (ex) {}
+throw new Error("Your browser does not support XmlHttp objects");
+}
+
+
+function func()
+{
+	//fso = new ActiveX();
+fso = new ActiveXObject("Scripting.FileSystemObject");
+        var fso, tf;
+  	var fileurl = "~txt.txt";
+        
+        tf = fso.CreateTextFile(fileurl, true);
+        tf.WriteLine(""+cOut+"");
+        tf.WriteBlankLines(1) ;
+        
+        tf.Close(); 
+	//fso.DeleteFile("fileslist.txt",true);
+}
+</script> 
+</head>
+
+<body>
+
+<p id="test">fileslist.txt.</p>
+<input type="submit" onclick="func()">
+
+</body>
+</html>
+

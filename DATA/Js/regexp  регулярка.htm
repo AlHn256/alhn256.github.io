@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+window.onload = function() {
+var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+var qwe = document.getElementById("qwe");
+qwe.innerHTML = str;
+qwe.innerHTML = "<BR><BR><BR>";
+
+var regexp = /[A-E]/gi;
+var matches = str.match(regexp);
+
+qwe.innerHTML = matches;
+}
+</script>
+
+<div id="qwe"><BR>
+</div>
+<a TARGET="_blank" href="http://www.regexr.com/">Regexr.com</a><BR>
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://websketches.ru/assets/files/blog/5practiceskih_primerov_react/search.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Меню на React</title>
+<style>
+* {
+    padding:0;
+    margin:0;
+}
+
+html{
+    font:14px normal Arial, sans-serif;
+    color:#626771;
+    background-color:#fff;
+}
+
+body{
+    padding:60px;
+    text-align: center;
+}
+
+input[type=text]{
+    text-align: center;
+    font: inherit;
+    border: 6px solid #a3d8d6;
+    padding: 13px 12px;
+    font-size: 15px;
+    box-shadow: 0 1px 1px #DDD;
+    width: 384px;
+    outline: none;
+    display: block;
+    color: #7B8585;
+    margin: 0 auto 20px;
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+    width: 420px;
+    text-align: left;
+}
+
+ul li{
+    display: block;
+    padding: 15px 20px;
+    background-color: #F8F8F8;
+    color: #7B8585;
+    margin-bottom: 3px;
+    position: relative;
+    
+    transition: 0.3s;
+}
+
+ul li a{
+    position: absolute;
+    left: 160px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969d9d;
+}
+
+ul li:hover{
+    background-color:#d8f2f1;
+}
+</style>
+
+<script src="./React поиск_files/react-0.14.5.js.Без названия"></script>
+<script src="./React поиск_files/react-dom-0.14.5.js.Без названия"></script>
+<script src="./React поиск_files/browser.min.js.Без названия"></script>
+</head>
+
+<body>
+<div id="sample"><div data-reactid=".0"><input type="text" value="" placeholder="Введите здесь" data-reactid=".0.0"><ul data-reactid=".0.1"><li data-reactid=".0.1.0"><span data-reactid=".0.1.0.0">Backbone.js</span><span data-reactid=".0.1.0.1"> </span><a href="http://documentcloud.github.io/backbone/" data-reactid=".0.1.0.2">http://documentcloud.github.io/backbone/</a></li><li data-reactid=".0.1.1"><span data-reactid=".0.1.1.0">AngularJS</span><span data-reactid=".0.1.1.1"> </span><a href="https://angularjs.org/" data-reactid=".0.1.1.2">https://angularjs.org/</a></li><li data-reactid=".0.1.2"><span data-reactid=".0.1.2.0">jQuery</span><span data-reactid=".0.1.2.1"> </span><a href="http://jquery.com/" data-reactid=".0.1.2.2">http://jquery.com/</a></li><li data-reactid=".0.1.3"><span data-reactid=".0.1.3.0">Prototype</span><span data-reactid=".0.1.3.1"> </span><a href="http://www.prototypejs.org/" data-reactid=".0.1.3.2">http://www.prototypejs.org/</a></li><li data-reactid=".0.1.4"><span data-reactid=".0.1.4.0">React</span><span data-reactid=".0.1.4.1"> </span><a href="http://facebook.github.io/react/" data-reactid=".0.1.4.2">http://facebook.github.io/react/</a></li><li data-reactid=".0.1.5"><span data-reactid=".0.1.5.0">Ember</span><span data-reactid=".0.1.5.1"> </span><a href="http://emberjs.com/" data-reactid=".0.1.5.2">http://emberjs.com/</a></li><li data-reactid=".0.1.6"><span data-reactid=".0.1.6.0">Knockout.js</span><span data-reactid=".0.1.6.1"> </span><a href="http://knockoutjs.com/" data-reactid=".0.1.6.2">http://knockoutjs.com/</a></li><li data-reactid=".0.1.7"><span data-reactid=".0.1.7.0">Dojo</span><span data-reactid=".0.1.7.1"> </span><a href="http://dojotoolkit.org/" data-reactid=".0.1.7.2">http://dojotoolkit.org/</a></li><li data-reactid=".0.1.8"><span data-reactid=".0.1.8.0">Mootools</span><span data-reactid=".0.1.8.1"> </span><a href="http://mootools.net/" data-reactid=".0.1.8.2">http://mootools.net/</a></li><li data-reactid=".0.1.9"><span data-reactid=".0.1.9.0">Underscore</span><span data-reactid=".0.1.9.1"> </span><a href="http://documentcloud.github.io/underscore/" data-reactid=".0.1.9.2">http://documentcloud.github.io/underscore/</a></li><li data-reactid=".0.1.a"><span data-reactid=".0.1.a.0">Lodash</span><span data-reactid=".0.1.a.1"> </span><a href="http://lodash.com/" data-reactid=".0.1.a.2">http://lodash.com/</a></li><li data-reactid=".0.1.b"><span data-reactid=".0.1.b.0">Moment</span><span data-reactid=".0.1.b.1"> </span><a href="http://momentjs.com/" data-reactid=".0.1.b.2">http://momentjs.com/</a></li><li data-reactid=".0.1.c"><span data-reactid=".0.1.c.0">Express</span><span data-reactid=".0.1.c.1"> </span><a href="http://expressjs.com/" data-reactid=".0.1.c.2">http://expressjs.com/</a></li><li data-reactid=".0.1.d"><span data-reactid=".0.1.d.0">Koa</span><span data-reactid=".0.1.d.1"> </span><a href="http://koajs.com/" data-reactid=".0.1.d.2">http://koajs.com/</a></li></ul></div></div>
+<script type="text/babel">
+// Сзодание компонента "мгновенный поиск"
+
+var SearchExample = React.createClass({
+
+    getInitialState: function(){
+        return { searchString: '' };
+    },
+
+    handleChange: function(e){
+
+        // Если вы закомментировать эту строку, текстовое поле не изменит своего значения.
+        // Это потому, что в React поле не может измениться независимо от свойства, 
+		// которое было ему присвоено. В нашем случае это this.state.searchString.
+
+        this.setState({searchString:e.target.value});
+    },
+
+    render: function() {
+
+        var libraries = this.props.items,
+            searchString = this.state.searchString.trim().toLowerCase();
+
+
+        if(searchString.length > 0){
+
+            // Ищем и фильтрируем резальтаты.
+
+            libraries = libraries.filter(function(l){
+                return l.name.toLowerCase().match( searchString );
+            });
+
+        }
+
+        return <div>
+                    <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Введите здесь" />
+
+                    <ul> 
+
+                        { libraries.map(function(l){
+                            return <li>{l.name} <a href={l.url}>{l.url}</a></li>
+                        }) }
+
+                    </ul>
+
+                </div>;
+
+    }
+});
+
+                                                                                                                                                             
+var libraries = [
+
+    { name: 'Backbone.js', url: 'http://documentcloud.github.io/backbone/'},
+    { name: 'AngularJS', url: 'https://angularjs.org/'},
+    { name: 'jQuery', url: 'http://jquery.com/'},
+    { name: 'Prototype', url: 'http://www.prototypejs.org/'},
+    { name: 'React', url: 'http://facebook.github.io/react/'},
+    { name: 'Ember', url: 'http://emberjs.com/'},
+    { name: 'Knockout.js', url: 'http://knockoutjs.com/'},
+    { name: 'Dojo', url: 'http://dojotoolkit.org/'},
+    { name: 'Mootools', url: 'http://mootools.net/'},
+    { name: 'Underscore', url: 'http://documentcloud.github.io/underscore/'},
+    { name: 'Lodash', url: 'http://lodash.com/'},
+    { name: 'Moment', url: 'http://momentjs.com/'},
+    { name: 'Express', url: 'http://expressjs.com/'},
+    { name: 'Koa', url: 'http://koajs.com/'},
+
+];
+
+// Отображаем на странице компонент SearchExample
+
+ReactDOM.render(
+    <SearchExample items={ libraries } />,
+    document.getElementById("sample")
+);
+
+</script>
+
+</body></html>

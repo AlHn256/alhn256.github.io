@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Скрипты</title>
+  <style>
+    #msg2 { 
+    display: none;
+    position: absolute;
+    width: 280px;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px; 
+    background: #fc0;
+    padding: 10px;
+   }
+   
+    #test { 
+    position: absolute;
+    width: 280px;
+    top: 600px;
+    left: 50%;
+    margin-left: -150px; 
+    background: #FF0;
+    padding: 10px;
+   }
+  </style>
+  <script>
+  
+   function textMsg(msg) {
+   document.getElementById('text').innerHTML = msg;
+   document.getElementById('msg2').style.display = 'block';
+   document.getElementById('test').style.display = 'none';
+   }
+   function closeMsg() {
+   document.getElementById('msg2').style.display = 'none';
+   document.getElementById('test').style.display = 'block';
+   }
+  </script>
+ </head>
+ 
+ <body>
+  <div id="msg2">
+   <div id="text"></div>
+   <div id="close"><a href="javascript:closeMsg()">[X]</a></div>
+  </div>
+  <a href="#" onclick="textMsg('Text12345')">∆мак ∆мак</a>
+  <div id="test">1234567890</div><BR><BR>
+  <div id="test2"><a href="javascript:document.getElementById('test').style.display = 'none' ">[X]</a></div>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3c3c3c;  
+  text-align: center;
+  font-family: monospace;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+
+div.center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+p {
+  border: 20px solid transparent;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+.right-triangle {
+  border-right-color: #3ad;
+  border-left: none;
+}
+
+.left-triangle {
+  border-left-color: red;
+  border-right: none;
+}
+
+.top-triangle {
+  border-top-color: #3ad;
+  border-bottom: none;
+}
+
+.bottom-triangle {
+  border-bottom-color: red;
+  border-top: none;
+}

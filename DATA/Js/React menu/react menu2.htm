@@ -1,0 +1,158 @@
+﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Price-React</title>
+<style>
+* {
+    padding:0;
+    margin:0;
+}
+
+html{
+    font:14px normal Arial, sans-serif;
+    color:#626771;
+    background-color:#fff;
+}
+
+body{
+    padding:60px;
+    text-align: center;
+}
+
+h1{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+#services{
+    list-style: none;
+    display: inline-block;
+    width: 440px;
+    text-align: left;
+}
+
+#services p{
+    display: block;
+    padding: 15px 20px;
+    background-color: #F8F8F8;
+    color: #7B8585;
+    margin-bottom: 3px;
+    position: relative;
+    cursor: pointer;
+	}
+
+#services p b{
+    position: absolute;
+    right: 28px;
+    line-height: 16px;
+    width: 100px;
+    color: #808787;
+    text-align: right;
+}
+
+#services p:hover{
+    background-color:#d8f2f1;
+}
+
+#services p.active{
+    color:#fff;
+    background-color:#41c7c2;
+}
+
+#services p.active b{
+    color: #fff;
+}
+
+#total{
+    background: none !important;
+    cursor: default !important;
+    padding-top: 10px !important;
+}
+</style>
+
+<script src="./js/react-0.14.5.js"></script>
+<script src="./js/react-dom-0.14.5.js"></script>
+<script src="./js/browser.min.js"></script>
+</head>
+
+<body>
+<div id="sample"><div data-reactid=".0"><h1 data-reactid=".0.0">Price-React</h1><div id="services" data-reactid=".0.1"><p class="" data-reactid=".0.1.0:$0"><span data-reactid=".0.1.0:$0.0">Веб-разработка</span><span data-reactid=".0.1.0:$0.1"> </span><b data-reactid=".0.1.0:$0.2"><span data-reactid=".0.1.0:$0.2.0">$</span><span data-reactid=".0.1.0:$0.2.1">300.00</span></b></p><p class="active" data-reactid=".0.1.0:$1"><span data-reactid=".0.1.0:$1.0">Дизайн</span><span data-reactid=".0.1.0:$1.1"> </span><b data-reactid=".0.1.0:$1.2"><span data-reactid=".0.1.0:$1.2.0">$</span><span data-reactid=".0.1.0:$1.2.1">400.00</span></b></p><p class="" data-reactid=".0.1.0:$2"><span data-reactid=".0.1.0:$2.0">Интеграция</span><span data-reactid=".0.1.0:$2.1"> </span><b data-reactid=".0.1.0:$2.2"><span data-reactid=".0.1.0:$2.2.0">$</span><span data-reactid=".0.1.0:$2.2.1">250.00</span></b></p><p class="active" data-reactid=".0.1.0:$3"><span data-reactid=".0.1.0:$3.0">Обучение</span><span data-reactid=".0.1.0:$3.1"> </span><b data-reactid=".0.1.0:$3.2"><span data-reactid=".0.1.0:$3.2.0">$</span><span data-reactid=".0.1.0:$3.2.1">220.00</span></b></p><p id="total" data-reactid=".0.1.1"><span data-reactid=".0.1.1.0">Итого </span><b data-reactid=".0.1.1.1"><span data-reactid=".0.1.1.1.0">$</span><span data-reactid=".0.1.1.1.1">620.00</span></b></p></div></div></div>
+<script type="text/babel">
+// Это уже более сложный пример, в котором мы показываем
+// как компоненты могут взаимодействовать друг с другом.
+
+var ServiceChooser = React.createClass({
+
+  getInitialState: function(){
+    return { total: 0 };
+  },
+
+  addTotal: function( price ){
+    this.setState( { total: this.state.total + price } );
+  },
+
+  render: function() {
+
+    var self = this;
+    var services = this.props.items.map(function(s,i){
+
+      // Создадим новый экземпляр компонента Service для 
+	  // каждого элемента массива. Обратите внимание,
+	  // что мы передаем функцию self.addTotal в компонент.
+
+      return <Service name={s.name} key={i} price={s.price} active={s.active} addTotal={self.addTotal} />;
+    });
+
+    return <div>
+          <h1>Price-React</h1>
+          <div id="services">
+            {services}
+            <p id="total">Итого <b>${this.state.total.toFixed(2)}</b></p>
+          </div>
+        </div>;
+  }
+});
+
+
+var Service = React.createClass({
+  getInitialState: function(){
+    return { active: false };
+  },
+
+  clickHandler: function (){
+    var active = !this.state.active;
+    this.setState({ active: active });
+    // Ставим в известность ServiceChooser, 
+	// вызывая метод addTotal
+    this.props.addTotal( active ? this.props.price : -this.props.price );
+
+  },
+
+	render: function(){
+	return <p className={this.state.active ? 'active' : ''} onClick={this.clickHandler}>
+		{this.props.name} <b>${this.props.price.toFixed(2)}</b>
+	</p>;
+  }
+});
+
+var services = [
+	{ name: 'Добавить батон', price: 300 },
+	{ name: 'Прикрутить картинку', price: 400 },
+	{ name: 'Нарисовать меню', price: 250 },
+	{ name: 'Добавить специи', price: 150 },
+	{ name: 'Запилить часы', price: 50 },
+	{ name: 'Запилить часы без цифр', price: 15 },
+	{ name: 'Запилить часы без цифр и без стрелок', price: 5 },
+	{ name: 'TODO-er', price: 1500 },
+	{ name: 'Хоп-хоп-хоп', price: 2200 }
+];
+
+
+// Отображаем ServiceChooser и передаем
+// ему массив с перечнем услуг
+
+ReactDOM.render(
+  <ServiceChooser items={ services } />,
+  document.getElementById("sample")
+);
+</script>
+
+</body></html>

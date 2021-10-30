@@ -1,0 +1,1582 @@
+<META HTTP-EQUIV="Page-Exit" Content="BlendTrans(Duration=2.0)">
+<HTML>
+<HEAD>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="main.css" TITLE="mainstyle">
+<LINK href="default.css" type=text/css rel=stylesheet>
+
+
+
+<SCRIPT language=javascript src="default.js" type=text/javascript></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+ns=(document.layers)?1:0;
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff')
+yBase=0;
+xBase=0;
+step=3;
+currStep = 0;
+Ypos=0;
+Xpos=0;
+if (ns){
+for (i = 0; i < 14; i++)
+document.write('<LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"></LAYER>');
+window.captureEvents(Event.MOUSEMOVE); 
+function nMouse(evnt){
+Ypos = evnt.pageY;
+Xpos = evnt.pageX;
+}
+window.onMouseMove=nMouse;
+}
+else{
+document.write('<div style="position:absolute;top:0;left:0"><div style="position:relative">');
+for (i=0; i < 14; i++)
+{document.write('<div id="me" style="position:absolute;top:0;left:0;width:'+i/4+';height:'+i/4+';font-size:'+i/4+'"></div>')}
+document.write('</div></div>');
+function iMouse() {
+Ypos = event.y+document.body.scrollTop;
+Xpos = event.x+document.body.scrollLeft;
+}
+document.onmousemove = iMouse;
+}
+function Comet() {
+var yBase=(document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;
+var xBase=(document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;
+for (i=0; i<14; i++){
+var randCol = Math.round(Math.random()*8);
+var layer = (document.layers)?document.layers['n'+i]:me[i].style;
+layer.top =Ypos + yBase*Math.cos((currStep+i*4)/12)*Math.cos(0.7+currStep/200);
+layer.left = Xpos + xBase*Math.sin((currStep+i*3)/10)*Math.sin(8.2+currStep/400);
+if (ns) layer.bgColor = Clrs[randCol];
+else
+layer.background = Clrs[randCol];
+}
+currStep += step;
+setTimeout("Comet()",10);
+}
+window.onload = Comet;
+// End -->
+</script>
+
+
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+
+<CENTER>
+<table width="30%">
+<tr><th>
+
+<IMG src="628.jpg" border=0><BR/>
+<A HREF="#HEAD"><font color="#003000">HEAD</font></A><BR/>
+<A HREF="#LINK"><font color="#004000">LINK</font></A><BR>
+<A HREF="#TITLE"><font color="#005000">TITLE</font></A><BR>
+<A HREF="#SCROLLBAR-STYLE"><font color="#006000">SCROLLBAR-STYLE</font></A><BR>
+<A HREF="#BODY"><font color="#007000">BODY</font></A><BR>
+<A HREF="#STYLE"><font color="#007300">STYLE</font></A><BR>
+<A HREF="HTM\hsl.HTM"><font color="#007600">HSL</font></A><BR>
+<A HREF="#HREF"><font color="#008000">HREF</font></A><BR>
+<A HREF="#SOUND"><font color="#009000">SOUND</font></A><BR>
+<A HREF="#&nbsp;"><font color="#00A000">&amp;nbsp;</font></A><BR>
+<A HREF="#&amp;#___;"><font color="#00B000">&amp;#___;</font></A><BR>
+<A HREF="#FONT"><font color="#00C000">FONT</font></A><BR>
+<A HREF="#&lt;UL&gt;&lt;LI&gt;"><font color="#00D000">&lt;UL&gt;&lt;LI&gt;</font></A><BR>
+<A HREF="#POINT"><font color="#00E000">POINT</font></A><BR>
+<A HREF="#&lt;HR&gt;"><font color="#00F000">&lt;HR&gt;</font></A><BR>
+<A HREF="#IMG"><font color="#00E000">IMG</font></A><BR>
+<A HREF="#Table"><font color="#00D000">Table</font></A><BR>
+<A HREF="#FRAME"><font color="#00C000">FRAME</font></A><BR>
+<A HREF="#SCRIPT"><font color="#00B000">SCRIPT</font></A><BR>
+<A HREF="Js\~Javascript.htm"><font color="#00A000">Javascript</font></A><BR>
+<A HREF="HTM\META tag.htm"><font color="#009000">Meta</font></A> <A HREF="HTM/META - теги описание и правила создания.htm"><font color="#009000">tag</font></A><BR>
+<A HREF="HTM\404.html"><font color="#009000">Eror 404</font></A><BR>
+<A HREF="HTM\color-converter\converter.html"><font color="#006000">Converter</font></A><BR>
+<A HREF="JS\json.HTM"><font color="#005500">Json</font></A><BR>
+<A HREF="https://learn.javascript.ru/ajax-intro"><font color="#004000">AJAX COMET</font></A><BR>
+<A HREF="HTM\REDIR\0.htm"><font color="#005000">REDIR</font></A><BR>
+<A HREF="#О"><font color="#004800">FFFFFF</font></A><BR>
+<A HREF="#П"><font color="#004000">FFFFFF</font></A><BR>
+<A HREF="#Т"><font color="#003000">FFFFFF</font></A><BR>
+<A HREF="HTM\Color.HTM" TARGET="_blank"><font color="#002000">COLOR</font></A><BR>
+<A HREF="#END"><font color="#001000">END</font></A><BR>
+</th></tr></table>
+
+<B><BR><HR>
+<A NAME="HEAD"></A>
+<h2>HEAD</h2><BR><BR>
+&lt;HTML&gt<BR>
+&lt;HEAD&gt
+<HR><BR>
+
+<A NAME="LINK"></A>
+<h2>LINK</h2></CENTER><BR>
+&lt;LINK REL=STYLESHEET TYPE="text/css" HREF="main.css" TITLE="mainstyle"&gt;<BR>
+<DL>
+<DT>main.css
+<DD>a.anav {<BR>
+	text-decoration: none;<BR>
+	font-weight: bold;<BR>
+	color: #00FF00; <BR>
+	background-color: transparent;}<BR>
+a.anav:hover {<BR>
+	font-weight: bold;<BR>
+	color: #DD0000;<BR> 
+	background-color: transparent;}<BR>
+h2	{<BR>
+	color:#00CC00;<BR>
+	font-size:20;<BR>
+	}<BR>
+</DL>
+<HR>
+
+
+
+<A NAME="TITLE"></A>
+<TITLE>ТэсТ</TITLE>
+<BR><h2><CENTER>TITLE</h2>
+&lt;TITLE&gt;ТэсТ&lt;/TITLE&gt;<BR>
+
+<H1><A title="|--------&#10;|---1----&#13;|-----2--&#13;&#10;|-----2--&#13;&#10;|--------&#13;&#10;|--------" style="COLOR: #AA0000"><B>Am</B></A><br></H1>
+</CENTER>
+&lt;A title="|--------&amp;#10;|---1----&amp;#13;|-----2--&amp;#13;&amp;#10;|-----2--&amp;#13;&amp;#10;|--------&amp;#13;&amp;#10;|--------" style="COLOR: #AA0000"&gt;Am&lt;/A&gt;<br>
+
+<BR><BR>
+</HEAD>
+ 
+<A NAME="SCROLLBAR-STYLE"></A>
+<BR><BR><CENTER><h2>SCROLLBAR-STYLE</h2></CENTER><BR>
+<style type="text/css">
+BODY {SCROLLBAR-FACE-COLOR:#aa0000; SCROLLBAR-SHADOW-COLOR:#003300; SCROLLBAR-3DLIGHT-COLOR:#004400; 
+SCROLLBAR-ARROW-COLOR:red; SCROLLBAR-TRACK-COLOR:#000011; SCROLLBAR-DARKSHADOW-COLOR:#005500 
+background-color: #FFFFFF;font-family: Arial, Helvetica;color:black;}.default{font-size:10pt;}.logo{font-family:Arial Black,Arial,Helvetica;
+font-size:13pt;color:#FFC800;filter:glow(color=#000000, strength=2);height:1;}-->
+</style>
+
+
+
+&lt;style type="text/css"&gt;<BR>
+BODY {SCROLLBAR-FACE-COLOR:#aa0000; SCROLLBAR-SHADOW-COLOR:#003300; SCROLLBAR-3DLIGHT-COLOR:#004400;
+SCROLLBAR-ARROW-COLOR:red; SCROLLBAR-TRACK-COLOR:#000011; SCROLLBAR-DARKSHADOW-COLOR:#005500
+background-color: #FFFFFF;font-family: Arial, Helvetica;color:black;}.default{font-size:10pt;}.logo{font-family:Arial Black,Arial,Helvetica;
+font-size:13pt;color:#FFC800;filter:glow(color=#000000, strength=2);height:1;}--&gt;<BR>
+&lt;/style&gt;<BR><BR>
+
+<A NAME="BODY"></A>
+<Center><H2>BODY</H2></Center><BR>
+<BODY alink="#FF0000" link="#00FF00" Vlink="#FF9900" text="#007700" bottommargin=100px leftmargin=50px rightmargin=50px topmargin=100px  bgProperties=fixed background=Fon.jpg bgcolor="#AA0000" BACKGROUND-POSITION: 10% top>
+<nobr><B>&lt;BODY alink="#FF0000" link="#00FF00" Vlink="#AAAA00" text="#007700" bottommargin=100px leftmargin=50px <BR> rightmargin=50px topmargin=100px bgcolor="#AA9900" bgProperties=fixed  background=Fon.jpg<BR> BACKGROUND-POSITION: 10% top&gt;</B><BR>
+<BR>
+
+<A NAME="STYLE"></A>
+<Center><H2><a class="anav" href="FRAME.HTM" TARGET="_blank">STYLE</a></H2></Center>
+<HR width=50% align="center" size=2 color="#00DD00"> 
+
+<B>&lta class="anav" href="Style.css" &gtFRAME&lt/a&gt<BR><BR>
+
+&lt;style&gt;<BR>
+&lt;!-- {<BR>
+	background-repeat: no-repeat;<BR>
+	background-position: top;}<BR>
+a.anav {<BR>
+	text-decoration: none;<BR>
+	font-weight: bold;<BR>
+	color: #AA0011; <BR>
+	background-color: transparent;}<BR>
+a.anav:hover {<BR>
+	font-weight: bold;<BR>
+	color: #FF0000; <BR>
+	background-color: transparent;}<BR>
+--&gt;<BR>
+&lt;/style&gt;<BR><BR>
+
+<B>Также можно запинуть всю эту байду в один файл, абозвать его ну например "Style.css"
+и сделать на него ссылку. <BR>
+Примерно так:<BR>
+
+&ltLINK REL=STYLESHEET TYPE="text/css" HREF="Style.css" TITLE="mainstyle"&gt
+
+<HR width=25% align="left" size=1 color="#00DD00">
+Еще вариант:<BR><BR>
+
+<DIV class=left_nav><A href="http://www.firaxis.com">Sid Meier's Civilization IV: Warlords</A></DIV>
+<BR>
+&lt;DIV class=left_nav&gt;&lt;A href="http://www.firaxis.com"&gt;Sid Meier's Civilization IV: Warlords&lt;/A&gt;&lt;/DIV&gt;
+<BR>
+
+Ссылка на файл:<BR>
+&lt;LINK REL=STYLESHEET TYPE="text/css" HREF="main.css" TITLE="mainstyle"&gt;
+</B>
+
+<Center><A NAME="HREF"><h2>HREF</h2></A></Center>
+<HR width=50% align="center" size=2 color="#00CC00">
+|&nbsp;&nbsp;<a href="../../PROGI/BlindWrite5_setup.exe">&lt;a href="../../PROGI/BlindWrite5_setup.exe"&gt;&lt;/a&gt;</a>&nbsp;&nbsp;|<BR>
+<BR>
+<a class="anav" href="FRAME.HTM" TARGET="_blank">FRAME</a></B></B> &nbsp;&nbsp;(Загрузка в новое окно)<BR>
+<B>&lta href="FRAME.HTM" TARGET="_blank"&gtFRAME&lt/a&gt<BR><BR>
+<a class="anav" href="FRAME.HTM" TARGET="_self">FRAME</a></B> &nbsp;&nbsp;(Загрузка в текуще окно или фрейм)<B><BR>
+TARGET="_self"<BR><BR>
+<a class="anav" href="FRAME.HTM" TARGET="_top">FRAME</a></B> &nbsp;&nbsp;(Загрузка в полное окно)<B><BR>
+TARGET="_top"<BR><BR>
+<a class="anav" href="FRAME.HTM" TARGET="_parent">FRAME</a></B> &nbsp;&nbsp;(Загрузка в область основного фрейма)<B><BR>
+TARGET="_parent"<BR>
+
+
+<a href="../Antivir/dr%20web%204.32/drweb32.exe">
+<img border="0" id="img7" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'IMG/RUS1.GIF')"></a>
+<img border="0" id="img8" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'IMG/RUS1.GIF')"></a>
+<img border="0" id="img9" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'IMG/RUS1.GIF')"></a>
+<img border="0" id="img10" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img10',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img10',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img10',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img10',/*url*/'IMG/RUS1.GIF')"></a>
+<img border="0" id="img11" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img11',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img11',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img11',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img11',/*url*/'IMG/RUS1.GIF')"></a>
+<img border="0" id="img12" src="IMG/RUS.GIF" "fp-title="" onmouseover="FP_swapImg(1,0,/*id*/'img12',/*url*/'IMG/RUS1.GIF')" onmouseout="FP_swapImg(0,0,/*id*/'img12',/*url*/'IMG/RUS.GIF')" onmousedown="FP_swapImg(1,0,/*id*/'img12',/*url*/'IMG/RUS2.GIF')" onmouseup="FP_swapImg(0,0,/*id*/'img12',/*url*/'IMG/RUS1.GIF')"></a>
+
+<br>
+<A HREF="#MYAnchor">
+<img border="0" id="img23" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img23',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img23',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img23',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img23',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img0" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img0',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img0',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img0',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img0',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img1" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img2" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img3" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img4" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img5" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button1D.jpg')"></a>
+<img border="0" id="img6" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1D.jpg')"></a>
+<br><br><br>
+
+
+&lt;script language="JavaScript"&gt;<br>
+&lt;!--<br>
+function FP_preloadImgs() {//v1.0<br>
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();<br>
+ for(var i=0; i&lt;a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }<br>
+}<br>
+<br>
+function FP_swapImg() {//v1.0<br>
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n&lt;args.length;<br>
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;<br>
+ elm.$src=elm.src; elm.src=args[n+1]; } }<br>
+}<br>
+<br>
+function FP_getObjectByID(id,o) {//v1.0<br>
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);<br>
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;<br>
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)<br>
+ for(n=0; n&lt;c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }<br>
+ f=o.forms; if(f) for(n=0; n&lt;f.length; n++) { els=f[n].elements;<br>
+ for(m=0; m&lt;els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }<br>
+ return null;<br>
+}<br>
+// --&gt;<br>
+&lt;/script&gt;<br>
+<br><br>
+&lt;A HREF="#MYAnchor"&gt;&lt;img border="0" id="img23" src="button1E.jpg" alt="Регистратор" fp-title="Регистратор"<br> onmouseover="FP_swapImg(1,0,/*id*/'img23',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img23',/*url*/'button1C.jpg')"<br> onmousedown="FP_swapImg(1,0,/*id*/'img23',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img23',/*url*/'button1D.jpg')"&gt;&lt;/a&gt;
+<HR><br><br>
+
+<A NAME="SOUND"></A>
+<B><CENTER><A NAME="BODY"><h2>SOUND</B></h2></A></Center><BR>
+<BGSOUND balance=1 src="../../Main/Мeтель.wav">
+&lt;BGSOUND balance=1 src="../../Main/Мeтель.wav"&gt;<BR><BR>
+<a class="anav" href="../../Main/Таинственный гость.wav">Таинственный гость</a><BR>
+<a class="anav" href="../../Main/Broken Pomises.wav">Broken Pomises</a><BR>
+<a class="anav" href="../../Main/Pulp Fiction.wav">Pulp Fiction</a><BR>
+<a class="anav" href="../../Main/Only time.wav">Only time</a><BR>
+<a class="anav" href="../../Main/Сентябрь.wav">Сентябрь</a><BR>
+<a class="anav" href="../../Main/The Memory Remains.wav">The Memory</a><BR>
+<a class="anav" href="../../Main/Zwitter.wav">Zwitter</a><BR>
+<a class="anav" href="../../Main/Метель.wav">Метель</a><BR>
+<a class="anav" href="../../Main/Friend.wav">Friend</a><BR>
+&lt;a class="anav" href="../../Main/Мeтель.wav"&gt;Метель&lt;/a&gt;<BR><BR>
+
+
+
+<A NAME="&nbsp;"></A>
+<A NAME="&amp;#___;"></A>
+<CENTER><a class="anav" href="HTM\&amp;Amp.HTM" TARGET="_blank"><h2>&amp;nbsp;</h2></a></Center><BR>
+
+&laquo;- &amp;laquo;<BR>
+&raquo;- &amp;raquo;<BR>
+&lt;- &amp;lt;<BR>
+&gt;- &amp;gt;<BR>
+&quot;- &amp;quot;<BR>
+&amp;- &amp;amp;<BR>
+&copy;- &amp;copy;<BR>
+&mdash; &amp;mdash;<BR>
+&nbsp;&nbsp;-  &amp;nbsp;
+
+А сдеся еще куча подобной фигни: <a class="anav" href="HTM\&amp;Amp.HTM" TARGET="_blank"> Фигня</a></b>
+
+
+<Center>
+
+<A NAME="FONT"></A>
+<h2>FONT</FONT></CENTER></h2><BR>
+<FONT FACE="Verdana", "Arial", "Helvetica" size=5 color="#00FF01">&lt;FONT FACE="Verdana", "Arial", "Helvetica" size=5 color="#00FF01"&gt;&nbsp;&lt;/FONT&gt;</FONT><BR>
+<font style='font-size:8pt;color:#0000AA;'>&lt;font style='font-size:8pt;color:#0000AA;'&gt;&lt;/font&gt;</font><BR>
+
+<STRONG>&lt;STRONG&gt;&lt;/STRONG&gt;</STRONG><BR>
+<BIG>&lt;BIG&gt;&lt;/BIG&gt;</BIG><BR>
+<blockquote>&lt;blockquote&gt;&lt;/blockquote&gt;</blockquote>
+<Q>&lt;Q&gt;&lt;/Q&gt;</Q><BR>
+<ABBR>&lt;ABBR&gt;&lt;/ABBR&gt;</ABBR><BR>
+<ACRONYM>&lt;ACRONYM&gt;&lt;/ACRONYM&gt;</ACRONYM><BR>
+<CITE>&lt;CITE&gt;&lt;/CITE&gt;</CITE><BR>
+<DFN>&lt;DFN&gt;&lt;/DFN&gt;</DFN>
+<ADDRESS>&lt;ADDRESS&gt;&lt;/ADDRESS&gt;</ADDRESS>
+<EM>&lt;EM&gt;&lt;/EM&gt;</EM><BR>
+<I>&lt;I&gt;&lt;/I&gt;</I><BR>
+<VAR>&lt;VAR&gt;&lt;/VAR&gt;</VAR><BR>
+<BLINK>&lt;BLINK&gt;&lt;/BLINK&gt;</BLINK><BR>
+<SMALL>&lt;SMALL&gt;&lt;/SMALL&gt;</SMALL><BR>
+<KBD>&lt;KBD&gt;&lt;/KBD&gt;</KBD><BR>
+<SAMP>&lt;SAMP&gt;&lt;/SAMP&gt;</SAMP><BR>
+<TT>&lt;TT&gt;&lt;/TT&gt;</TT><BR>
+<CODE>&lt;CODE&gt;&lt;/CODE&gt;</CODE><BR>
+<SUP>&lt;SUP&gt;&lt;/SUP&gt;</SUP><B>e</B><SUP>2</SUP><BR>
+<SUB>&lt;SUB&gt;&lt;/SUB&gt;</SUB><B>e</B><SUB>ijk</SUB><BR>
+<b>&lt;b&gt;&lt;/b&gt;</b><BR>
+<INS>&lt;INS&gt;&lt;/INS&gt;</INS><BR>
+<U>&lt;U&gt;&lt;/U&gt;</U><BR>
+<DEL DATETIME=1990-10-29T16:12:53+0.00>&lt;DEL DATETIME=1990-10-29T16:12:53+0.00&gt&lt;/DEL&gt</DEL><BR>
+<STRIKE>&lt;STRIKE&gt;&lt;/STRIKE&gt;</STRIKE><BR>
+<DEL DATETIME=1990-10-29T16:12:53+0.00>&lt;DEL&gt;&lt;/DEL&gt;</DEL><BR>
+<s>&lt;s&gt;&lt;/s&gt;</s><BR><BR><BR>
+<BR><HR>
+
+
+<A NAME="&lt;UL&gt;&lt;LI&gt;"></A>
+<CENTER><h2>&lt;UL&gt;&lt;LI&gt;</FONT></CENTER></h2><HR><B>
+
+<UL>
+<LI>1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>2 ########################################
+<LI>3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</UL><BR>
+&lt;UL&gt;<BR>
+&lt;LI&gt;1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;2 ########################################<BR>
+&lt;LI&gt;3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/UL&gt;<BR>
+<HR><BR>
+
+<UL TYPE=circle>
+<LI>1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>2 ########################################
+<LI>3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</UL><BR>
+&lt;UL TYPE=circle&gt;<BR>
+&lt;LI&gt;1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;2 ########################################<BR>
+&lt;LI&gt;3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/UL&gt;<HR><BR>
+
+<UL TYPE=disk>
+<LI>1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>2 ########################################
+<LI>3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</UL><BR>
+&lt;UL TYPE=disk&gt;<BR>
+&lt;LI&gt;1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;2 ########################################<BR>
+&lt;LI&gt;3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/UL&gt;<HR><BR>
+
+<UL TYPE=square>
+<LI>1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>2 ########################################
+<LI>3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</UL><BR>
+&lt;UL TYPE=square&gt;<BR>
+&lt;LI&gt;1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;2 ########################################<BR>
+&lt;LI&gt;3 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/UL&gt;<HR><BR>
+
+<UL>
+<Img src="IMG/POINT/BD14794_.GIF">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+<Img src="IMG/POINT/BD14866_.GIF">########################################<BR>
+<Img src="IMG/POINT/BD21298_.GIF">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+</UL><BR><BR>
+&lt;UL&gt;<BR>
+&lt;IMG SCR="IMG/POINT/BD14794_.GIF"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;BR&gt;<BR>
+&lt;IMG SCR="IMG/POINT/BD14866_.GIF"&gt;########################################&lt;BR&gt;<BR>
+&lt;IMG SCR="IMG/POINT/BD21298_.GIF"&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;BR&gt;<BR>
+&lt;/UL&gt;
+
+
+<BR><A NAME="POINT"></A><BR>
+<TABLE border=5 Width=100% Rules= Groups Frame =HSIDES><COLGGROUP ALIGH=CENTER><COLGGROUP ALIGH=CENTER><TR><TH>
+<Img src="IMG/POINT/J0115843.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10253_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10254_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10255_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10263_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10264_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10265_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10266_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10267_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10268_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10297_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10298_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10299_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10300_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10301_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10302_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10335_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10336_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD10337_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14513_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD14514_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14515_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14528_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14529_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14530_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14531_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14532_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14533_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14565_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14578_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14579_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14580_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14581_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14582_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14583_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14654_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14655_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14656_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14691_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14692_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD14693_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14752_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14753_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14754_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14755_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14756_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14757_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14790_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14791_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14792_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14793_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14794_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14795_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14828_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14829_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14830_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14831_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14832_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14833_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14866_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD14867_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14868_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14869_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14870_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14871_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14980_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14981_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14982_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14983_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14984_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD14985_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15018_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15019_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15020_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15021_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15022_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15023_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15056_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15057_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15058_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD15059_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15060_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15061_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15132_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15133_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15134_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15135_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15136_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15168_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15169_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15170_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15171_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15172_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15173_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15272_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15273_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15274_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15275_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15276_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD15277_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD21294_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21295_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21296_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21297_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21298_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21299_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21300_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21301_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21302_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21304_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21306_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21308_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21310_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21312_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21314_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21316_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21327_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21329_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21331_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21333_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD21335_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21337_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21339_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21342_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21343_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21344_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21364_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21365_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21366_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21375_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21376_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21377_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21398_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21399_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21400_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21421_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21422_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21423_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21433_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21434_.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/BD21435_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21480_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21481_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21482_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21503_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21504_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21505_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21518_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21519_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21520_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21533_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21534_.GIF"></TH><TH>
+<Img src="IMG/POINT/BD21535_.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115834.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115835.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115836.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115839.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115840.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115841.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115842.GIF"></TH><TH>
+</TH></TR><TR><TH>
+<Img src="IMG/POINT/J0115844.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115863.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115864.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115865.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115866.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115867.GIF"></TH><TH>
+<Img src="IMG/POINT/J0115868.GIF"></TH><TH>
+<Img src="IMG/POINT/1.GIF"></TH><TH>
+<Img src="IMG/POINT/1a.GIF"></TH><TH>
+<Img src="IMG/POINT/2a.GIF"></TH><TH>
+<Img src="IMG/POINT/3.GIF"></TH><TH>
+<Img src="IMG/POINT/3a.GIF"></TH><TH>
+<Img src="IMG/POINT/4.GIF"></TH><TH>
+<Img src="IMG/POINT/4a.GIF"></TH><TH>
+<Img src="IMG/POINT/5a.GIF"></TH><TH>
+<Img src="IMG/POINT/10a.GIF"></TH><TH>
+<Img src="IMG/POINT/20a.GIF"></TH><TH>
+<Img src="IMG/POINT/30a.GIF"></TH><TH>
+<Img src="IMG/POINT/1000a.GIF"></TH><TH>
+</TR></TABLE>
+<BR><BR>
+
+
+
+<HR><BR>
+
+<OL>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>########################################
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;########################################<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<OL TYPE=A>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>########################################
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL TYPE=A&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;########################################<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<OL TYPE=a>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>########################################
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL TYPE=a&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;########################################<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<OL TYPE=I>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>########################################
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL TYPE=I&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;########################################<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<OL TYPE=i>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI>########################################
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL TYPE=i&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI&gt;########################################<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<OL TYPE=1 Start=5>
+<LI>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<LI value=58>########################################
+<LI value=75>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+</OL><BR>
+&lt;OL TYPE=1 Start=5&gt;<BR>
+&lt;LI&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;LI value=58&gt;########################################<BR>
+&lt;LI value=75&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<BR>
+&lt;/OL&gt;<HR><BR>
+
+<DL>
+<DT>Термин
+<DD>Определение
+</DL><BR>
+<DL>
+&lt;DL&gt;<BR>
+<DT>&lt;DT&gt;Термин<BR>
+<DD>&lt;DD&gt;Определение</DL>
+&lt;/DL&gt;<BR>
+<HR><BR>
+
+
+
+<p align="left">&lt;p align="left"&gt;<BR>
+<p align="center">&lt;p align="center"&gt;<BR>
+<p align="right">&lt;p align="right"&gt;<BR>
+<p align="justify">&lt;p align="justify"&gt;<BR><BR>
+<HR>
+
+<A NAME="&lt;HR&gt;"></A>
+<CENTER><h2>&lt;HR&gt;</h2></Center><BR>
+<HR width=50% align="left" size=2 color="#00FF00">
+&lt;HR width=50% align="left" size=2 color="#00FF00"&gt;
+<HR width=150px align="center" size=3 color="#00DD00">
+&lt;HR width=150px align="center" size=3 color="#00DD00"&gt;
+<HR width=50% align="right" size=4 color="#00AA00">
+&lt;HR width=50% align="right" size=4 color="#00AA00"&gt;
+<HR width=30% align="right" size=4 noshade color="#008800">
+&lt;HR width=30% align="right" size=4 noshade color="#008800"&gt;
+<HR size=6>
+&lt;HR size=6&gt;
+<CENTER><BR><BR>
+
+<A NAME="IMG"></A>
+<CENTER><h2>IMG</h2></Center><BR>
+<BR><BR><IMG alt=Первый src="logo_41_8304.gif" border=0><BR>
+&ltIMG alt=Первый src="logo_41_8304.gif" border=0&gt<BR><BR>
+
+<img id="pagerrorImg" SRC="res://shdoclc.dll/pagerror.gif" width="25" height="33"><BR>
+&lt;img id="pagerrorImg" SRC="res://shdoclc.dll/pagerror.gif" width="25" height="33"&gt;</Center>
+
+<Img src="8-1024.jpg"><BR>
+&lt;Img src="8-1024.jpg"&gt;<BR><BR>
+<marquee bgcolor=blue behavior=altternet width="75%" loop=infinite><fonte color=yellow><Img src="8-1024.jpg">1234567890<Img src="8-1024.jpg"></marquee><BR>
+&lt;marquee bgcolor=blue behavior=altternet width="75%" loop=infinite&gt;&lt;fonte color=yellow&gt;&lt;B&gt;&lt;Img src="8-1024.jpg"&gt;1234567890&lt;Img src="8-1024.jpg"&gt;&lt;/B&gt;&lt;/marquee&gt;<BR><BR>
+<CENTER>
+<BR><BR>
+<Table Border=0>
+<TR>
+<TD><A><IMG class=flt onmouseover="this.style.filter='alpha(opacity=100)'" onmouseout="this.style.filter='alpha(opacity=40)'" alt="Hause" src="Hause.jpg"></A>
+</TD>
+<TD><FONT FACE="Verdana", "Arial", "Helvetica" size=3 color="#000000"><B>&lt;A&gt;&lt;IMG 
+<FONT FACE="Verdana", "Arial", "Helvetica" size=3 color="#00AA00">class=flt</FONT> onmouseover="this.style.filter='alpha(opacity=100)'" onmouseout="this.style.filter='alpha(opacity=40)'" alt="Hause" src="Hause.jpg"&gt;&lt;/A&gt;</B></FONT>
+</TD>
+</TR>
+</Table>
+
+<HR><HR>
+
+<A NAME="Table"></A>
+<A NAME="PLAYER"><h2>Table</h2></A><BR>
+
+
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD  width=200>
+      <TABLE  width="100%">
+        <TBODY>
+        <TR>
+          <TD  width=200>
+            <TABLE class=tableBorderLeft  
+            width="100%" align=left valign="top">
+              <TBODY>
+              <TR>
+                <TD >
+                  <TABLE cellSpacing=2 cellPadding=2 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TH class=tableHeaderNewsTopText vAlign=top align=middle 
+                      height=20><A class=tableHeaderText2 
+                        href="http://www.iakovlev.org/index.html">&nbsp;www.iakovlev.org&nbsp;</A></TH></TR></TBODY></TABLE>
+                  <TABLE >
+                    <DIV style="DISPLAY: block"></DIV>
+                    <TBODY></TBODY></TABLE>
+                  <TABLE  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD width=10></TD>
+                      <TD vAlign=top><A class=folder style="COLOR: #023f6e" 
+                        onclick=toggle(this,1)><IMG 
+                        src="IMG/minus.gif"><IMG 
+                        src="IMG/folder.gif">&nbsp;Books</A> 
+
+                        <TABLE  border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width=10></TD>
+                            <TD vAlign=top noWrap><IMG 
+                              src="IMG/page.gif"><A 
+                              class=leaf style="COLOR: #023f6e" 
+                              href="http://www.iakovlev.org/index.html?p=77&amp;m=1&amp;l1=5">&nbsp;&nbsp;Краткое&nbsp;описание</A></TD></TR></TBODY></TABLE>
+                        <TABLE  border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width=10></TD>
+                            <TD vAlign=top><A class=folder 
+                              style="COLOR: #023f6e" onclick=toggle(this,1)><IMG 
+                              src="IMG/plus.gif"><IMG 
+                              src="IMG/closed.gif">&nbsp;Linux</A>
+                              <DIV style="DISPLAY: none">
+                              <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top><A class=folder 
+                                style="COLOR: #023f6e" 
+                                onclick=toggle(this,1)><IMG 
+                                src="IMG/plus.gif"><IMG 
+                                src="IMG/closed.gif">&nbsp;W.&nbsp;R.&nbsp;Стивенс</A>
+                                <DIV style="DISPLAY: none">
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=7&amp;m=1&amp;l1=5">&nbsp;&nbsp;Введение</A></TD></TR></TBODY></TABLE>
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=8&amp;m=1&amp;l1=5">&nbsp;&nbsp;Глава&nbsp;1</A></TD></TR></TBODY></TABLE>
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=9&amp;m=1&amp;l1=5">&nbsp;&nbsp;Глава&nbsp;2</A></TD></TR></TBODY></TABLE>
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=91&amp;m=1&amp;l1=5">&nbsp;&nbsp;Глава&nbsp;3</A></TD></TR></TBODY></TABLE>
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=92&amp;m=1&amp;l1=5">&nbsp;&nbsp;Глава&nbsp;4</A></TD></TR></TBODY></TABLE>
+                                <TABLE  border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10></TD>
+                                <TD vAlign=top noWrap><IMG 
+                                src="IMG/page.gif"><A 
+                                class=leaf style="COLOR: #023f6e" 
+                                href="http://www.iakovlev.org/index.html?p=93&amp;m=1&amp;l1=5">&nbsp;&nbsp;Глава&nbsp;5</A></TD></TR></TBODY></TABLE>
+	</DIV></TD></TR></TBODY></TABLE></TBODY></TABLE></TBODY></TABLE></TBODY></TABLE></TBODY></TABLE></TBODY></TABLE><BR>
+
+
+<HR>
+
+
+
+<CENTER>
+<Table Border=1 width=30%><TR>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#630480'" bgColor=#FF0000>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#0000FF'" bgColor=#e69a00>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#1ef9ff'" bgColor=#e6fa00>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#00FF00'" bgColor=#00FF00>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#e6fa00'" bgColor=#1ef9ff>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#e69a00'" bgColor=#0000FF>&nbsp;</TH>
+<TH onmouseover="this.bgColor='#000000'" onmouseout="this.bgColor='#FF0000'" bgColor=#630480>&nbsp;</TH>
+</TR></Table><BR><BR>
+</CENTER>
+<Table   Border=2  width="80%" bordercolor="#00AA00"><TR><TH>
+
+<Table width=40 border="5" bordercolor="red">
+<TR onmouseover="this.bgColor='#FF0000'" onmouseout="this.bgColor='#000000'" bgColor=#000000><TD>&nbsp;</TD></TR>
+<TR onmouseover="this.bgColor='#e6fa00'" onmouseout="this.bgColor='#000000'" bgColor=#000000><TD>&nbsp;</TD></TR>
+<TR onmouseover="this.bgColor='#00FF00'" onmouseout="this.bgColor='#000000'" bgColor=#000000><TD>&nbsp;</TD></TR>
+</Table>
+
+</TH><TH>
+<B><B><p align="left">
+&lt;Table width=40 border="2" bordercolor="red"&gt;<BR>
+&lt;TR onmouseover="this.bgColor='#FF0000'" onmouseout="this.bgColor='#000000'" bgColor=#000000&gt;&lt;TD&gt;&nbsp;&lt;/TD&gt;&lt;/TR&gt;<BR>
+&lt;TR onmouseover="this.bgColor='#e6fa00'" onmouseout="this.bgColor='#000000'" bgColor=#000000&gt;&lt;TD&gt;&nbsp;&lt;/TD&gt;&lt;/TR&gt;<BR>
+&lt;TR onmouseover="this.bgColor='#00FF00'" onmouseout="this.bgColor='#000000'" bgColor=#000000&gt;&lt;TD&gt;&nbsp;&lt;/TD&gt;&lt;/TR&gt;<BR>
+&lt;/Table&gt;
+</P></B></B></FONT>
+</TH></TR></Table>
+
+<CENTER><BR><BR>
+<Table RULES=NONE  Border=1  width="50%" bordercolor="red"><TR><TH>
+
+<Table Border=1>
+  <TR>
+	<TH>0</TH>
+	<TH>A</TH>
+	<TH>D</TH>
+	<TH>C</TH>
+  </TR>
+  <TR>
+	<TH>1</TH>
+	<TH>A1</TH>
+	<TH>D1</TH>
+	<TH>C1</TH>
+  </TR>
+  <TR>
+	<TH>2</TH>
+	<TH>A2</TH>
+	<TH></TH>
+	<TH>A4</TH>
+  </TR>
+  <TR>
+	<TH>3</TH>
+	<TH>A3</TH>
+	<TH>D3</TH>
+	<TH>C3</TH>
+  </TR>
+</Table><BR>
+
+</TH><TH>
+
+&lt;Table Border=1"&gt;<BR>
+  &lt;TR&gt;<BR>
+	&lt;TH&gt;0&lt;/TH&gt;<BR>
+	&lt;TH&gt;A&lt;/TH&gt;<BR>
+	&lt;TH&gt;D&lt;/TH&gt;<BR>
+	&lt;TH&gt;C&lt;/TH&gt;<BR>
+  &lt;/TR&gt;<BR>
+  &lt;TR&gt;<BR>
+	&lt;TH&gt;1&lt;/TH&gt;<BR>
+	&lt;TH&gt;A1&lt;/TH&gt;<BR>
+	&lt;TH&gt;D1&lt;/TH&gt;<BR>
+	&lt;TH&gt;C1&lt;/TH&gt;<BR>
+  &lt;/TR&gt;<BR>
+  &lt;TR&gt;<BR>
+	&lt;TH&gt;2&lt;/TH&gt;<BR>
+	&lt;TH&gt;A2&lt;/TH&gt;<BR>
+	&lt;TH&gt;&lt;/TH&gt;<BR>
+	&lt;TH&gt;A4&lt;/TH&gt;<BR>
+  &lt;/TR&gt;<BR>
+  &lt;TR&gt;<BR>
+	&lt;TH&gt;3&lt;/TH&gt;<BR>
+	&lt;TH&gt;A3&lt;/TH&gt;<BR>
+	&lt;TH&gt;D3&lt;/TH&gt;<BR>
+	&lt;TH&gt;C3&lt;/TH&gt;<BR>
+  &lt;/TR&gt;<BR>
+&lt;/Table&gt;
+
+</TH></TR></Table>
+
+<BR><BR>
+<CENTER>
+
+<table cellpadding="0" cellspacing="0" width="50%">    
+<td style="background-color:#FFC800;"></td>
+<tr><td style="background-color:#800000;" >&nbsp;WINAMP          
+<div class="coffee logo" style="margin-top: -21px;">&nbsp;WINAMP</div>           
+<div class="coffee logo" style="margin-top: -20px;">&nbsp;WINAMP</div></td></tr>
+<tr><td style="background-color:#FFC800;">
+<tr><td style="background-color:#008000;"><div class="coffee logo">&nbsp;
+<tr><td style="background-color:#FFC800;"></td></tr> 
+<tr><td style="background-color:#000080;">&nbsp;|||||||||||||||||||||||||||||
+<tr><td style="background-color:#FFC800;">
+</td></tr></table><BR><BR>
+
+&lt;table cellpadding="0" cellspacing="0" width="50%"&gt;<BR>   
+&lt;td style="background-color:#FFC800;"&gt;&lt;/td&gt;<BR>
+&lt;tr&gt;&lt;td style="background-color:#800000;" &gt;&amp;nbsp;WINAMP;<BR>
+&lt;div class="coffee logo" style="margin-top: -23px;"&gt;&amp;nbsp;WINAMP&lt;/div&gt;<BR>
+&lt;div class="coffee logo" style="margin-top: -23px;"&gt;&amp;nbsp;WINAMP&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;<BR>
+&lt;tr&gt;&lt;td style="background-color:#FFC800;"&gt;<BR>
+&lt;tr&gt;&lt;td style="background-color:#008000;"&gt;&lt;div class="coffee logo"&gt;&amp;nbsp;<BR>
+&lt;tr&gt;&lt;td style="background-color:#FFC800;"&gt;&lt;/td&gt;&lt;/tr&gt;<BR>
+&lt;tr&gt;&lt;td style="background-color:#000080;"&gt;&amp;nbsp;|||||||||||||||||||||||||||||<BR>
+&lt;tr&gt;&lt;td style="background-color:#FFC800;"&gt<BR>
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<BR><BR><BR>
+
+
+
+
+<table RULES=NONE FRAME=HSIDES cellpadding="0" cellspacing="4" border="5" bordercolor="red" width="60%" >
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<THEAD><TR><Th>FRAME</Th><Th>RULES</Th></TR></THEAD>
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#800000;"><table width="100%"><tR><TH>BOX<TH>
+<table FRAME=BOX><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#800000;"><table width="100%"><tR><TH>ALL<TH>
+<table RULES=ALL><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR></table></tR></table></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#008000;"><table width="100%"><tR><TH>ABOVE<TH>
+<table FRAME=ABOVE><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#008000;"><table width="100%"><tR><TH>GROUPS<TH>
+<table RULES=GROUPS><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR></table></tR></table></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#0000D0;"><table width="100%"><tR><TH>BELOW<TH>
+<table FRAME=BELOW><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#0000D0;"><table width="100%"><tR><TH>ROWS<TH>
+<table RULES=ROWS><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR></table></tR></table></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#FFC800;"><table width="100%"><tR><TH>HSIDES<TH>
+<table FRAME=HSIDES><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#FFC800;"><table width="100%"><tR><TH>COLS<TH>
+<table RULES=COLS><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR></table></tR></table></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#800000;"><table width="100%"><tR><TH>VSIDES<TH>
+<table FRAME=VSIDES><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#800000;"><table width="100%"><tR><TH>NONE<TH>
+<table RULES=NONE><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR><tR><TH>&#9608;</TH><TH>&#9608;</TH></tR></table></tR></table></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#008000;"><table width="100%"><tR><TH>LHS<TH>
+<table FRAME=LHS><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#008000;"></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#0000D0;"><table width="100%"><tR><TH>RHS<TH>
+<table FRAME=RHS><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#0000D0;"></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#FFC800;"><table width="100%"><tR><TH>VOID<TH>
+<table FRAME=VOID border=1><tR><TH>&#9608;</TH></tR></table></tR></table>
+</th><th style="background-color:#FFC800;"></th></tr>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+<TFOOT><TR><th>FRAME</th><th>RULES</th></TR></TFOOT>
+
+<tr><th style="background-color:#FFC800;"></th><th style="background-color:#FFC800;"></th></tr>
+
+</table><BR>
+&lt;TABLE RULES=GROUPS FRAME=HSIDES cellpadding="0" cellspacing="4" border="5" bordercolor="red" width="80%" height="50%"&gt;
+<BR><BR>
+
+
+<TABLE BORDER=3>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\CTRCAN.ICO"></TD>
+	<TD><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01244_.GIF" ALING= MIDDLE>TexT and Graphics.</TD>
+	<TD>TextAlone</TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\CTRFRAN.ICO"></TD>
+	<TD><Center><Img src="IMG\АНИМАЦИЯ\PUB60COR\AG00090_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\AG00090_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\AG00090_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\AG00090_.GIF"></Center></TD>
+	<TD>TexTddddd ddddddddddddddddd После установки скопируйте ok70.dll и eatop702crk.exe в директорию, куда установлена программа, затем запустите
+eatop702crk.exe, указав путь к ok70.dll.</TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\CTRGERM.ICO"></TD>
+	<TD><Center>TexTTexTTexTTexTTexTTexTTexT</Center></TD>
+	<TD><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01293_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01293_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01293_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01293_.GIF"><Img src="IMG\АНИМАЦИЯ\PUB60COR\WB01293_.GIF"></TD>
+  </TR>
+</Table><BR><HR>
+<CENTER>
+<TABLE BORDER=3>
+<TR>
+<TD><Img src="IMG\icons\Flage\ALL.jpg"></TD>
+<TD>
+<TABLE BORDER=1>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\CTRCAN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRFRAN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRGERM.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRITALY.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRJAPAN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRMEX.ICO"></TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\CTRSKOR.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRSPAIN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRUK.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\CTRUSA.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGASTRL.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGAUSTA.ICO"></TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\FLGBELG.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGBRAZL.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGCAN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGDEN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGFIN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGFRAN.ICO"></TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\FLGGERM.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGIREL.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGITALY.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGJAPAN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGMEX.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGNETH.ICO"></TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\FLGNORW.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGNZ.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGPORT.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGRSA.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGRUS.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGSKOR.ICO"></TD>
+  </TR>
+  <TR>
+	<TD><Img src="IMG\icons\Flage\FLGSPAIN.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGSWED.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGSWITZ.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGTURK.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGUK.ICO"></TD>
+	<TD><Img src="IMG\icons\Flage\FLGUSA02.ICO"></TD>
+  </TR>
+</TR>
+</TABLE></TD>
+<TD><Img src="IMG\icons\Flage\ALL.jpg"></TD>
+</TABLE>
+</CENTER>
+
+
+<TABLE>
+<TR>
+<TH><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><BR>
+<INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME="!@#$%^&*"><BR>
+<INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="checkbox" VALUE="(!@#$%^&*)" NAME=""></TH><BR>
+<TH>1 2 3<BR>4 5 6<BR>7 8 9</TH>
+<TH><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><BR>
+<INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><BR>
+<INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""><INPUT TYPE="radio" VALUE="(!@#$%^&*)" NAME=""></TH>
+</TR>
+</TABLE>
+
+<FORM METHOD=GET ACTION="/cdi-bin/query">
+
+<CENTER>
+
+<INPUT TYPE="еуче" VALUE="(!@#$%^&*!@#$%^&*!)" NAME="" SiZE=10><HR>
+
+<INPUT TYPE="text" VALUE="(!@#$%^&*!@#$%^&*!)" NAME="text" SiZE=20><HR>
+
+<SELECT NAME="QWE"
+<OPTION SELECTED>
+<OPTION>
+******************
+<OPTION>
+#############
+<OPTION>
+@@@@@@@
+</SELECT><HR>
+
+<TEXTAREA ROWS=5 NAME="TEXTAREA" SiZE=50>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@############################################################$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+</TEXTAREA><BR>
+
+<INPUT TYPE="submit" VALUE="Нефиг"><INPUT TYPE="reset" VALUE="Нафиг"><INPUT TYPE="button" VALUE="Пофиг">
+
+
+
+<HR><BR>
+<A NAME="FRAME"></A>
+<h2><a class="anav" href="FRAME.HTM">FRAME</a></h2><BR><BR>
+</CENTER></CENTER>
+
+&ltHTML&gt<BR>
+&ltHEAD&gt<BR>
+&ltTITLE&gtFRAME&lt/TITLE&gt<BR>
+&ltFRAMESET ROWS="25%,25%,25%,35%"&gt<BR>
+&ltFRAME SRC="../Nero.htm" SCROLLING=NO&gt<BR>
+&ltFRAMESET COLS="300,240"  border="50" frameborder="NO" bordercolor="red"&gt<BR>
+&ltFRAME SRC="Жидкие кристаллы.htm" SCROLLING=NO&gt<BR>
+&ltFRAME SRC="Виртуальная Техническая Библиотека.htm" SCROLLING=NO&gt<BR>
+&lt/FRAMESET&gt<BR>
+&ltFRAME SRC="Sid Meier's Alpha Centauri.htm"&gt<BR>
+&ltFRAMESET COLS="100,25%,*,2*" framespacing=-3&gt<BR>
+&ltFRAME SRC="../Nero.htm" NAME="Window" SCROLLING=NO NORESIZE&gt<BR>
+&ltFRAME SRC="../text.htm" SCROLLING=NO&gt<BR>
+&ltFRAME SRC="../ALL.htm" MARGINWIDTH="30" MARINHEIGHT="51" SCROLLING=NO&gt<BR>
+&ltFRAME SRC="../yp/LINK.HTM" SCROLLING=NO&gt<BR>
+&lt/FRAMESET&gt<BR>
+&ltFRAME SRC="Sid Meier's Alpha Centauri.htm"&gt<BR>
+&lt/FRAMESET&gt<BR>
+&ltNOFRAMEES&gt<BR>
+Ваш баузер не отображает фреймы.<BR>
+&lt/NOFRAMES&gt<BR>
+&lt/HTML&gt<BR>
+<HR>
+
+<h2><A NAME="SCRIPT"></A>
+<BR><h2><CENTER><a class="anav" href="Script.htm" TARGET="_blank">SCRIPT</a></h2><BR>
+<a class="anav" href="Script.htm" TARGET="_blank">Этот скрипт задает положение окна на экране и его размеры.</a></h2>
+</CENTER>
+
+&lt;html&gt;<BR>
+&lt;title&gt;SCRIPT&lt;/title&gt;<BR>
+&lt;head&gt;
+<blockquote>		
+	&lt;script language="JavaScript" src="<FONT FACE="Verdana", "Arial", "Helvetica" size=3 color="#00FF01">Var.js</FONT>"&gt;<BR>
+	&lt;/script&gt;<BR>	
+	&lt;script language="JavaScript"&gt;<BR>
+	function OpenDriver()<BR>
+	{<BR>
+	var w,h,X1,Y1;<BR>
+	if(screen.width > 1023)<blockquote>
+		{<BR>
+		w=1024;<BR>
+		h=768;<BR>
+		X1=(screen.width - w)/2;<BR>
+		Y1=(screen.height - h)/2;<BR>
+		}</blockquote>
+	else<blockquote>
+		{<BR>
+		if(screen.width > 790)<blockquote>
+			{<BR>
+			w=800;<BR>
+			h=600;<BR>
+			X1=(screen.width - w)/2;<BR>
+			Y1=(screen.height - h)/2;<BR>		
+			}</blockquote>
+		else<blockquote>
+			{<BR>
+			w=640;<BR>
+			h=480;<BR>
+			X1=0;<BR>
+			Y1=0;<BR>
+			}</blockquote>
+		}</blockquote>
+	resizeTo(w,h);<BR>
+	moveTo(X1,Y1);<BR>
+	document.title=CD_Ver;<BR>
+	window.location='FRAME.HTM';<BR>
+	}<BR>	
+	&lt;/script&gt;</blockquote>
+	
+&lt;/head&gt;<BR>
+&lt;body onLoad="OpenDriver()"&gt;<BR>
+&lt;/body&gt;<BR>
+&lt;/html&gt;<BR><BR><HR>
+
+
+<h2><CENTER>Стоимость билетов на концерт металики :&nbsp;&nbsp;
+<SCRIPT language=javascript>
+	ar=new Array();
+	ar[0]='6500';
+	ar[1]='4300';
+	ar[2]='6000-12000';
+	ar[3]='1200-6000';
+	function PrintCost(value)
+		{
+		  costElem2=document.getElementById('cost');
+		  costElem1=document.getElementById('div_cost');
+		  costElem1.innerText=ar[value];
+		  costElem2.value=ar[value];
+		}
+
+ </SCRIPT>
+ 
+<SELECT onchange=PrintCost(this.selectedIndex); name=zone> 
+<OPTION value=Фан-зона selected>Фан-зона</OPTION> 
+<OPTION value=Танцпартер>Танцпартер</OPTION> 
+<OPTION value="VIP Ложа">VIP Ложа</OPTION> 
+<OPTION value=Сектора>Сектора</OPTION></SELECT> 
+
+<B><SPAN id=div_cost></SPAN>&nbsp;руб.</B><INPUT id=cost type=hidden maxLength=10 size=6 value=0 name=cost>
+<SCRIPT language=javascript>PrintCost(0);</SCRIPT><BR><BR>
+</CENTER></h2>
+
+
+
+&lt;SCRIPT language=javascript&gt;<BR>
+	ar=new Array();<BR>
+	ar[0]='&nbsp;6500';<BR>
+	ar[1]='&nbsp;4300';<BR>
+	ar[2]='&nbsp;6000-12000';<BR>
+	ar[3]='&nbsp;1200-6000';<BR>
+	function PrintCost(value)<BR>
+		{<BR>
+		  costElem2=document.getElementById('cost');<BR>
+		  costElem1=document.getElementById('div_cost');<BR>
+		  costElem1.innerText=ar[value];<BR>
+		  costElem2.value=ar[value];<BR>
+		}<BR>
+		function checkInt(_obj)<BR>
+		{<BR>
+		  validNum='0123456789';<BR>
+		  var sourceNum=_obj.value;<BR>
+		  var newNum='';<BR>
+		  for (i=0;i&lt;3;i++)<BR>
+			{<BR>
+			charNum=sourceNum.substr(i,1);<BR>
+			if (validNum.indexOf(charNum,0)!=-1) newNum=newNum+charNum;<BR>
+		  	}<BR>
+		  if (newNum=='') newNum='1';<BR>
+ 		  if (newNum=='0') newNum='1';<BR>
+		  _obj.value=newNum;<BR>
+		}<BR>
+ &lt;/SCRIPT&gt;<BR><BR>
+&lt;SELECT onchange=PrintCost(this.selectedIndex); name=zone&gt; <BR>
+&lt;OPTION value=Фан-зона selected&gt;Фан-зона&lt;/OPTION&gt; <BR>
+&lt;OPTION value=Танцпартер&gt;Танцпартер&lt;/OPTION&gt;<BR>
+&lt;OPTION value="VIP Ложа"&gt;VIP Ложа&lt;/OPTION&gt;<BR>
+&lt;OPTION value=Сектора&gt;Сектора&lt;/OPTION&gt;&lt;/SELECT&gt;<BR>
+&lt;B&gt;&lt;SPAN id=div_cost&gt;&lt;/SPAN&gt;&nbsp;&nbsp;руб.&lt;/B&gt;&lt;INPUT id=cost type=hidden maxLength=10 size=6 value=0 name=cost&gt;<BR><BR>
+&lt;SCRIPT language=javascript&gt;PrintCost(0);&lt;/SCRIPT&gt;<BR>
+<BR><BR><BR><BR>
+<HR>
+<h2>Та фигня вокруг мышки</h2>
+&lt;SCRIPT LANGUAGE="JavaScript"&gt;<BR>
+&lt;!-- Begin<BR>
+ns=(document.layers)?1:0;<BR>
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff')<BR>
+yBase=0;<BR>
+xBase=0;<BR>
+step=3;<BR>
+currStep = 0;<BR>
+Ypos=0;<BR>
+Xpos=0;<BR>
+if (ns){<BR>
+for (i = 0; i &lt; 14; i++)<BR>
+document.write('&lt;LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"&gt;&lt;/LAYER&gt;');<BR>
+window.captureEvents(Event.MOUSEMOVE); <BR>
+function nMouse(evnt){<BR>
+Ypos = evnt.pageY;<BR>
+Xpos = evnt.pageX;<BR>
+}<BR>
+window.onMouseMove=nMouse;<BR>
+}<BR>
+else{<BR>
+document.write('&lt;div style="position:absolute;top:0;left:0"&gt;&lt;div style="position:relative"&gt;');<BR>
+for (i=0; i &lt; 14; i++)<BR>
+{document.write('&lt;div id="me" style="position:absolute;top:0;left:0;width:'+i/4+';height:'+i/4+';font-size:'+i/4+'"&gt;&lt;/div&gt;')}<BR>
+document.write('&lt;/div&gt;&lt;/div&gt;');<BR>
+function iMouse() {<BR>
+Ypos = event.y+document.body.scrollTop;<BR>
+Xpos = event.x+document.body.scrollLeft;<BR>
+}<BR>
+document.onmousemove = iMouse;<BR>
+}<BR>
+function Comet() {<BR>
+var yBase=(document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;<BR>
+var xBase=(document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;<BR>
+for (i=0; i&lt;14; i++){<BR>
+var randCol = Math.round(Math.random()*8);<BR>
+var layer = (document.layers)?document.layers['n'+i]:me[i].style;<BR>
+layer.top =Ypos + yBase*Math.cos((currStep+i*4)/12)*Math.cos(0.7+currStep/200);<BR>
+layer.left = Xpos + xBase*Math.sin((currStep+i*3)/10)*Math.sin(8.2+currStep/400);<BR>
+if (ns) layer.bgColor = Clrs[randCol];<BR>
+else<BR>
+layer.background = Clrs[randCol];<BR>
+}<BR>
+currStep += step;<BR>
+setTimeout("Comet()",10);<BR>
+}<BR>
+window.onload = Comet;<BR>
+// End --&gt;<BR>
+&lt;/script&gt;<BR>
+
+
+<HR>
+<!-- START OF SCRIPT -->
+
+<SCRIPT language="JavaScript">
+
+var browser = "unknown";
+var version = 0;
+
+if (navigator.userAgent.indexOf("Opera") >= 0)
+ browser = "opera";
+else if (navigator.userAgent.indexOf("obot") >= 0)
+ browser = "robot";
+else if (navigator.appName.indexOf("etscape") >= 0)
+ browser = "netscape";
+else if (navigator.appName.indexOf("icrosoft") >= 0)
+ browser = "msie";
+
+version = parseFloat(navigator.appVersion);
+if (isNaN(version)) version = 0;
+if ((browser == "msie")&&(version == 2)) version = 3;
+
+var tohex = new Array(256);
+var hex = "0123456789ABCDEF";
+var count = 0;
+for (x=0; x<16; x++) {
+ for (y=0; y<16; y++) {
+ tohex[count] = hex.charAt(x) + hex.charAt(y);
+ count++;
+ }
+}
+
+//ColorCode constructor
+function ColorCode(hexcode) {
+  if (hexcode.length == 7) {
+    this.r = parseInt(hexcode.substring(1,3),16);
+    this.g = parseInt(hexcode.substring(3,5),16);
+    this.b = parseInt(hexcode.substring(5,7),16);
+  }
+  else if (hexcode.length == 6) {
+    this.r = parseInt(hexcode.substring(0,2),16);
+    this.g = parseInt(hexcode.substring(2,4),16);
+    this.b = parseInt(hexcode.substring(4,6),16);
+  }
+  else {
+    this.r = this.g = this.b = 0;
+    alert("Error: ColorCode constructor failed");
+  }
+  if (isNaN(this.r)||isNaN(this.g)||isNaN(this.b))
+    alert("Error: ColorCode constructor failed");
+}
+
+// ColorList constructor
+function ColorList(hexcodes) {
+  var i = 0;
+  var c = 0;
+  this.codes = new Array(Math.round(hexcodes.length/7));
+  while (i < hexcodes.length) {
+    if (isNaN(parseInt(hexcodes.substring(i,i+6),16))) ++i;
+    else {
+      this.codes[c] = new ColorCode(hexcodes.substring(i,i+6));
+      i += 7;
+      ++c;
+    }
+  }
+  this.len = c;
+}
+
+function interpolate (x1, y1, x3, y3, x2) {
+  if (x3 == x1) return y1
+  else return (x2-x1)*(y3-y1)/(x3-x1) + y1
+}
+
+// x=index of letter, y=number of letters, z=number of colors
+function lowcolorindex (x, y, z) {
+  if (y == 1) return 0
+  else return Math.floor( (x*(z-1))/(y-1) )
+}
+
+function hicolorindex (x, y, z, low) { 
+  if ( low*(y-1) == x*(z-1) ) return low
+  else if (y == 1) return 0
+  else return Math.floor( (x*(z-1))/(y-1) + 1 )
+}
+
+function gradient (thetext,thecolors) {
+  if (((browser == "netscape")||(browser == "msie")||(browser == "opera"))&&(version>=3.0)) {
+    var colors = new ColorList(thecolors);
+    var numcolors = colors.len;
+    var numchars = thetext.length;
+    var rr = 0;
+    var gg = 0;
+    var bb = 0;
+    var lci = 0; //lower color index
+    var hci = 0; //high color index
+    for (i=0; i<numchars; ++i) {
+      lci = lowcolorindex(i, numchars, numcolors);
+      hci = hicolorindex(i, numchars, numcolors, lci);
+      rr = Math.round(interpolate( lci/(numcolors-1), colors.codes[lci].r, hci/(numcolors-1), colors.codes[hci].r, i/(numchars-1)));
+      gg = Math.round(interpolate( lci/(numcolors-1), colors.codes[lci].g, hci/(numcolors-1), colors.codes[hci].g, i/(numchars-1)));
+      bb = Math.round(interpolate( lci/(numcolors-1), colors.codes[lci].b, hci/(numcolors-1), colors.codes[hci].b, i/(numchars-1)));
+      if (browser == "opera") {
+        rr = 255 - rr;
+        gg = 255 - gg;
+        bb = 255 - bb;
+      }
+        document.write(thetext.charAt(i).fontcolor(tohex[rr]+tohex[gg]+tohex[bb]));
+    }
+  }
+  else document.write(thetext); // unrecognized browser, better not to attempt anything fancy
+}
+      
+
+</SCRIPT>
+
+<DIV align=center>
+
+
+</tr>
+</table>
+
+
+<SCRIPT language="JavaScript">
+gradient("always wanted to be a genius?","FF0000 FFFFFF 0000FF");
+document.write('<BR>');
+gradient("...well...do it, in...","444444 DDDDDD 444444");
+document.write('<BR><FONT size=+1><TT><B>');
+gradient("snazzy, eyecatching, gradient colors!","FF8888 FFFF88 88FF88 88FFFF 8888FF FF88FF");
+document.write('</B></TT></FONT><BR><FONT size=2>');
+gradient("but uhm, just be careful not to overdo it","884488 444488 448888 448844 888844 884444");
+document.write("</FONT><BR>");
+</SCRIPT>
+</DIV>
+<!-- END OF SCRIPT -->
+<HR>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+	document.write('<B><FONT size=4 color="#00AA00">');
+	document.write("Dir : " + document.location);
+	document.write('</B></FONT>');
+<br>
+446-090-887 Virtuoz
+// -->
+</script>
+<HR>
+
+<HR>
+<Center>
+<SCRIPT language=javascript type=text/javascript>
+function updateCountdownClock(endDate) {
+  var time = new Date();
+  var endtime = new Date(endDate);
+  var timemils = time.getTime();
+  var endtimemils = endtime.getTime();
+  if (endtimemils < timemils) {
+    document.getElementById('CountdownClock').innerHTML='';
+    return;
+  }
+  
+  var daysleft = Math.floor( ( endtimemils - timemils ) / 1000 / 60 / 60 / 24) ;
+	var d = daysleft - Math.floor(daysleft/10)*10;
+  var daysleftFinal;
+  var text_day;
+
+	
+/*arr_month[0]="January";  	arr_month[6]="July"; 
+	arr_month[1]="February";  	arr_month[7]="August";
+	arr_month[2]="March";  	arr_month[8]="September";
+	arr_month[3]="April";  	arr_month[9]="October";
+	arr_month[4]="May";  	arr_month[10]="November";
+	arr_month[5]="June";  	arr_month[11]="December"*/
+	if (d==1 && daysleft!=11) text_day="день";
+	else if (d>1 && d<5 && (daysleft<10 || daysleft>20)) text_day="дня";
+	else if (d>=0) text_day="дней";
+  
+  if (daysleft > 0) daysleftFinal = daysleft + '&nbsp;' + text_day + '<br>+';  
+	else daysleftFinal = '';
+		
+	var hours=23-time.getHours();
+	var minutes=59-time.getMinutes();
+	var seconds=59-time.getSeconds();
+
+  document.getElementById('CountdownClock').innerHTML=
+  "<table cellpadding=0 cellspacing=0 border=1 width=100% height=60 bgcolor=#ff0000><tr><td height=11 style='border-right:1px solid #ff9e42;background:url(/images/hlop.gif)'><img src='/images/spacer.gif' height=1></td></tr><tr><td style='border-bottom:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;color:#777' bgcolor=#ececec align=center>" +
+  ( daysleftFinal ) + 
+  ((hours<10)?'0'+hours:hours)+':'+
+  ((minutes<10)?'0'+minutes:minutes)+':'+
+  ((seconds<10)?'0'+seconds:seconds) +
+  "</td></tr></table>";
+  
+  window.setTimeout("updateCountdownClock('"+endDate+"')",1000);
+}</SCRIPT>
+<TABLE cellSpacing=0 cellPadding=0 width="30%" border=2><TR><TD>                                
+<DIV id=CountdownClock style="COLOR: #77000"></DIV><BR>
+<SCRIPT language=javascript type=text/javascript> updateCountdownClock ("February 5, 2009") </SCRIPT></TR></TABLE>
+
+<HR>
+<BR>
+<input type="button" name="print" value="Print" size="40" onClick="print(document);">
+<BR>
+&ltinput type="button" name="print" value="Print" size="40" onClick="print(document);"&gt
+</Center>
+<HR>
+
+
+<HR>
+
+<HR>
+<A NAME="END"></A>
+<h2>END</h2><BR><BR>
+&lt/HEAD&gt<BR>
+&lt/BODY&gt<BR>
+&lt/HTML&gt
+</body>
+</HTML>

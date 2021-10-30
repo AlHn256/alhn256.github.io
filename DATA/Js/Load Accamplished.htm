@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Событие onload</title>
+  <style>
+   @keyframes _transparent {
+    from { opacity: 0; }
+    to { opacity: 1;}
+   }
+   @-webkit-keyframes _transparent {
+    from { opacity: 0; }
+    to { opacity: 1;}
+   }
+   @-moz-keyframes _transparent {
+    from { opacity: 0; }
+    to { opacity: 1;}
+   }
+   #status {
+    position: absolute;
+    background: #fc0;
+    bottom: 0; right: 0;
+    padding: 10px; margin: 0;
+    display: none;
+    animation: _transparent 3s;
+    -webkit-animation: _transparent 3s;
+    -moz-animation: _transparent 3s;
+   }
+  </style>
+  <script>
+   function loadPage() {
+    document.getElementById('status').style.display = 'block';
+   }
+  </script>
+ </head>
+ <body onload="loadPage()">
+  <p id="status">Load Accamplished</p>
+ </body>
+</html>

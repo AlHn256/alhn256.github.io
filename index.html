@@ -1,160 +1,459 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CSS 3D Solar System</title>
-  <link rel="stylesheet" href="./style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
+<HTML>
+
+<head>
+<TITLE>LINK</TITLE>
+<meta charset="windows-1251" />
 </head>
 <body>
-<!-- partial:index.partial.html -->
-  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-    <div id="navbar">
-      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-      <h1>3D Solar System<br><span>by <a href="https://twitter.com/JulianGarnier" target="_blank">@JulianGarnier</a></span></h1>
-      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
-    </div>
-    <div id="data">
-      <a class="sun" title="sun" href="#sunspeed">Sun</a>
-      <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
-      <a class="venus" title="venus" href="#venusspeed">Venus</a>
-      <a class="earth active" title="earth" href="#earthspeed">Earth</a>
-      <a class="mars" title="mars" href="#marsspeed">Mars</a>
-      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-      <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
-      <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
-      <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
-    </div>
-    <div id="controls">
-      <label class="set-view">
-        <input type="checkbox">
-      </label>
-      <label class="set-zoom">
-        <input type="checkbox">
-      </label>
-      <label>
-        <input type="radio" class="set-speed" name="scale" checked>
-        <span>Speed</span>
-      </label>
-      <label>
-        <input type="radio" class="set-size" name="scale">
-        <span>Size</span>
-      </label>
-      <label>
-        <input type="radio" class="set-distance" name="scale">
-        <span>Distance</span>
-      </label>
-    </div>
-    <div id="universe" class="scale-stretched">
-      <div id="galaxy">
-        <div id="solar-system" class="earth">
-          <div id="mercury" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Mercury</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="venus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Venus</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="earth" class="orbit">
-            <div class="pos">
-              <div class="orbit">
-                <div class="pos">
-                  <div class="moon"></div>
-                </div>
-              </div>
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Earth</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="mars" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Mars</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="jupiter" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Jupiter</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="saturn" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <div class="ring"></div>
-                <dl class="infos">
-                  <dt>Saturn</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="uranus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Uranus</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="neptune" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Neptune</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="sun">
-            <dl class="infos">
-              <dt>Sun</dt>
-              <dd><span></span></dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    if (typeof jQuery == 'undefined') { 
-      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-    }
-    </script>
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-  </body>
-<!-- partial -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script  src="./script.js"></script>
+<style>
+body	{
+	background-color:red;
+	background-image:url('DATA/Earn.jpg');
+	background-attachment: fixed;
+	}
 
-</body>
-</html>
+a.anav {
+	text-decoration: none;
+	font-weight: bold;
+	color: #0066FF; 
+	background-color: transparent;}
+a.anav:hover {
+	font-weight: bold;
+	color: #FF0000; 
+	background-color: transparent;}
+a.bleckav {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000; 
+	background-color: transparent;}
+a.bleckav:hover {
+	font-weight: bold;
+	color: #FF0000; 
+	background-color: transparent;}
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+ns=(document.layers)?1:0;
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff')
+
+yBase=0;
+xBase=0;
+step=3;
+currStep = 0;
+Ypos=0;
+Xpos=0;
+X=0;
+Y=0;
+
+if (ns)
+	{
+	for (i = 0; i < 30; i++)document.write('<LAYER NAME="n'+i+'" LEFT=0 TOP=0 CLIP="0,0,'+i/4+','+i/4+'"></LAYER>');
+	window.captureEvents(Event.MOUSEMOVE); 
+	function nMouse(evnt)
+		{
+		Ypos = evnt.pageY;
+		Xpos = evnt.pageX;
+		}
+	window.onMouseMove=nMouse;
+	}
+else
+	{
+	document.write('<div style="position:absolute;top:0;left:0"><div style="position:relative">');
+	for (i=0; i < 30; i++)
+		{
+		document.write('<div id="me" style="position:absolute;top:0;left:0;width:'+2+';height:'+1+';font-size:'+2+'"></div>')
+		}
+	document.write('</div></div>');
+	function iMouse() 
+		{
+		Ypos = event.y+document.body.scrollTop;
+		Xpos = event.x+document.body.scrollLeft;
+		}
+	document.onmousemove = iMouse;
+	}
+
+function Comet() 
+	{
+	var yBase=(document.layers)?window.innerHeight/4:window.document.body.clientHeight/4;
+	var xBase=(document.layers)?window.innerWidth/4:window.document.body.clientWidth/4;
+	
+	for (i=0; i<30; i++)
+		{
+		var randCol = Math.round(Math.random()*8);
+		
+		var layer = (document.layers)?document.layers['n'+i]:me[i].style;
+		X=0;
+		
+		if (i==21||i==22||i==23||i==24||i==25||i==26||i==27||i==28||i==29)	
+			{
+			layer.top =Ypos + yBase*Math.sin((currStep-i*4)/22)*Math.cos(0.7-currStep/200)/2;
+			layer.left=Xpos + xBase*Math.cos((currStep-i*3)/22)*Math.sin(8.2-currStep/400)/2;
+			X=1;
+			}
+		if (i==5||i==6||i==7||i==8||i==9||i==10||i==11||i==12)	
+			{
+			layer.top =Ypos + yBase*Math.cos((currStep+i*4)/14)*Math.sin(0.7+currStep/200)/3;
+			layer.left=Xpos + xBase*Math.sin((currStep+i*3)/14)*Math.cos(8.2+currStep/400)/3;
+			X=1;
+			}
+		if (i==15||i==16||i==17||i==18||i==19||i==20)
+			{
+			layer.top =Ypos + yBase*Math.cos((currStep-i*4)/11)*Math.sin(0.7-currStep/200)/4;
+			layer.left=Xpos + xBase*Math.sin((currStep-i*3)/11)*Math.cos(8.2-currStep/400)/4;
+			X=1;
+			}
+		if (i==0||i==1||i==2||i==3||i==4)	
+			{
+			layer.top =Ypos + yBase*Math.sin((currStep+i*4)/7)*Math.cos(0.7+currStep/200)/5;
+			layer.left=Xpos + xBase*Math.cos((currStep+i*3)/7)*Math.sin(8.2+currStep/400)/5;
+			X=1;
+			}
+		if(X==0)
+			{
+			layer.top=Ypos-6;
+			layer.left=Xpos-3;
+			}
+		if (ns) layer.bgColor = Clrs[randCol];
+		else layer.background = Clrs[randCol];
+		}
+	currStep += step/1;
+	setTimeout("Comet()",10);
+	}
+
+window.onload = Comet;
+// End -->
+</script>
+
+<center>
+<IMG  src="DATA\IMG\color2b.gif" border=0>
+<B>
+<TABLE width="30%"><TR><TH>
+<A TARGET="_blank" href="DATA\Js\player\M1\M1.htm"><IMG  src="DATA/globe.gif" border=0></a></TH><TH>
+<A href="D:\PR\setup.exe"><IMG src="DATA/symbol01.gif" border=0></a></TH><TH>
+<A TARGET="_blank" href="DATA/~ТэсT.HTM"><IMG src="DATA/symbol02.gif" border=0></a></TH><TH>
+<A TARGET="_blank" href="C 255.exe"><IMG src="DATA/symbol03.gif" border=0></a></TH><TH>
+<A TARGET="_blank" href="SF.HTM"><IMG src="DATA/symbol04.gif" border=0></a></TH><TH>
+<A TARGET="_blank" href="Ya.htm"><IMG src="DATA/symbol05.gif" border=0></a></TH><TH>
+<A TARGET="_blank" href="DATA\Js\player\audio-player-html5\index.html"><IMG  src="DATA/globe.gif" border=0></a></TH></TR></TABLE>
+<IMG  src="DATA\IMG\color2b.gif" border=0><IMG  src="DATA\IMG\color2b.gif" border=0>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--start stealth
+ function GoToURL(j) 
+	{
+  	window.status=('Connecting....')
+	var URLis;
+ 	URLis = document.URLframe.Dest.value
+   	if (URLis == "" || URLis.length <= 3)
+           	{ 
+     		j.value = "Try Again"
+		alert('\n  Да!\n\nЛажа');
+         	window.status=('Missing data or Invalid. Try again?.')
+           	} 
+    	else
+        	{
+ 		j.value = "Ща, поторможу : http:\\" + URLis   
+ 		var location=("http://" + URLis);
+         	this.location.href = location;
+		window.status=('Connecting to ' + URLis + '  Ща, поторможу маленько........');
+        	}
+        }
+//-->
+</SCRIPT>
+
+<BR><BR>
+<TABLE width="70%" border=3><TR></TR><TR><TH>
+<a class="anav" href="http://ya.ru">Ya</a><a class="anav" href="https://mail.yandex.ru/"> mail</a><a class="anav" href="https://yandex.ru/maps/covid19?ll=-13.437520%2C42.158977&source=wizgeo&z=3"> k</a>
+<a class="anav" href="https://yandex.ru/maps/15/tula/?l=trf%2Ctrfe&ll=37.613026%2C54.181938&source=wizgeo&z=16">арта</a><BR>
+<a class="anav" href="http://google.ru">Google</a>
+<a class="anav" href="https://translate.google.ru/"> translater</a>
+<a class="anav" href="http://mail.google.com/mail/?hl=ru&tab=wm"> mail</a><BR>
+<a class="anav" href="http://Gismeteo.ru">Погода</a><a class="anav" href="https://www.gismeteo.ru/weather-tula-4392/3-days/"> в Туле</a><BR>
+<a class="anav" href="http://anekdotov.net">Anekdotov</a><BR>
+<a class="anav" href="http://time.is/">Time is</A><BR>
+<a class="anav" href="http://poiskknig.ru">Поиск книг</a><BR>
+<a class="anav" href="http://www.rutor.org.new-rutor.org/">Rutor</a>.<a class="anav" href="http://www.zerkalo.rutor.org.new-rutor.org/">org</a><BR>
+<a class="anav" href="http://chtotakoe.info">Что такое?</a><BR>
+<a class="anav" href="https://www.songsterr.com/">Songsterr</a><BR>
+<a class="anav" href="https://baza-otvetov.ru/quiz">Quiz </a><a class="anav" href="https://db.chgk.info/">Chgk</a><BR>
+<a class="anav" href="https://www.duolingo.com/learn">Duolingo</a><BR>
+
+
+<a class="anav" href=""></a><BR>
+</TH><TH>
+<A class="anav" href="http://redmine.advajob.ru/">Redmine</A><BR>
+<A class="anav" href="http://frpto.local/">Frpto </A><A class="anav" href="file:///C:/Test/Техническое задание на доработку раздела.docx">Тех. задание</A><BR>
+<a class="anav" href="http://git.smartru.com">Github</A>|<a class="anav" href="http://tracker.smartru.com/">Tracker</A>|<a class="anav" href="https://corp.smartru.com/">Портал</A><BR>
+<a class="anav" href="http://sd.smartru.com/"> SD</A><a class="anav" href="https://redmine.smartru.com/login">SmartRu Redmine</A><BR>
+<a class="anav" href="https://metanit.com/">Metanit </A><a class="anav" href="https://jira.gulfstream.ru/browse/OUT-744"> Jira</A><BR>
+<a class="anav" href="http://www.sql-ex.ru/register.php">Sql </a><a class="anav" href="http://codepen.io/#"> Codepen</a><BR>
+<a class="anav" href="https://entityframeworkcore.com/querying-data-basic-query">Basic Query</a><BR>
+<a class="anav" href="http://www.newart.ru/htm/flash/risovalka_42.php">Diagram</a><BR>
+</TH><TH>
+<a class="anav" href="https://us04web.zoom.us/j/9014347865?pwd=QVhONEhWNjRxY2ZTMWxYK1NudWd5dz09">Dai</A>
+<a class="anav" href="https://us04web.zoom.us/j/5229166844?pwd=UFEwM3NPU0cxYmM0N3RyMXpacElVUT09">ly </A>
+<a class="anav" href="https://dev.azure.com/tekora/4I/_workitems/assignedtome/"> Azure</A><BR>
+
+<a class="anav" href="https://dev.azure.com/tekora/4I/_git/4I.Local">4I.Local</A><BR>
+<a class="anav" href="https://dev.azure.com/tekora/4I/_workitems/edit/2136/">Обновления стендов</A><BR>
+<A class="anav" href="https://validator.w3.org/#validate_by_input">Check HTML</A><a class="anav" href="https://jsonlint.com/"> Json </A><a class="anav" href="http://myregexp.com/"> RegExpretion</A><BR>
+<A class="anav" href="https://divtable.com">Divtable generator</A><BR>
+<A class="anav" href="https://bootswatch.com/">Bootswatch </A><A class="anav" href="https://www.layoutit.com/"> Layoutit</A><BR>
+<A class="anav" href="https://vuejsexamples.com/">Vue js examples</A><BR>
+<a class="anav" href="https://adblockplus.org/">Adblock </a><A class="anav" href="http://140200.pro/">140200.pro</A><BR>
+<A class="anav" href="https://habrahabr.ru/post/134892/">Сети для самых маленьких</A><BR>
+<A class="anav" href="https://calc.by/">Calc</A><BR>
+</TH><TH>
+<a class="anav" href="http://www.youtube.com/user/Fletcher2008/videos">Goblin</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UC6cqazSR6CnVMClY0bJI0Lg/videos">BadComedian</a><BR>
+<a class="anav" href="https://www.youtube.com/user/dj47maryn/videos">Mr. Marmok</a><BR>
+<a class="anav" href="https://www.youtube.com/user/rusm9snik/videos">rusm9snik</a><BR>
+<a class="anav" href="https://www.youtube.com/user/TheNafig/videos">TheNafig</a><BR>
+<A class="anav" href="https://crossout.net/ru/news/">Crossout</A><BR>
+<a class="anav" href="http://www.youtube.com/user/OnlineLAI/videos">LAI</a><a class="anav" href="http://www.lah.ru/"> Лаи</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCbK6S8jFtYZ3UnPhWRIJ0bA/videos">Gabriella Quevedo</a><BR>
+</TH><TH>
+<a class="anav" href="https://www.youtube.com/user/PolitRussiaCom/videos">Polit</a><a class="anav" href="https://www.youtube.com/channel/UCcvMdU6a3jqWxBd3ODJS4CQ/videos">Russia</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCjHHzZ7KcWwej-W_7B0NskA/videos">Михей</a><BR>
+<a class="anav" href="https://www.youtube.com/user/gasparyantv/videos">Сумбатыч</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCoiyr9RVNBRYy2PQS2BHhKQ/videos">Савельев</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCnwVcoyppmPAr0xKrHJgJQg/videos">Konanykhin</a><BR>
+<a class="anav" href="https://www.youtube.com/user/Vassermansru/videos">Анатоле</a><BR>
+
+<a class="anav" href="https://www.youtube.com/channel/UC6psT9WoOinfL2Dk9dB_jEA/videos">Semchenko</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCtO0TzSAoIOzTnTsQeywSSw">Mount Show</a><BR>
+<a class="anav" href="https://www.youtube.com/user/rtrussian/featured">Rt </a><a class="anav" href="https://www.youtube.com/user/nstarikovru/videos"> Ct</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCIi2Tk2POJkRgWHD7HGBa7Q/videos">Наука 2.0</a><BR>
+</TH><TH>
+<a class="anav" href="https://www.youtube.com/user/TEDEducation/videos">TEDEd</a><BR>
+<a class="anav" href="https://www.youtube.com/channel/UCNRYbltJXhf6DepS26-uSbQ/videos">Ещёнепознер</a><BR>
+<a class="anav" href="https://www.youtube.com/user/tubushow/videos">tubushow</a><BR>
+<A class="anav" href="http://www.diablo1.ru/median2008/">Diablo Median XL</A><BR>
+<a class="anav" href="https://developer.mozilla.org">Mozilla Meveloper</A><BR>
+<a class="anav" href="http://knzsoft.ru/qt-bgr-ls1/">Qt </a><A class="anav" href="http://tfile.ru "> Torrent </A><a class="anav" href="https://lk.gosuslugi.ru/info">MFC</A><BR>
+<a class="anav" href="http://www.bolshoyvopros.ru/questions/popular_p2.html">Bolshoyvopros</A><BR>
+<a class="anav" href="https://knigavuhe.org/book/giperprostranstvo/">Giperprostranstvo</A><BR>
+<a class="anav" href="https://akniga.org/aforizmy-zhiteyskoy-mudrosti-artur-shopengauer">Aforizmy-zhiteyskoy-mudrosti</A><BR>
+<a class="anav" href="https://www.rulit.me/author/mechnikov-ilya-ilich/etyudy-optimizma-download-free-533153.html">Etyudy-optimizma</A><BR>
+
+
+</TH></TR></TABLE>
+<BR><BR>
+
+
+
+https://msdn.microsoft.com/ru-ru/library/b0zbh7b6(v=vs.110).aspx<BR>
+Обезглавленный.<BR>
+Линкольн против зомби.<BR>
+Тяжелый метал. Грег янг код на пляже.
+NEW Pawn Sacrifice
+Бомж с дробовиком
+Топор
+Общество<BR>
+Агесты A.n.c.l
+Человек из стали 
+Разлом Санадрерас 
+Сова мультфильм 
+Страж галактики<BR>
+Свадебная ваза
+badman
+Зеленый слоник 
+Клиника<BR>
+РТФМ
+история рики
+очень голодные игры
+Мертвый терорист Ахмед
+Ctnb lkz cfvs[ vfktymrb[.
+https://www.youtube.com/watch?v=g-_3S8ZlqnY<BR>
+https://www.youtube.com/watch?v=OWB0CKAQGAg<BR>
+https://www.youtube.com/watch?v=sLE5vP0t1G0<BR>
+https://www.youtube.com/watch?v=LmLIKcTIjDw<BR>
+https://www.youtube.com/watch?v=6vkd8vA1uk8<BR>
+ln.al@mail.ru<BR>
+Pawn Sacrifice <BR>
+Trumbo<BR>
+
+<BR>
+<table cellpadding="0" cellspacing="4" border="1" bordercolor="red" height="20%" >
+
+	<TR><Th>
+	<form name=Yandex TARGET="_blank" method="get" action="http://www.yandex.ru/yandsearch" class="search">
+	<input name="text"  size="33" maxlength="300" value="" onfocus="searchInputIsActive = 1;">
+	</Th><TD>
+	<a class="anav" TARGET="_blank" href="http://yandex.ru"><font color="#FF0000">Я</font><font color="#881100">ndex</font></a>
+	</TD><TD>
+	<input style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 60px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid; WIDTH: 70px; HEIGHT: 21px" type="submit" value="Найти" onClick="return search_type('www');">
+	</form>
+	
+	</TD></TR><TR><Th>
+	<form name=google TARGET="_blank" method=GET action="http://www.google.com/search">	
+	<input name=q size=33 title="Поиск" value="">
+	</Th><TD>
+	<A class="anav" TARGET="_blank" href="http://www.google.com">G<FONT color=#d12710><b>o</FONT><FONT color=#f2c002>o</FONT>g<FONT color=#4bcc52>l</FONT><FONT color=#d12710>e</FONT></A>
+	</TD><TD>
+	<input style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 60px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid;WIDTH: 70px; HEIGHT: 21px" name=btnG type=submit value=" Пуск  ">
+	</form>
+	
+	</TD></TR><TR><Th>
+	<FORM name=poiskknig TARGET="_blank" action=http://www.poiskknig.ru/cgi-bin/poisk.cgi method=get>
+	<INPUT type=hidden value=ru  name=lang><INPUT class=in size=33 value="" name=st>
+	</Th><TD>
+	<a class="anav" TARGET="_blank" href="http://poiskknig.ru">Поиск книг</a>
+	</TD><TD>
+	<INPUT style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 60px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid;WIDTH: 70px; HEIGHT: 21px" class=but type=submit value=Поиск>
+	</FORM>
+
+	</TD></TR><TR><Th>
+	<FORM TARGET="_blank" name=Search action=http://savefrom.net/ method=get>
+	<INPUT class=in size=33 value="" name=url>
+	</Th><TD>
+	<a class="anav" TARGET="_blank" href="http://ru.savefrom.net/">
+	You<FONT color=#dd0000>Tube</FONT>
+	</a>
+	</TD><TD>
+	<INPUT style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 70px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid; HEIGHT: 21px" type=submit value=Скачать>
+	</FORM>	
+
+	</TD></TR><TR><Th>
+	<FORM TARGET="_blank" action=http://www.webalta.ru/search>
+	<INPUT size=33 id=q name=q>
+	</Th><TD>	
+	<a class="anav" TARGET="_blank" href="http://www.webalta.ru">Webalta</a>
+	
+	</TD><TD>
+	<INPUT id=site type=hidden CHECKED value=site name=where>
+	<INPUT style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 70px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid; HEIGHT: 21px" class=submit type=submit value="Go go go">
+	</FORM>
+
+	</TD></TR><TR><Th>
+	<form TARGET="_blank" action="http://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Search" id="searchform">
+	<input id="searchInput" size=33 name="search" type="text" title="Искать это слово [f]" accesskey="f" value="" />
+	</Th><TD>
+	<A class="anav" href="http://ru.wikipedia.org/">Wikipedia</A>
+	</TD><TD>
+	<input style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 40px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid; HEIGHT: 21px" type='submit' name="go" class="searchButton" id="searchGoButton"	value=" Ent" /><input style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 30px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid; HEIGHT: 21px" type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="ter &nbsp; &nbsp;&nbsp;&nbsp;" />
+	</form>
+
+
+	</TD></TR><TR><Th>
+	<table><TR><TH>
+	<FORM TARGET="_blank" action=http://lyricsreal.com/search.php method=get><INPUT type=hidden value=ru name=lang>
+	<INPUT style="BORDER-RIGHT: #1d73b6 1px solid; BORDER-TOP: #1d73b6 1px solid; BORDER-LEFT: #1d73b6 1px solid; WIDTH: 120px; PADDING-TOP: 3px; BORDER-BOTTOM: #1d73b6 1px solid; HEIGHT: 23px" size=25 value="" name=query>
+	</TH><TD><INPUT class=radio id=title type=radio CHECKED value=title name=where>
+	<LABEL for=title><font style='font-size:8pt;color:#DD0000;'><B>Композиция</LABEL><BR>
+	<INPUT class=radio id=artist type=radio value=artist name=where>
+	<LABEL for=artist>Исполнитель</B></font></LABEL></TD></TR></TABLE>
+	</Th><TD>
+	<a class="anav" TARGET="_blank" href="http://www.lyricsreal.com">Lyricsreal</a>
+	</TD><TD>
+	<INPUT class=submit type=image src="DATA/search-button.gif" value=Найти>
+	</FORM>
+	
+	</TD></TR><TR><Th>
+	<form name=Torrent TARGET="_blank" method="get" action="http://tfile.ru/forum/ssearch.php?" class="search">
+	<input name="q"  size="33" maxlength="300" value="" onfocus="searchInputIsActive = 1;">
+	</Th><TD>
+	<a class="anav" TARGET="_blank" href="http://tfile.ru">Torren</a><a  class="anav" TARGET="_blank" href="https://www.xvideos.com/">t</a>
+	<a  class="bleckav" TARGET="_blank" href="https://www.pornhub.com/">t</a>
+	<a  class="bleckav" TARGET="_blank" href="https://www.24video.sexy/">t</a>
+	<a  class="bleckav" TARGET="_blank" href="https://www.erosberry.com/videos">t</a>
+	
+	
+	</TD><TD>
+	<input style="BORDER-RIGHT:#00EE00 2px solid; BORDER-TOP:#00FF00 2px solid;FONT-SIZE: 14px;BACKGROUND: #22AA22; BORDER-LEFT: #008800 2px solid; WIDTH: 60px; COLOR: #000000; BORDER-BOTTOM: #00AA00 2px solid;WIDTH: 70px; HEIGHT: 21px" type="submit" value=" Жмак " onClick="return search_type('www');">
+	</form>
+	</TD></TR>
+</TABLE>
+	
+<BR>
+<IMG  src="DATA\IMG\color2b.gif" border=0><IMG  src="DATA\IMG\color2b.gif" border=0>
+<TABLE width="30%"><TR><TH>
+<IMG  src="DATA/globe.gif" border=0></TH><TH>
+<A href="SF.exe">
+<IMG src="DATA/symbol01.gif" border=0></a></TH><TH>
+<IMG src="DATA/symbol02.gif" border=0></TH><TH>
+<IMG src="DATA/symbol03.gif" border=0></TH><TH>
+<IMG src="DATA/symbol04.gif" border=0></TH><TH>
+<IMG src="DATA/symbol05.gif" border=0></TH><TH>
+<IMG  src="DATA/globe.gif" border=0></TH><TH>
+</TH></TR></TABLE>
+<IMG  src="DATA\IMG\color2b.gif" >
+</CENTER>
+
+
+<div  style="margin-top: 1500px;"></div>
+<A class="anav" HREF="#A">OLD</A>
+
+<div  style="margin-top: 1500px;"></div>
+<TABLE width="35%" border=3 bordercolor="#00CC00" height="20%"><TR><TD>
+<form name=Auth method=post TARGET="_blank" action="http://auth.mail.ru/cgi-bin/auth"> 
+<input type=password class=long size=7 name=Login>
+<select size=1 name=Domain class=long>
+<option value=mail.ru  SELECTED>@mail.ru</option><option value=inbox.ru >@inbox.ru</option><option value=bk.ru >@bk.ru</option><option value=list.ru >@list.ru</option>
+</select>
+<input type=password class=long size=4 name=Password>
+<input type=checkbox id=alien class=hole name="level" value=1>
+</TD><TD>
+<input type=submit tabindex=4 value=" Mail " >
+</form>
+
+<script language="JavaScript"><!-- 
+document.Auth.Login.value="alex-hanin";  
+document.Auth.Password.value="CERN"; 
+//--></script>
+</TD></TR><TR><TD>
+ <FORM name=Auth2 TARGET="_blank" action=http://passport.yandex.ru/passport?mode=auth&amp;retpath=http://mail.yandex.ru 
+      method=post>
+      <INPUT id=l onfocus=clean(this) type=password size=8 name=login>
+      <INPUT id=s onfocus=clean(this) type=password size=4 name=passwd>     
+      
+</TD><TD>
+      <INPUT onclick="p('next.mail.login')" type=submit value=Enter tabindex=5>
+      </FORM>
+<script language="JavaScript"><!-- 
+document.Auth2.login.value="ALEX-HAN";  
+document.Auth2.passwd.value="CERN"; 
+//--> </script>
+</TR></TABLE>
+
+
+<div  style="margin-top: 500000px;"></div>
+<A NAME="A"></A>
+<HR><BIG><FONT COLOR=#FF0000>OLD</FONT><HR>
+
+<A class="anav" href="http://historic.ru">Histori</A><BR>
+<A class="anav" href="http://www.kinopoisk.ru/level/8/view/prem/">Премьеры фильмов</A><BR>
+<A class="anav" href="http://ru.wikipedia.org/">Wikipedia(Энциклопедия)</A><BR>
+<A class="anav" href="http://mm-players.softp.ru/i">Softp(Проги)</A><BR>
+<A class="anav" href="http://songs.ru/accord/">Songs(AKK)</A><BR>
+<A class="anav" href="http://www.romance.ru/cgi-bin/index.cgi?page=d-6-4-13">Romance(AKK)</A><BR>
+<A class="anav" href="http://www.mail.ru/cgi-bin/index.cgi?page=d-6-4-13">Mail</A><BR>
+<A class="anav" href="http://bash.org.ru">Bash.org</A><BR>
+<A class="anav" href="http://yabs.yandex.ru/count/LCyTyQ6C0sG40000Zh8MR904KfK3cm5iBuYcNsO3YQ5DQW6IgW791Ogj2qW3ZG6HihS0VWIFl4vdqW-Vk2dei0MJ3ukffUSIGg2GXWjv2000">Тула на интерактивных Яндекс.Картах</A><BR>
+<A class="anav" href="http://www.amalgama-lab.com">Переводчик песен</A><BR>
+<A class="anav" href="http://www.gamed.info/view_item.php?id=116">Game</A><BR>
+<A class="anav" href="http://www.dosgamesarchive.com">ГАААА МЫ</A><BR>
+<A class="anav" href="http://www.php.ru/manual/">Php (manual)</A><BR>
+<A class="anav" href="http://tfile.ru ">Torrent</A><BR>
+<a class="anav" href="http://megalyrics.ru">Megalyrics</a><br>
+
+<a class="anav" TARGET="_blank" href="http://bash.im/">Bash</a><BR>
+<a class="anav" TARGET="_blank" href="https://www.youtube.com/watch?v=t1QZpbkCgu0&index=10&list=PLHkZS6iiF7s00-SnnXKxKYS5rAXspKujs">Puff play</a><BR>
+<a class="anav" TARGET="_blank" href="https://e.mail.ru/messages/inbox/">Mail</a><BR>
+<a class="anav" TARGET="_blank" href="http://thg.ru">Tom's hardware guide</a><BR>
+<a class="anav" TARGET="_blank" href="http://www.hardwareportal.ru">Hardwareportal</A><BR>
+<a class="anav" TARGET="_blank" href="https://myzuka.me/">Myzuka</a><BR>
+<A class="anav" href="http://allserials.net/">Allserials</A><BR>
+<HR><BIG><FONT COLOR=#FF0000>TEMP</FONT>
+<HR>
+
+
+<div  style="margin-top: 1500000px;"></div>
+
+</BODY>
+</HTML>
+
+
+

@@ -1,0 +1,30 @@
+<html>
+<body>
+<Center>
+<Table Border=1">
+<script type="text/javascript">
+var z=99;
+for (i = 1; i <= z; i++)
+{
+document.write("<TR>");
+	for (y = 1; y <= z; y++)
+	{
+	document.write("<TH>");
+	
+	if(i==1||y==1)
+		{
+		if(i==1&&i!=y)document.write(y);
+		if(y==1)document.write(i);
+		}
+	else 
+	document.write(i*y);
+	
+	
+	document.write("</TH>");
+	}
+document.write("</TR>");
+}
+</script>
+</Table> 
+</body>
+</html>

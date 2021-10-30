@@ -1,0 +1,43 @@
+<html>
+<title>SCRIPT</title>
+<head>		
+	<script language="JavaScript" src="Var.js">
+	</script>	
+	<script language="JavaScript">
+	function OpenDriver()
+	{
+	var w,h,X1,Y1;
+	if(screen.width > 1023)
+	{
+		w=1024;
+		h=768;
+		X1=(screen.width - w)/2;
+		Y1=(screen.height - h)/2;
+	}
+	else
+	{
+		if(screen.width > 790)
+		{
+			w=800;
+			h=600;
+			X1=(screen.width - w)/2;
+			Y1=(screen.height - h)/2;		
+		}
+		else
+		{
+			w=640;
+			h=480;
+			X1=0;
+			Y1=0;
+		}
+	}
+	resizeTo(w,h);
+	moveTo(X1,Y1);
+	document.title=CD_Ver;
+	window.location='FRAME.HTM';
+	}		
+	</script>	
+</head>
+<body onLoad="OpenDriver()">
+</body>
+</html>

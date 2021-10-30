@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>search and sort datagrid | vue 2.0</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <datatable :items="items"></datatable> 
+</div>
+<template id="datatable">
+  <div>
+    <input v-model="searchKey" class="searchBox" placeholder="Search...">
+    <table>
+        <tr>
+          <th @click="columnSort('name',toggleSortOrder, 'head-name')" id="head-name">
+              <span>Name</span>
+              <div class="arrow_box"></div></th>
+          <th @click="columnSort('prename',toggleSortOrder, 'head-prename')" id="head-prename">
+              <span>Prename</span>
+              <div class="arrow_box"></div></th>
+          <th @click="columnSort('age',toggleSortOrder,'head-age')" id="head-age">
+              <span>Age</span>
+              <div class="arrow_box" ></div></th>
+        </tr>
+        <tr v-for="item in orderedList" class="row">
+          <td data-th="Name">{{item.name}}</td>
+          <td data-th="Prename">{{item.prename}}</td>
+          <td data-th="Age">{{item.age}}</td>
+        </tr> 
+    </table>
+  </div>
+</template>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<button id="elem" onclick="alert('Клик');">Автоклик</button>
+
+<script>
+for (i=0;i<=5;i++)
+{
+ var event = new Event("click");
+  elem.dispatchEvent(event);
+}
+ 
+</script>

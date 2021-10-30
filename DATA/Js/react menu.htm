@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://websketches.ru/assets/files/blog/5practiceskih_primerov_react/menu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Меню на React</title>
+<style>
+* {
+    padding:0;
+    margin:0;
+}
+
+html{
+    font:14px normal Arial, sans-serif;
+    color:#626771;
+    background-color:#fff;
+}
+
+body{
+    padding:60px;
+    text-align: center;
+}
+
+ul{
+    list-style:none;
+    display: inline-block;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor:pointer;
+    background-color:#eee;
+    color:#7B8585;
+    
+    transition:0.3s;
+}
+
+ul li:hover{
+    background-color:#beecea;
+}
+
+ul li.focused{
+    color:#fff;
+    background-color:#41c7c2;
+}
+
+p{
+    padding-top:15px;
+    font-size:12px;
+}
+  </style>
+
+<script src="./React Меню_files/react-0.14.5.js.Без названия"></script>
+<script src="./React Меню_files/react-dom-0.14.5.js.Без названия"></script>
+<script src="./React Меню_files/browser.min.js.Без названия"></script>
+</head>
+
+<body>
+<div id="sample"><div data-reactid=".0"><ul data-reactid=".0.0"><li class="focused" data-reactid=".0.0.$0">Главная</li><li class="" data-reactid=".0.0.$1">Услуги</li><li class="" data-reactid=".0.0.$2">О нас</li><li class="" data-reactid=".0.0.$3">Контакты</li></ul><p data-reactid=".0.1"><span data-reactid=".0.1.0">Выбрано: </span><span data-reactid=".0.1.1">Главная</span></p></div></div>
+<script type="text/babel">
+var MenuExample = React.createClass({
+
+    getInitialState: function(){
+        return { focused: 0 };
+    },
+
+    clicked: function(index){
+
+        // Обработчик click будет обновлять состояние с
+		// с индексом нажатого элемента меню
+
+        this.setState({focused: index});
+    },
+
+    render: function() {
+
+        // Здесь мы будем читать свойство items, которое было 
+		// принято в качестве атрибута при создании компонента
+
+        var self = this;
+
+        // Метод map пройдется по массиву с пунктами меню,
+		// и возвратит массив с элементами &lt;li&gt;.
+
+        return (
+            <div>
+                <ul>{ this.props.items.map(function(m, index){
+        
+                    var style = '';
+        
+                    if(self.state.focused == index){
+                        style = 'focused';
+                    }
+        
+                    // Обратите внимание на использование метода bind().
+					// Он делает index доступным в функции clicked:
+        
+                    return <li className={style} key={index} onClick={self.clicked.bind(self, index)}>{m}</li>;
+        
+                }) }
+                        
+                </ul>
+                
+                <p>Выбрано: {this.props.items[this.state.focused]}</p>
+            </div>
+        );
+
+    }
+});
+
+// Рендер компонента меню на странице с передачей массива с пунктами меню
+
+ReactDOM.render(
+    <MenuExample items={ ['Главная', 'Услуги', 'О нас', 'Контакты'] } />,
+    document.getElementById("sample")
+);
+</script>
+
+</body></html>

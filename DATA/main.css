@@ -1,0 +1,119 @@
+A .flt {
+	FILTER: alpha(opacity=50); opacity: 0.5
+}
+img .flt {
+	FILTER: alpha(opacity=50); opacity: 0.5
+}
+a.anav {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00FF00; 
+	background-color: transparent;}
+a.anav:hover {
+	font-weight: bold;
+	color: #DD0000; 
+	background-color: transparent;}
+
+h2	{
+	color:#00CC00;
+	font-size:20;
+	}
+a.gm:link 
+	{
+	FONT-WEIGHT: bold; 
+	COLOR: #000000; 
+	TEXT-DECORATION: none
+	}
+a.gm:hover 
+	{
+	FONT-WEIGHT: bold; 
+	COLOR: #6a7279; 
+	TEXT-DECORATION: none
+	}
+a.gm:visited 
+	{
+	FONT-WEIGHT: bold; 
+	COLOR: #000000; 
+	TEXT-DECORATION: none
+}
+a.gm:active 
+	{
+	FONT-WEIGHT: bold; 
+	COLOR: #e15829; 
+	TEXT-DECORATION: none
+	}
+.footer_legal {
+	FONT-SIZE: 9px; COLOR: #999999; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Tahoma
+}
+.footer_legal A:link {
+	FONT-SIZE: 9px; COLOR: #999999; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Tahoma
+}
+.footer_legal A:visited {
+	FONT-SIZE: 9px; COLOR: #999999; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Tahoma
+}
+.footer_legal A:hover {
+	FONT-SIZE: 9px; COLOR: #ccaa99; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Tahoma
+}
+.left_nav {
+	PADDING-LEFT: 20px; FONT-SIZE: 10px; COLOR: #ffff99; TEXT-INDENT: -20px; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.left_nav A:link {
+	PADDING-LEFT: 20px; FONT-SIZE: 10px; COLOR: #ffff99; TEXT-INDENT: -20px; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.left_nav A:visited {
+	PADDING-LEFT: 20px; FONT-SIZE: 10px; COLOR: #ffff99; TEXT-INDENT: -20px; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.left_nav A:hover {
+	PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; TEXT-INDENT: -20px; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.std_xsm {
+	FONT-SIZE: 10px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_xsm A:link {
+	FONT-SIZE: 10px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_xsm A:visited {
+	FONT-SIZE: 10px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_xsm A:hover {
+	FONT-SIZE: 10px; COLOR: #cc9900; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: underline
+}
+.std_sm {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_sm A:link {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_sm A:visited {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+TD A:link {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+TD A:visited {
+	FONT-SIZE: 12px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_sm A:hover {
+	FONT-SIZE: 12px; COLOR: #cc9900; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: underline
+}
+TD A:hover {
+	FONT-SIZE: 12px; COLOR: #cc9900; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: underline
+}
+.std_lg {
+	FONT-SIZE: 14px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_lg A:link {
+	FONT-SIZE: 14px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_lg A:visited {
+	FONT-SIZE: 14px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}
+.std_lg A:hover {
+	FONT-SIZE: 14px; COLOR: #cc9900; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: underline
+}
+.std_filesize {
+	FONT-SIZE: 9px; COLOR: #984a11; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma, Verdana
+}

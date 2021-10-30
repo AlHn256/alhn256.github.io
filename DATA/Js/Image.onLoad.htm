@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<script language = "JavaScript">
+function preloader() {
+	heavyImage = new Image(); // объект для прелоада тяжелого имэджа
+	heavyImage.src = "https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png";
+	heavyImage.onLoad = letHeavySrc();
+}
+function letHeavySrc() {
+	document.img01.src="https://img.imgsmail.ru/p/0.13.3/i/mail/logo/logo.png";
+}
+</script>
+</head>
+
+<body onLoad="javascript:preloader()">
+<img name="img01" src="https://www.caritas.us/sites/default/files/images/misc/loading.gif">
+</body>
+</html>

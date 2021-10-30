@@ -1,0 +1,79 @@
+<html>
+<head>
+
+<Script type = "text/javascript">
+//пишем функцию добавления нового пункта в списке
+function addLi() {
+	var stroka = prompt("Введите название строки:", "");//для ввода названия новой строки
+	if (stroka){
+		var ol = document.getElementById ("spisokst");//находим наш список
+		var li = document.createElement("LI");//создаем новый элемент списка
+			ol.appendChild(li);//присваиваем нашему спску новый элемент
+		var text = document.createTextNode(stroka);//создаем новый узел текст
+			li.appendChild(text);//присваиваем этот текст нашему новому пункту списка
+	}
+}
+//пишем функцию удаления пунктов из списка
+function deleteLi() {
+    var ol = document.getElementById ("spisokst");//находим наш список
+    var lastLi = ol.lastChild;//заводим переменную и храним в ней последний элемент нашего списка
+	//проверяем на наличие нашего элемента, исключая пробелы, табуляции и комментарии
+        while (lastLi && lastLi.nodeType != 1){
+	   lastLi = lastLi.previousSibling;
+	}
+	if (lastLi){
+	    lastLi.parentNode.removeChild(lastLi);//непосредственно удаляем пункт списка, 
+//если конечно в списке еще что-то осталось
+	  }
+	}
+  
+   function open() {
+    document.getElementById('table').style.display = 'block';
+   }
+   function close() {
+    document.getElementById('table').style.display = 'none';
+   }
+
+</script>
+</head>
+<body>
+
+<BR><button id="button1" onclick="close();">Hide</button>
+<button id="button2" onclick="open();">Show</button>
+
+<div id="spisokst" >
+<ol style = "display:block;width:270px;background-color:#AE3311;color:black;">
+<li>Первоя строка</li>
+<li>Вторая строка</li>
+<li>Третья строка</li>
+</ol>
+</div>	
+
+<div  id="table">
+<table>
+  <tr>
+   <td>
+    <p onClick="addLi()" 
+     style = "display:block;width:150px;background-color:#4EAEC1;color:black;"  
+     align = "center" 
+     onmouseover="this.style.color = '#ffffff';this.style.cursor = 'pointer';" 
+     onmouseout="this.style.color = 'black';">
+     Добавить в список
+    </p>
+  </td>
+  <td>
+   <p onClick="deleteLi()" 
+    style = "display:block;width:150px;background-color:#4EAEC1;color:black;"  
+    align = "center" 
+    onmouseover="this.style.color = '#ffffff';this.style.cursor = 'pointer';" 
+    onmouseout="this.style.color = 'black';" >
+    Удалить из списка
+   </p>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+</body>
+</html>

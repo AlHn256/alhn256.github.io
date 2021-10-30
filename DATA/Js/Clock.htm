@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<title>Clock однако</title>
+  
+<style> 
+  body 
+{
+  margin: 10;
+  background: #711;
+}
+
+#face { stroke-width: 2px; stroke: #CC0; }
+#hour, #min {stroke: #222;}
+#sec { stroke: #f11; }
+#t12,#t9,#t3,#t6 { stroke: #080; }
+</style>
+
+  <script>
+  setInterval(function() {
+  function r(el, deg) {
+el.setAttribute('transform', 'rotate('+ deg +' 50 50)')
+  }
+  var d = new Date()
+  r(sec, 6*d.getSeconds())
+  r(min, 6*d.getMinutes())
+  r(hour, 30*(d.getHours()%12) + d.getMinutes()/2)
+}, 50)
+  </script>
+</head>
+
+<body>
+<Center>
+
+<svg id="clock" viewBox="0 0 100 100">
+<circle id="face" cx="50" cy="50" r="45"/>
+<g id="hands">
+<text id="t12" x="47.5" y="12.5" font-size="5">12</text>
+<text id="t9" x="8.5" y="50.5" font-size="5">9</text>
+<text id="t3" x="89.5" y="50.5" font-size="5">3</text>
+<text id="t6" x="47.5" y="91.5" font-size="5">6</text>
+<rect id="hour" x="47.5" y="12.5" width="5" height="40" rx="2.5" ry="2.55" />
+<rect id="min" x="48.5" y="12.5" width="3" height="40" rx="2" ry="2"/>
+<line id="sec" x1="50" y1="50" x2="50" y2="16" />
+</g>
+</svg>
+
+</body>
+</html>

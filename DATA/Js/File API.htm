@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function func()
+{
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  alert('File API  Работает');
+} else {
+  alert('File API не поддерживается данным браузером');
+}
+
+}
+</script> 
+</head>
+
+<body>
+
+<p id="test">Текст абзаца.</p>
+<input type="submit" onclick="func()">
+
+</body>
+</html>
+
