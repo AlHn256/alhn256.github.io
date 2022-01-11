@@ -1,0 +1,437 @@
+
+
+Dependency Injection
+https://www.youtube.com/watch?v=AxZLJA84_74
+
+http
+https://ru.wikipedia.org/wiki/HTTP
+https://habr.com/ru/post/215117/
+      / ХЗ	 /Саня
+      /Серега/Евгения
+Виктор/Макс  /Саня
+
+\ahanin
+css flex
+greed
+Fox Hunting
+
+
+https://httpbin.org/#/HTTP_Methods/
+и другим интернет ресурсам
+
+3 почитать про rest api и json - максимум час времени
+https://toster.ru/q/136265
+https://developer.ibm.com/articles/ws-restful/
+https://habr.com/ru/post/447322/
+https://ru.wikipedia.org/wiki/REST
+https://ru.wikipedia.org/wiki/JSON
+
+4 прочитать про XMLHttpRequest
+https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest
+https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
+попробовать воспроизвести с помощью асинхронного XMLHttpRequest запросы из п. 2
+
+5 прочитать про Fetch
+https://developer.mozilla.org/ru/docs/Web/API/Fetch_API
+https://medium.com/beginners-guide-to-mobile-web-development/the-fetch-api-2c962591f5c
+
+попробовать воспроизвести с помощью Fetch запросы из п. 2
+https://ru.wikipedia.org/wiki/HTTP
+
+https://habr.com/ru/post/215117/
+
+Metanid
+Gl 3,OOP,Классы обьекты,Свойства Инкапсуляия,3.4,3.6,3.7,3.8,3.9
+
+Куки https://metanit.com/sharp/aspnet5/2.11.php 
+
+http://flexboxfroggy.com/#ru
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-around;
+justify-content: space-between;
+align-items:flex-end;
+justify-content: center; align-items:center;
+align-items:flex-end;justify-content: space-around;
+flex-direction: row-reverse;
+flex-direction: column;
+justify-content: flex-end;flex-direction: row-reverse;
+flex-direction: column; justify-content:flex-end;
+
+первые пять глав на выходные
+http://menuteca.ru/wp-content/uploads/2017/05/martin-chistyj-kod.2010.pdf
+
+https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
+https://docs.microsoft.com/ru-ru/aspnet/core/fundamentals/host/web-host?view=aspnetcore-2.2
+https://docs.microsoft.com/ru-ru/aspnet/core/fundamentals/startup?view=aspnetcore-2.2
+
+Guid отправка
+time Guid
+
+SQL
+
+SELECT *FROM dbo.StatRecords
+DROP TABLE dbo.StatRecords
+
+
+в самом начале 
+enable-migrations
+add-migration MyFirstMigration
+Update-Database
+
+Update-Database LastGoodMigration
+remove-migration
+
+
+https://grishaev.me/cors/
+конструкторы
+перегрузка и переопределение
+
+https://github.com/maksym-bielyshev/findthepairjs
+
+Basic Query
+https://entityframeworkcore.com/querying-data-basic-query
+https://ru.wikipedia.org/wiki/HTTP#GET
+
+Как настроить свой первый веб-узел IIS
+https://support.microsoft.com/ru-ru/help/323972/how-to-set-up-your-first-iis-web-site
+
+MLHttpRequest: кросс-доменные запросы
+https://learn.javascript.ru/xhr-crossdomain
+
+JWT-токены
+https://metanit.com/sharp/aspnet5/23.7.php
+
+ок, дальше надо 6,7 и 10 главы, но внимательно (8 и 9 пока пропустим)
+
+1334935829
+
+375723
+
+Авторизация по ролям
+https://metanit.com/sharp/aspnet5/15.5.php
+
+Методы расширения
+Интерфейс
+
+IEnumerable и IEnumerator
+Vue.js
+https://ru.vuejs.org/v2/guide/
+c# хеширование с солью
+Почта
+запрос каждой ячейки
+
+https://www.codility.com/
+
+постгрес sql
+https://www.postgresql.org/
+
+10,11,12,13-?
+
+https://metanit.com/sharp/aspnet5/3.1.php
+
+ВидеокурсSQL
+https://www.youtube.com/watch?v=BfaKBs_eQXw&list=PL0lO_mIqDDFVnLvR39VpEtphQ8bPJ-xR9
+
+https://metanit.com/sharp/aspnet5/6.2.php
+https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
+Внедрение зависимостей в ASP.NET Core
+https://docs.microsoft.com/ru-ru/ASPNET/Core/fundamentals/dependency-injection?view=aspnetcore-2.2
+
+https://www.youtube.com/watch?v=MKuckMtKLwo
+
+
+Smart Reporter конструктор отчетных фор
+www argo ivanovo .ru
+
+https://docs.google.com/document/d/1KempsUtIeexPusSzB7kWUwGvUPxoeqwlXDldTFz39uk/edit#
+
+https://docs.microsoft.com/ru-ru/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2
+
+
+Cli/Vuejs
+npm install -g @vue/cli
+vue -V
+vue create frontdemomc #vue create FrontDemoMC
+vue create FrontDemoMC #vue create FrontDemoMC
+vue create function-based
+
+cd progect
+npm run serve 
+npm run dev
+npm run build
+
+
+axios
+$ npm i axios -S
+https://medium.com/devschacht/%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC-axios-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5-%D1%81-vue-js-3bc45464c460
+
+
+npm install --save emailjs
+
+mail
+https://www.emailjs.com/
+https://nodemailer.com
+
+TestMail_1978@mail.ru
+1CERNCERN1
+http://www.mimekit.net/docs/html/Creating-Messages.htm
+https://metanit.com/sharp/aspnet5/21.1.php
+
+Инициализация перенсти
+Добавить UrAgent
+Добавить список мигрантов
+
+[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+Identity
+https://www.learnentityframeworkcore.com/configuration/data-annotation-attributes/databasegenerated-attribute
+
+one-to-many relationship ef core
+https://metanit.com/sharp/entityframeworkcore/3.1.php
+https://www.learnentityframeworkcore.com/conventions
+
+DTO 
+https://docs.microsoft.com/ru-ru/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5
+
+Regular Expression
+https://metanit.com/sharp/tutorial/22.2.php
+https://emailregex.com/
+
+
+https://vuex.vuejs.org/ru/
+https://medium.com/@KucherDev/vuex-%D1%8D%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-6807d9ad330d
+https://habr.com/ru/post/421551/
+https://vuex.vuejs.org/ru/
+https://medium.com/@KucherDev/vuex-%D1%8D%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-6807d9ad330d
+
+
+Eager loading (жадная загрузка)
+Explicit loading (явная загрузка)
+Lazy loading (ленивая загрузка)(Появилась, начиная с версии 2.1)
+https://metanit.com/sharp/entityframeworkcore/3.3.php
+https://docs.microsoft.com/ru-ru/ef/core/querying/related-data
+
+
+Enable Cross-Origin Requests (CORS)
+https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.2
+
+
+
+https://docs.microsoft.com/ru-ru/ef/ef6/saving/change-tracking/entity-state
+https://stackoverflow.com/questions/30987806/dbset-attachentity-vs-dbcontext-entryentity-state-entitystate-modified
+https://stackoverflow.com/questions/15336248/entity-framework-5-updating-a-record
+https://entityframeworkcore.com/querying-data-asnotracking
+
+Httperror\Httpresponse\Httpcode
+https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP
+
+Связность
+https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D1%8C_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+
+
+Подход TPT
+https://metanit.com/sharp/entityframework/7.2.php
+
+Как следует писать комментарии к коммитам
+https://habr.com/ru/post/416887/
+
+Git Book
+https://git-scm.com/book/ru/v2
+
+
+MyStyleCop
+https://andrey.moveax.ru/post/net-standard-using-style-cop
+#pragma warning disable SA1201
+
+
+https://docs.automapper.org/en/stable/Lists-and-arrays.html
+
+
+http://sergeyteplyakov.blogspot.com/2014/11/di-vs-dip-vs-ioc.html
+https://habr.com/ru/post/350068/
+https://habr.com/ru/post/434380/
+
+Андрей Часовских — Async/await: собираем грабли
+https://www.youtube.com/watch?v=lh8cT6qI-nA
+https://docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/async/
+https://metanit.com/sharp/tutorial/13.5.php
+
+https://localhost:44363/swagger/index.html
+https://localhost:44363/swagger/v1/swagger.json
+
+10.10.60.6:8090
+10.10.60.6\localhost
+http://localhost:8101/swagger/index.html
+http://localhost:8101/swagger/v1/swagger.json
+
+http://10.10.60.6:8101/swagger/index.html
+http://10.10.60.6:8101/swagger/v1/swagger.json
+
+https://metanit.com/sharp/aspnet5/20.1.php
+https://localhost:8092/swagger/index.html
+
+https://10.10.60.6:8102/
+http://10.10.60.6:8101/
+
+https://localhost:44363/
+http://10.10.60.6:8101
+
+cmd
+c:/> iisreset /start
+c:/> iisreset /stop
+c:/> iisreset /restart
+
+SQL
+CREATE LOGIN developer WITH PASSWORD = 'CD12345343dfsdf12'
+
+
+Проверка email в регистрации(RegExpession)
+Доделать AllUseres у админа
+localhost заменить всем, добавить редактровние админом
+
+Разобртся с rootом
+OrderСControler Предпроверка дубликатов заявок
+Переход на REST
+
+admin/registration buh переделать Qualifiction на select
+Посчитать сумму в Order
+Automaping везде
+Дискриминатор в User настроить на RoleId
+UrAgent переименовать в PersonAgent
+
+IsDebet переделать
+asinc await все запросы
+Убрать IsDelete  из PayList
+Заменить Migrant => MigrantDTO
+
+Логирование 
+Обработка исключения
+Конфигурация приложения apsetings.json
+
+
+End
+Убрать ID Из форм
+Убрать Token из консоли
+Order Убрать Initialisation
+
+
+FrpTo.Api.Controllers.ResourcesController
+DeleteResourceFile
+guid => resurce
+
+db forse sql studio
+msdn 
+alter table
+
+Data Source=10.10.0.174;Encrypt=False;Integrated Security=False;User ID=dev_user
+
+ASP.NET Core. 12. Dependency Injection и сервисы
+https://www.youtube.com/watch?v=cPJGT8Xms1I&t=685s
+
+
+
+Кде лучше хранить класс
+
+?? 
+
+Почему редактирование ИНН в проектах заблокирован + еще и неправильно заполнен.
+Можно ли добавить на название проекта ссылку как на его номере.
+Менеджер по проектам - без проектов
+
+SQL
+
+ProjectAdmin to AspNetRoles
+DisplayFileName to UploadedFiles
+
+FFF
+
+1) У Администратора нет прав на установку статуса "Работа по проекту остановлена" для проектов.
+
+http://www.sql-ex.ru
+Razdolbai2123123
+1QAZXSW2
+
+SELECT * FROM Product
+SELECT * FROM PC
+SELECT * FROM Laptop
+SELECT * FROM Printer
+
+1)
+SELECT model, speed,hd FROM PC WHERE price < 500
+
+2)
+SELECT DISTINCT maker FROM Product WHERE type = 'Printer'
+
+3)
+SELECT model, ram, screen  FROM Laptop WHERE price > 1000
+
+4)
+SELECT *  FROM Printer WHERE color='y'
+
+5)
+
+
+6)
+SELECT DISTINCT maker, speed FROM Product INNER JOIN 
+Laptop ON Laptop.model = Product.model where Laptop.hd >=10
+order by speed
+
+SELECT code ,price 
+FROM Product 
+INNER JOIN Laptop ON Laptop.model = Product.model
+where maker ='B'
+
+SELECT Product.*, PC.*
+FROM Product INNER JOIN PC 
+ON Product.model = PC.model
+
+SELECT * FROM PC JOIN Product ON PC.model = Product.model where maker ='B'
+
+7)
+SELECT DISTINCT Product.model, PC.price 
+FROM Product INNER JOIN PC 
+ON Product.model = PC.model
+where maker ='B'
+
+SELECT DISTINCT Product.model, Laptop.price 
+FROM Product INNER JOIN Laptop 
+ON Product.model = Laptop.model
+where maker ='B'
+
+8)
+SELECT maker FROM Product where type ='PC'
+EXCEPT
+SELECT maker FROM Product where type ='Laptop'
+
+9)
+SELECT DISTINCT Product.maker
+FROM Product INNER JOIN PC 
+ON Product.model = PC.model
+where speed >449
+
+10)
+SELECT model, price
+FROM Printer
+WHERE price = (SELECT MAX(price) 
+FROM Printer)
+ 
+11)
+SELECT AVG(speed)
+FROM PC
+
+12)
+SELECT AVG(speed)
+FROM Laptop
+where price >1000
+
+13)
+SELECT AVG(PC.speed) 
+FROM PC INNER JOIN Product
+ON Product.model = PC.model
+where maker ='A'
+
+14)
+SELECT Classes.class ,Ships.name ,Classes.country
+FROM Ships INNER JOIN Classes
+ON Ships.class = Classes.class
+where numGuns >9
