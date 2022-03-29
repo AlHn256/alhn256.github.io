@@ -1,0 +1,18 @@
+<#Passive vois
+Sub + be + verb 3/ed
+my room is ceaned every day
+
+my room was ceaned every day
+my room will be ceaned every day
+
+must \ should \ would \ could \ can
+#>
+<#Pr perf
+has\have 3V
+I've just had lunch
+just\ever\yet
+to be driven
+#>
+<#Pr cont
+Sub + be + V+ing
+#>
