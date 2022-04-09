@@ -1,18 +1,20 @@
 <#Passive vois
 Sub + be + verb 3/ed
+must \ should \ would \ could \ can
 my room is ceaned every day
-
 my room was ceaned every day
 my room will be ceaned every day
-
-must \ should \ would \ could \ can
 #>
 <#Pr perf
 has\have 3V
+Констатация факта
+never\for\since\recently\already\lately\just\ever\yet
 I've just had lunch
-just\ever\yet
-to be driven
+Have you ever been to China?
 #>
 <#Pr cont
 Sub + be + V+ing
+Длительное настоящее время используется, чтобы говорить о том, что происходит прямо сейчас или временно, в данный период времени.
+They are drinking tea.
+I am drinking tea.
 #>
