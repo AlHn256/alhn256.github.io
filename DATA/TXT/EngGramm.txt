@@ -18,3 +18,19 @@ Sub + be + V+ing
 They are drinking tea.
 I am drinking tea.
 #>
+<#Condition I
++ If Sub pr simp, Sub will V
+- If sub do/does not VI, --//--
+? Will Sub VI, if Sub pr simp
+#>
+<#Condition I
++ If Sub pr simp, Sub will V
+- If sub do/does not VI, --//--
+? Will Sub VI, if Sub pr simp
+#>
+<#Gerund
+Глаголоприлагательное
+Swimming, reading, thinking, singing, finding, marrying...
+#>
+
+
