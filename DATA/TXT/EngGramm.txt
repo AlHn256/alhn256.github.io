@@ -23,14 +23,20 @@ I am drinking tea.
 - If sub do/does not VI, --//--
 ? Will Sub VI, if Sub pr simp
 #>
-<#Condition I
-+ If Sub pr simp, Sub will V
-- If sub do/does not VI, --//--
-? Will Sub VI, if Sub pr simp
+<#Condition II
++ If Sub past simp, Sub would(could) V
 #>
 <#Gerund
 Глаголоприлагательное
 Swimming, reading, thinking, singing, finding, marrying...
+#>
+<#Pr perf cont
+Процесс, но результат не известен, подчеркнуть длительность процесса
+
+Sub have\has been V + ing
+fore a month \ for ages \ for a day
+Глаголы чувств не употрбл в ингв форме
+know\ love\ feel
 #>
 
 
