@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RandElement</title>
+<script type="text/javascript" src="data.json"></script>
+<meta charset="utf-8" />
+</head>
+<body><h2><CENTER>Стоимость билетов на концерт металики :&nbsp;&nbsp;
+
+<SELECT onchange=PrintCost(this.selectedIndex); name=zone> 
+<OPTION value=Фан-зона>Фан-зона</OPTION> 
+<OPTION value=Танцпартер>Танцпартер</OPTION> 
+<OPTION value="VIP Ложа">VIP Ложа</OPTION> 
+<OPTION value=Сектора selected>SELECT1</OPTION>
+<OPTION value=Сектора>SELECT2</OPTION>
+<OPTION value=Сектора>SELECT3</OPTION>
+<OPTION value=Сектора>Test1</OPTION>
+<OPTION value=Сектора>Test1</OPTION>
+</SELECT> 
+
+<B><SPAN id=div_cost></SPAN>&nbsp;руб.</B><INPUT id=cost type=hidden maxLength=10 size=6 value=0 name=cost>
+<BR><BR>
+ <button class="btn" type="button">
+    Показать элемент
+</button>
+</CENTER></h2>
+
+<SCRIPT language=javascript>
+	ar=new Array();
+	ar[0]='6500';
+	ar[1]='4300';
+	ar[2]='6000-12000';
+	ar[3]='1200-6000';
+	ar[4]='120006000';
+	function PrintCost(value)
+		{
+		  costElem2=document.getElementById('cost');
+		  costElem1=document.getElementById('div_cost');
+		  costElem1.innerText=ar[value];
+		  costElem2.value=ar[value];
+		}
+		
+	PrintCost(0);
+		
+	var mydata = JSON.parse(data);
+	console.log('mydata ',mydata);
+
+	function getRandomArbitrary(max) {
+    return Math.floor(Math.random()*(max));
+	}
+	console.log('mydata.length ',mydata.length);
+	
+	var Rand = getRandomArbitrary(mydata.length);
+	console.log('Rand ',Rand);
+	console.log('mydata[Rand] ',mydata[Rand]);
+	
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", btnClick);
+
+function btnClick() {
+	Rand = getRandomArbitrary(mydata.length);
+	console.log('Rand ',Rand);
+	console.log('mydata[Rand] ',mydata[Rand]);
+}
+	
+ </SCRIPT>
+ 
+
+</body>
+</html>

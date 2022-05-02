@@ -15029,7 +15029,6 @@ Ne plus revenir
 И вот крадутся дяденьки, сверкают топоры,
 И много-много радости приносят трояки!
 >
-
 <
 Вещая судьба
 Dm                    Gm7                   
@@ -15628,6 +15627,7 @@ Aerials, so up high,
 When you free your eyes,
 Eternal prize.
 >
+<
 Atwa
 
 Hey you, see me, pictures crazy,
@@ -15679,6 +15679,7 @@ I don't sleep, anymore,
 I don't eat, anymore,
 I don't live anymore,
 I don't feel.
+>
 <
 Looking for the summer
 
@@ -15989,7 +15990,6 @@ Ich hab' keine Lust
 
 * - возможный сленговый вариант перевода этой фразы "не хочу умереть от передозировки"
 >
-
 <
 POR UNA CABEZA
 
@@ -16232,9 +16232,7 @@ girl
 Такие прекрасные лица, без тени забот,
 Там, где юноша и девушка просто любят друг
 друга.
->
-
-<
+><
 Moskau
 
 Эта песня о самом прекрасном
