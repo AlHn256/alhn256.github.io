@@ -38,5 +38,19 @@ fore a month \ for ages \ for a day
 Глаголы чувств не употрбл в ингв форме
 know\ love\ feel
 #>
+<#Comperative objective
+1) Simple
+tall, big, short => taller, biger, shorter => tallest, biggest, shortest
+busy, dirty => busier, dirtier => busiest, dirtiest
+2) Complex
+important, beautiful, amazing
+more / less
+3) Irregular
+good => better => the best
+bad => worse => the worst
+far => futher => furthest
+little => less => the least
+many/much => more => the most
+#>
 
 
