@@ -1,9 +1,13 @@
 <#Passive vois
-Sub + be + verb 3/ed
+Sub + be + V3\ed
+Sub + was\were + V3\ed
 must \ should \ would \ could \ can
 my room is ceaned every day
 my room was ceaned every day
 my room will be ceaned every day
+
+
+The criminal was caught by the police
 #>
 <#Pr perf
 has\have 3V
@@ -52,5 +56,10 @@ far => futher => furthest
 little => less => the least
 many/much => more => the most
 #>
-
+<#Countable \ uncountable
+a few - исчесляемые
+a little - неисчесляемые
+- ? much \ many - неисчесляемые \ исчесляемые 
++  a lot of
+#>
 
