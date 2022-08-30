@@ -28,6 +28,7 @@ I am drinking tea.
 #>
 <#Condition II
 + If Sub past simp, Sub would(could) V
+- If Sub did't / was't, Sub would't V
 #>
 <#Gerund
 Глаголоприлагательное
