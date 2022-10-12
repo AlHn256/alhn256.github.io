@@ -27,8 +27,10 @@ I am drinking tea.
 ? Will Sub VI, if Sub pr simp
 #>
 <#Condition II
-+ If Sub past simp, Sub would(could) V
++ If Sub past (simp / continuous), Sub would(could / might) V
 - If Sub did't / was't, Sub would't V
+If I had more money, I might start my own buisiness
+I'd play some game if I had more time
 #>
 <#Gerund
 Глаголоприлагательное
