@@ -1,3 +1,15 @@
+<#Complex subject
+It is reported that the strike ended yesterday
+The strike is reported to have ended yesterday
+
+
+To + verb 1 
+to be verb ing 
+to have verb 3/ed 
+to have been verb ing
+I've seen this film many times
+
+#>
 <#Passive vois
 Sub + be + V3\ed
 Sub + was\were + V3\ed
