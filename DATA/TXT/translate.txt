@@ -1,4 +1,4 @@
-<
+K<
 Cancion del Mariachi (Los Lobos & A. Banderas)
 Песня музыкантов 
 
@@ -858,7 +858,7 @@ Yeah, more than you know [8x]
 
 
 I just...
->
+>K
 <Осколок льда(Ария)
 
      Am                            F
@@ -1343,8 +1343,7 @@ Kann ich dir nicht geben
 Deutschland!
 Германия!
 
->
-<
+><
 Auslander (Rammstein)
 Иностранец
 
@@ -4373,7 +4372,7 @@ Oh gib mir Kraft
 Сердце замерло в груди!
 Только небо. Только ветер.
 Только радость впереди. 
-><
+>K<
 Et Si Tu N'existais Pas (Joe Dassin)
 Если б не было тебя
 
@@ -4386,7 +4385,6 @@ Pour trainer dans un monde sans toi,
 Sans espoir et sans regrets?
 Без надежд, без снов, без грёз.
 
-
 Et si tu n'existais pas,
 Если б не было тебя,
 J'essaierais d'inventer l'amour,
@@ -4398,7 +4396,6 @@ Naitre les couleurs du jour
 Et qui n'en revient pas.
 Вдыхая краски дня.
 
-
 Et si tu n'existais pas,
 Если б не было тебя,
 Dis-moi pour qui j'existerais?
@@ -4407,7 +4404,6 @@ Des passantes endormies dans mes bras
 Предаваться любви, не любя –
 Que je n'aimerais jamais.
 Разве это жизнь, скажи.
-
 
 Et si tu n'existais pas,
 Если б не было тебя,
@@ -4420,7 +4416,6 @@ Je me sentirais perdu,
 J'aurais besoin de toi.
 Везде б твой след искал.
 
-
 Et si tu n'existais pas,
 Если б не было тебя,
 Dis-moi comment j'existerais?
@@ -4429,7 +4424,6 @@ Je pourrais faire semblant d'etre moi,
 Как на сцене, играя себя,
 Mais je ne serais pas vrai.
 Так бы и не стал собой.
-
 
 Et si tu n'existais pas,
 Если б не было тебя,
@@ -4442,7 +4436,6 @@ Simplement pour te creer
 Et pour te regarder.
 И знать, что ты жива...
 
-
 Et si tu n'existais pas,
 Если б не было тебя,
 Dis-moi pourquoi j'existerais?
@@ -4451,7 +4444,6 @@ Pour trainer dans un monde sans toi,
 Год за годом бесцельно бредя,
 Sans espoir et sans regrets...
 Без надежд, без снов, без грёз.
-
 
 Et si tu n'existais pas,
 Если б не было тебя,
@@ -4463,8 +4455,7 @@ Naitre les couleurs du jour
 Любуется им вновь и вновь,
 Et qui n'en revient pas...
 Забыв, что это холст...
->
-<
+>K<
 Keep Holding On (Avril Lavigne)
 Не сдавайся
 G             D
@@ -4557,10 +4548,9 @@ Yeah, yeah, yeah, yeah
 Да, да, да, да
 
 HK:
->
-<
+>K<
 Get over It (Avril Lavigne)
-Это нужно пережить (перевод )
+Это нужно пережить
 
 Bm             G
 Slipping down a slide
@@ -4748,8 +4738,7 @@ Va encore nous dire "Salut les amoureux".
 Она нам, как обычно, скажет "Привет, влюблённые!"
 
 Chorus:
->
-<
+>K<
 Il Etait Une Fois Nous Deux (Joe Dassin)
 Когда-то мы были вдвоем…
 
@@ -6361,7 +6350,7 @@ Dm               Gm
 Россомах и лис, медведей, волков
      Gm         A        Dm
 Превратил в козлов отпущения.
-><
+>K<
 Behind Blue Eyes (Limp Bizkit)
 За голубыми глазами 
 
@@ -7102,7 +7091,7 @@ Cm
 До земли летишь пока!
 От-от-от винта!
 От-от-от винта!
-><
+>K<
 Hero of the Day (Metallica)
 Герой дня 
 Mama they try and break me
@@ -8226,6 +8215,7 @@ In hell I'll be in good company
 Что буду я в аду не один.>
 <High Hopes
 Большие надежды 
+
 Beyond the horizon of the place we lived when we were young
 За горизонтом канули места, где молоды так были мы,
 In a world of magnets and miracles
@@ -8239,7 +8229,6 @@ Along the Long Road and on down the Causeway
 Do they still meet there by the Cut
 По-прежнему встречаясь в Тупике.
 
-
 There was a ragged band that followed in our footsteps
 Была оборванная cyть, что вслед идет пятам вблизи,
 Running before time took our dreams away
@@ -8251,7 +8240,6 @@ Trying to tie us to the ground
 To a life consumed by slow decay
 В сущность жизни стлевшей суеты.
 
-
 The grass was greener
 Трава свежее,
 The light was brighter
@@ -8261,7 +8249,6 @@ With friends surrounded
 The nights of wonder
 Чудесны ночи.
 
-
 Looking beyond the embers of bridges glowing behind us
 Глядя на угли тлеющих мостов сожженных позади,
 To a glimpse of how green it was on the other side
@@ -8270,7 +8257,6 @@ Steps taken forwards but sleepwalking back again
 Вперед ступая, но назад идя во сне лунатиком,
 Dragged by the force of some inner tide
 Влекомы силой сна в потоке том.
-
 
 At a higher altitude with flag unfurled
 В выси всевышней развевая флаг
@@ -8285,7 +8271,6 @@ Our weary eyes still stray to the horizon
 Though down this road we've been so many times
 Хоть есть и проще путь, где были мы не раз.
 
-
 The grass was greener
 Трава свежее,
 The light was brighter
@@ -8297,7 +8282,6 @@ The nights of wonder
 With friends surrounded
 С друзьями поручь.
 
-
 The dawn mist glowing
 Рассвет пылает,
 The water flowing
@@ -8306,8 +8290,7 @@ The endless river
 Рекой бесконечной,
 Forever and ever
 Всегда и навечно
->
-<
+>K<
 Разговор на войне(DDT)
 
        Em                                     B7
@@ -10737,8 +10720,7 @@ Am     B     Em  C
 Знают стены, крыши;
 Ночью мною движет
 Страсть к чужим телам.
->
-<
+>K<
 Don't Dream It's Over(Crowded House)
 
 Csus2      Csus2          Cm          Cm   
@@ -10934,8 +10916,7 @@ Flame on, motherfuckers
 4 - Прямая бочка — разновидность партий ударных инструментов, когда удар в большой барабан ("бочку") звучит на сильную долю. Применялась в свинге, хаусе, техно
 5 - Нил Бломкамп - южноафриканский режиссёр и 3D-аниматор, более известен как режиссёр фильма "Район № 9"
 6 - Zef style – Вот как описала этот стиль непосредственно Иоланди – Да, ты беден, но у тебя есть воображение, ты беден, но ты сексуален, у тебя есть стиль
->
-<
+>K<
 Bad Liar (Imagine Dragons)
 Плохой лжец 
 
@@ -11026,8 +11007,7 @@ Please believe me
 Пожалуйста, верь мне,
 Please believe me
 Пожалуйста, верь мне.
->
-<
+>K<
 Birds (Imagine Dragons)
 Птицы 
 
@@ -11186,8 +11166,7 @@ Ooh, so fly high, so fly high
 А любовь стоит того, 
         F#m Bm
 Чтобы ждать...
->
-<
+>K<
 Heaven 
 Рай 
 
@@ -12460,8 +12439,7 @@ DmE7A7Dm
 И синий вол исполненных очей.
 С ними золотой орел небесный,
 Чей так светел взор незабываемый.
->
-<
+>K<
 Get A Haircut(George Thorogood)
 
 Intro: G-C-D	
@@ -12537,8 +12515,7 @@ I even tried that 9 to 5 scene
 
 Почему бы тебе не постричься и не получить настоящую работу?
 Я даже пытался, что 9 до 5 сцены 
->
-<
+>K<
 California Dreamin(The Mamas And The Papas)
 Мечты о Калифорнии
 
@@ -12655,8 +12632,7 @@ And ride your broken wings
 
 Welcome to my world [3х]
 Добро пожаловать в мой мир.[3х]
->
-<
+>K<
 Enjoy the Silence (Depeche Mode)
 Наслаждайся тишиной
 
@@ -13932,8 +13908,7 @@ C
 Плохие да фальшиво,
 В голове стучалось
 Без тебя паршиво.
->
-<
+>K<
 17 Лет (Чайф)
 
 Am  F   G                C
@@ -14106,8 +14081,7 @@ Gm|D#|Cm|F|Dm|Gm|Cm|D 2p
 Нет, не она в этой горсти...
 
 Припев:
->
-<
+>KD<
 Fragile
 
 Part I (Intro):
@@ -15062,9 +15036,7 @@ Je suis loin de vous...
 
 Я удаляюсь от всего
 Я от вас далеко...
->
-
-<
+><
 Somebody that i used to know
 Кто-то, кого я знал
 
@@ -17383,9 +17355,7 @@ Me back again.
 Влюбляюсь, да, я влюбляюсь,
 И она отвечает мне
 Взаимностью
->
-
-<
+><
 Rockstar
 
 I'm through with standing in line
@@ -17594,9 +17564,7 @@ Hey hey I wanna be a rockstar
 Эй, эй, я хочу стать рок-звездой! 
 Эй, эй, я хочу стать рок-звездой! 
 
->
-
-<
+><
 Help
 
 (Help) I need somebody 
@@ -17666,9 +17634,7 @@ Won't you please, please help me, me, me, Oo
 Качусь вниз, вниз, пойми! 
 
 Пойми, пойми, пойми-и, у-у-у. 
->
-
-<
+><
 The Night Before
 
  D              C     G       A7
@@ -18112,9 +18078,7 @@ Way to heaven when
 Воздушные замки.
 Я словно взбираюсь по лестнице
 В небо, когда…
->
-
-<
+>K<
 Bamboleo
 
 Em              B7         Em
@@ -21008,9 +20972,7 @@ e insieme al cielo compriamo anche la luna.
 Купить небо, чтобы подарить его ей.
 А если нам улыбнётся фортуна,
 Тогда вместе с небом купим в придачу ещё и луну.
->
-
-<
+><
 Forever Young 
 
 Let's dance in style,
@@ -21954,39 +21916,28 @@ Chorus.
 И забыть. 
 
 Припев: 
->
-<
+>K<
 How soon is now	
-
 
 G					
 I’m the son and the heir	
-
    Bb		       F	     G
 of a shyness that is criminally vulgar
-
 G							
-I’m the son and heir		
-
-                       Bb	     F
+I’m the son and heir
+   Bb	     F
 of nothing in particular
-
 
 D#
    You shut you mouth
-
 Bb
    How can you say
-
 D	  F		       G
    I go about the things the wrong way
-
       D#		    Bb
 I’m human and I need to be loved
-
 D	        F	   G
 Just like everybody else does
-
 
 repeat chorus and verse
 
@@ -22035,7 +21986,6 @@ I’m human and I need to be loved
 
 D		F	  G
 Just like everybody else does
-
 >
 <
 How you remind me
@@ -22774,7 +22724,7 @@ Am       F     B          E       Am     F B E
 ---      -2-
 ---      ---
 
->
+>X
 < 
 Белая птица
 
