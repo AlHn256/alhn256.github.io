@@ -13,28 +13,65 @@
 <button style="margin-top: 250px;" class="btn" id='linkButton' class="btn" type="button">
 <h2> Rand </h2>
 </button>
+<button style="margin-top: 250px;" class="btn" id='TextButton' class="btn" type="button">
+<h2> Text </h2>
+</button>
 </CENTER>
  
 <script type="text/javascript">
 	$(document).ready(function() {
-	
 		var mydata = JSON.parse(data);
-	
+		var SelectedElement = null;
 		function getRandomArbitrary(max) {
 		return Math.floor(Math.random()*(max));
 		}
 	
-        toastr.options.timeOut = 10000; 
+        toastr.options.timeOut = 8000; 
 		toastr.options.positionClass = "toast-top-full-width";
         toastr.info('Page Loaded!');
 		
-        $('#linkButton').click(function() {
+		
+        $('#linkButton').click(function() 
+		{
 			Rand = getRandomArbitrary(mydata.length);
-			console.log('Rand ',Rand);
-			console.log('mydata[Rand] ',mydata[Rand]);
-            toastr.success(mydata[Rand].name);
-        });
-	});
+
+			let RandomList = mydata.filter(r => r.check == false);
+			console.log("RandomList.length ",RandomList.length);
+			
+			if(RandomList.length == 0)
+			{
+				console.log("Reloading");
+				for (const element of mydata) 
+					{
+						element.check = false;
+					}
+				RandomList = mydata.filter(r => r.check == false);
+				console.log("RandomList.length ",RandomList.length);
+			}
+			
+			<!-- console.log("RandomList ",RandomList); -->
+			let R = Math.floor(Math.random()*(RandomList.length));
+			let RandomId = RandomList[R].id;
+			
+			for (const element of mydata) 
+				{
+					if (element.id === RandomId) 
+					{
+					element.check = true;
+					SelectedElement = element;
+					console.log("SelectedElement ",SelectedElement);
+					toastr.success(SelectedElement.name);
+					}
+				}
+			});
+			
+			$('#TextButton').click(function() 
+			{
+				console.log("TextButton");
+				console.log("SelectedElement.text",SelectedElement.text);
+			});
+			
+		});
 </script>
 </body>
 </html>
