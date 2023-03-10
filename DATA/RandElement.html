@@ -7,16 +7,46 @@
     <script src="modul/jquery-2.2.4.min.js"></script>
     <link href="modul/toastr.css" rel="stylesheet"/>
     <script src="modul/toastr.js"></script>
+	<style>
+     .flex-container {
+     display: flex;
+     align-items: center; /* Подставьте другое значение и посмотрите результат */
+     width: 90%;
+     <!-- background-color: #aaaaaa; -->
+     }
+     .flex-container > div {
+     width: 47%;
+     padding: 5px 0;
+     margin: 5px;
+     <!-- background-color: lightgrey; -->
+     text-align: left;
+     font-size: 35px;
+     }
+    </style>
 </head>
 <body>
-<CENTER>
-<button style="margin-top: 250px;" class="btn" id='linkButton' class="btn" type="button">
-<h2> Rand </h2>
-</button>
-<button style="margin-top: 250px;" class="btn" id='TextButton' class="btn" type="button">
-<h2> Text </h2>
-</button>
-</CENTER>
+
+<div>
+	<div style="height: 55px;">
+	
+	</div>
+	<div class="flex-container">
+		<div>
+			<textarea id="textarea" style="height: 600px; width: 600px;"></textarea>
+		</div>
+		<div style="width: 3%;">
+			&nbsp;
+		</div>
+		<div style="width: 110px;height: 210px;">
+			<button style="width: 100px;height: 100px;" class="btn" id='randButton' class="btn" type="button">
+			<h2> Rand </h2>
+			</button>
+			<button style="width: 100px;height: 100px;" class="btn" id='TextButton' class="btn" type="button">
+			<h2> Text </h2>
+			</button>
+		</div>
+	</div>
+</div>
  
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -31,7 +61,7 @@
         toastr.info('Page Loaded!');
 		
 		
-        $('#linkButton').click(function() 
+        $('#randButton').click(function() 
 		{
 			Rand = getRandomArbitrary(mydata.length);
 
@@ -63,17 +93,26 @@
 					toastr.success(SelectedElement.name);
 					}
 				}
+				
+			$('#textarea').val("");
 			});
 			
 			$('#TextButton').click(function() 
 			{
 				console.log("TextButton");
 				console.log("SelectedElement.text",SelectedElement.text);
+				<!-- $('#textarea').val('Новый текст'); -->
+				<!-- $('#textarea').val($.trim(element + '\n')); -->
+				let text ="";
+				for (const element of SelectedElement.text) 
+				{
+					text += element + '\n';
+				}
+				
+				$('#textarea').val(text);
 			});
 			
-			const millionPlusCities = cities.filter(function (e) {
-  return e.population > 1000000;
-});console.log(millionPlusCities);
+
 			
 		});
 </script>
