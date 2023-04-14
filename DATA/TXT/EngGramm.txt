@@ -24,10 +24,13 @@ The criminal was caught by the police
 #>
 <#Pr perf
 has\have 3V
-Констатация факта
+Констатация факта 
 never\for\since\recently\already\lately\just\ever\yet
 I've just had lunch
 Have you ever been to China?
+все что связано с опытом
+I have not seen this film yet
+today, this monsh, this year
 #>
 <#Pr cont
 Sub + be + V+ing
@@ -65,10 +68,12 @@ busy, dirty => busier, dirtier => busiest, dirtiest
 2) Complex
 important, beautiful, amazing
 more / less
+superlarives
+the most / the least
 3) Irregular
 good => better => the best
 bad => worse => the worst
-far => futher => furthest
+far => further => furthest
 little => less => the least
 many/much => more => the most
 #>
