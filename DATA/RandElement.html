@@ -32,7 +32,23 @@
 	</div>
 	<div class="flex-container">
 		<div>
+			<div>
 			<textarea id="textarea" style="height: 1200px; width: 100%;"></textarea>
+			</div>
+			<div>
+				<button class="btn" id='Button3' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+					<input type="checkbox" name="checkbox3" />
+					<h2> 3 </h2>
+				</button>
+				<button class="btn" id='Button4' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+					<input type="checkbox" name="checkbox4" id="Checkbox4" checked/>
+					<h2> 4 </h2>
+				</button>
+				<button class="btn" id='Button5' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+					<input type="checkbox" name="checkbox5" id="Checkbox5" checked/>
+					<h2> 5 </h2>
+				</button>
+			</div>
 		</div>
 		<div style="width: 210px;height: 410px; margin-left: auto; margin-bottom: auto;">
 			<button style="width: 200px;height: 200px;" class="btn" id='randButton' class="btn" type="button">
@@ -41,63 +57,118 @@
 			<button style="width: 200px;height: 200px; margin-top: 20px;" class="btn" id='TextButton' class="btn" type="button">
 			<h2> Text </h2>
 			</button>
+			<button style="width: 200px;height: 200px; margin-top: 20px;" class="btn" id='BackButton' class="btn" type="button">
+			<h2> Back </h2>
+			</button>
+			<button style="width: 200px;height: 200px; margin-top: 20px;" class="btn" id='NextButton' class="btn" type="button">
+			<h2> Next </h2>
+			</button>
+
 		</div>
+
 	</div>
 </div>
  
-<script type="text/javascript">
-	$(document).ready(function() {
-		var mydata = JSON.parse(data);
-		var SelectedElement = null;
-		function getRandomArbitrary(max) {
+<script>
+toastr.options.timeOut = 8000; 
+toastr.options.positionClass = "toast-top-full-width";
+toastr.info('Page Loaded!');
+
+$(document).ready(function() 
+	{
+	var mydata = JSON.parse(data);
+	var SelectedElement = null;
+	
+	let BackPages = new Array();
+	var SelectedPage = -1;
+	
+	function getRandomArbitrary(max) 
+		{
 		return Math.floor(Math.random()*(max));
 		}
+		
+	function getElement(Id) 
+		{
+		for (const element of mydata) 
+			{
+				if (element.Id === Id) 
+				{
+				element.IsRead = true;
+				SelectedElement = element;
+				console.log("SelectedElement ",SelectedElement);
+				toastr.success(SelectedElement.Name);
+				}
+			}
+		}
+		
+	$('input[name=checkbox3]').change(function() {
+	if ($(this).is(':checked')) {
+		console.log("Checkbox is checked..")
+	} else {
+		console.log("Checkbox is not checked..")
+	}
+	});
 	
-        toastr.options.timeOut = 8000; 
-		toastr.options.positionClass = "toast-top-full-width";
-        toastr.info('Page Loaded!');
+	$('#Checkbox4').change(function()
+		{
+		console.log("Checkbox4");
+<!-- 		if(this.checked!=true); -->
+		});
 		
+	$('#Checkbox5').change(function()
+		{
+		console.log("Checkbox5");
+		});
 		
-        $('#randButton').click(function() 
+    $('#BackButton').click(function() 
+		{
+		SelectedPage = SelectedPage-1;
+		if(SelectedPage<0) SelectedPage=0;
+		else getElement(BackPages[SelectedPage]);
+		});
+		
+    $('#NextButton').click(function() 
+		{
+		SelectedPage = SelectedPage+1;
+		if(SelectedPage > BackPages.length-1)SelectedPage = BackPages.length-1;
+		else getElement(BackPages[SelectedPage]);
+		});
+		
+    $('#randButton').click(function() 
 		{
 			Rand = getRandomArbitrary(mydata.length);
-
-			let RandomList = mydata.filter(r => r.check == false);
-			console.log("RandomList.length ",RandomList.length);
+			let RandomList = mydata.filter(r => r.IsRead == false);
 			
 			if(RandomList.length == 0)
 			{
 				console.log("Reloading");
+				SelectedPage = -1;
+				BackPages = new Array();
 				for (const element of mydata) 
 					{
-						element.check = false;
+						element.IsRead = false;
 					}
-				RandomList = mydata.filter(r => r.check == false);
+				RandomList = mydata.filter(r => r.IsRead == false);
 				console.log("RandomList.length ",RandomList.length);
 			}
 			
-			<!-- console.log("RandomList ",RandomList); -->
 			let R = Math.floor(Math.random()*(RandomList.length));
-			let RandomId = RandomList[R].id;
+			let RandomId = RandomList[R].Id;
 			
-			for (const element of mydata) 
-				{
-					if (element.id === RandomId) 
-					{
-					element.check = true;
-					SelectedElement = element;
-					console.log("SelectedElement ",SelectedElement);
-					toastr.success(SelectedElement.name);
-					}
-				}
-				
+			if(SelectedPage == -1)SelectedPage = 0;
+			else SelectedPage = BackPages.length;
+			BackPages[SelectedPage] = RandomId;
+			
+			<!-- console.log("BackPages ",BackPages); -->
+			
+			getElement(RandomId);
 			$('#textarea').val("");
 			});
 			
 			$('#TextButton').click(function() 
 			{
 				let text ="";
-				for (const element of SelectedElement.text) 
+				for (const element of SelectedElement.SplitText) 
 				{
 					text += element + '\n';
 				}
