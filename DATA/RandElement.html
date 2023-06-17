@@ -37,7 +37,7 @@
 			</div>
 			<div>
 				<button class="btn" id='Button3' class="btn" type="button" style="width: 70px;margin-top: 20px;">
-					<input type="checkbox" name="checkbox3" />
+					<input type="checkbox" name="checkbox3" id="Checkbox3"/>
 					<h2> 3 </h2>
 				</button>
 				<button class="btn" id='Button4' class="btn" type="button" style="width: 70px;margin-top: 20px;">
@@ -101,23 +101,43 @@ $(document).ready(function()
 			}
 		}
 		
-	$('input[name=checkbox3]').change(function() {
-	if ($(this).is(':checked')) {
-		console.log("Checkbox is checked..")
-	} else {
-		console.log("Checkbox is not checked..")
-	}
-	});
-	
+    $('#Button3').click(function() 
+		{
+		if($("#Checkbox3").is(":checked"))$('#Checkbox3').prop('checked', false);
+		else $('#Checkbox3').prop('checked', true);
+		getData();
+		});
+		
+	$('#Checkbox3').change(function()
+		{
+		console.log("Checkbox3");
+		getData();
+		});
+		
+	$('#Button4').click(function() 
+		{
+		if($("#Checkbox4").is(":checked"))$('#Checkbox4').prop('checked', false);
+		else $('#Checkbox4').prop('checked', true);
+		getData();
+		});
+		
 	$('#Checkbox4').change(function()
 		{
 		console.log("Checkbox4");
-<!-- 		if(this.checked!=true); -->
+		getData();
 		});
+			
+	$('#Button5').click(function() 
+		{
+		if($("#Checkbox5").is(":checked"))$('#Checkbox5').prop('checked', false);
+		else $('#Checkbox5').prop('checked', true);
+		getData();
+		});	
 		
 	$('#Checkbox5').change(function()
 		{
 		console.log("Checkbox5");
+		getData();
 		});
 		
     $('#BackButton').click(function() 
@@ -134,9 +154,40 @@ $(document).ready(function()
 		else getElement(BackPages[SelectedPage]);
 		});
 		
+	function getData() 
+		{
+			let CheckArray = new Array();
+			CheckArray[0] = $("#Checkbox3").is(":checked");
+			CheckArray[1] = $("#Checkbox4").is(":checked");
+			CheckArray[2] = $("#Checkbox5").is(":checked");
+			console.log("CheckArray |"+CheckArray[0]+"|"+CheckArray[1]+"|"+CheckArray[2]+"|");
+			
+			let NewArray = new Array();
+			let N = 0;
+			for (const element of mydata) 
+					{
+						let Add = false;
+						element.IsRead = false;
+						let NewParam = element.NewParam;
+						
+						for (const Param of NewParam)
+						{
+							if(Param == 4||Param == 5)Add=true;
+						}
+						
+						if(Add)
+						{
+							NewArray[N]=element;
+							N++;
+						}
+					}
+			console.log("NewArray |",NewArray);
+			console.log("mydata |",mydata);
+		}
+		
     $('#randButton').click(function() 
 		{
-			Rand = getRandomArbitrary(mydata.length);
+
 			let RandomList = mydata.filter(r => r.IsRead == false);
 			
 			if(RandomList.length == 0)
@@ -158,8 +209,6 @@ $(document).ready(function()
 			if(SelectedPage == -1)SelectedPage = 0;
 			else SelectedPage = BackPages.length;
 			BackPages[SelectedPage] = RandomId;
-			
-			<!-- console.log("BackPages ",BackPages); -->
 			
 			getElement(RandomId);
 			$('#textarea').val("");
