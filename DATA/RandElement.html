@@ -36,15 +36,23 @@
 			<textarea id="textarea" style="height: 1200px; width: 100%;"></textarea>
 			</div>
 			<div>
-				<button class="btn" id='Button3' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+				<button class="btn" id='Button1' class="btn" type="button" style="width: 90px;margin-top: 20px;">
+					<input type="checkbox" name="checkbox1" id="Checkbox1"/>
+					<h2> 1 </h2>
+				</button>
+				<button class="btn" id='Button2' class="btn" type="button" style="width: 90px;margin-top: 20px;">
+					<input type="checkbox" name="checkbox2" id="Checkbox2"/>
+					<h2> 2 </h2>
+				</button>
+				<button class="btn" id='Button3' class="btn" type="button" style="width: 90px;margin-top: 20px;">
 					<input type="checkbox" name="checkbox3" id="Checkbox3"/>
 					<h2> 3 </h2>
 				</button>
-				<button class="btn" id='Button4' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+				<button class="btn" id='Button4' class="btn" type="button" style="width: 90px;margin-top: 20px;">
 					<input type="checkbox" name="checkbox4" id="Checkbox4" checked/>
 					<h2> 4 </h2>
 				</button>
-				<button class="btn" id='Button5' class="btn" type="button" style="width: 70px;margin-top: 20px;">
+				<button class="btn" id='Button5' class="btn" type="button" style="width: 90px;margin-top: 20px;">
 					<input type="checkbox" name="checkbox5" id="Checkbox5" checked/>
 					<h2> 5 </h2>
 				</button>
@@ -63,9 +71,7 @@
 			<button style="width: 200px;height: 200px; margin-top: 20px;" class="btn" id='NextButton' class="btn" type="button">
 			<h2> Next </h2>
 			</button>
-
 		</div>
-
 	</div>
 </div>
  
@@ -77,7 +83,9 @@ toastr.info('Page Loaded!');
 $(document).ready(function() 
 	{
 	var mydata = JSON.parse(data);
+	var filteredData = new Array();
 	var SelectedElement = null;
+	getData();
 	
 	let BackPages = new Array();
 	var SelectedPage = -1;
@@ -89,7 +97,7 @@ $(document).ready(function()
 		
 	function getElement(Id) 
 		{
-		for (const element of mydata) 
+		for (const element of filteredData) 
 			{
 				if (element.Id === Id) 
 				{
@@ -101,16 +109,24 @@ $(document).ready(function()
 			}
 		}
 		
+    $('#Button1').click(function() 
+		{
+		if($("#Checkbox1").is(":checked"))$('#Checkbox1').prop('checked', false);
+		else $('#Checkbox1').prop('checked', true);
+		getData();
+		});
+		
+    $('#Button2').click(function() 
+		{
+		if($("#Checkbox2").is(":checked"))$('#Checkbox2').prop('checked', false);
+		else $('#Checkbox2').prop('checked', true);
+		getData();
+		});
+		
     $('#Button3').click(function() 
 		{
 		if($("#Checkbox3").is(":checked"))$('#Checkbox3').prop('checked', false);
 		else $('#Checkbox3').prop('checked', true);
-		getData();
-		});
-		
-	$('#Checkbox3').change(function()
-		{
-		console.log("Checkbox3");
 		getData();
 		});
 		
@@ -120,12 +136,6 @@ $(document).ready(function()
 		else $('#Checkbox4').prop('checked', true);
 		getData();
 		});
-		
-	$('#Checkbox4').change(function()
-		{
-		console.log("Checkbox4");
-		getData();
-		});
 			
 	$('#Button5').click(function() 
 		{
@@ -133,12 +143,6 @@ $(document).ready(function()
 		else $('#Checkbox5').prop('checked', true);
 		getData();
 		});	
-		
-	$('#Checkbox5').change(function()
-		{
-		console.log("Checkbox5");
-		getData();
-		});
 		
     $('#BackButton').click(function() 
 		{
@@ -154,52 +158,57 @@ $(document).ready(function()
 		else getElement(BackPages[SelectedPage]);
 		});
 		
+	function getFilter() 
+		{
+		 let Filter = new Array();
+		 let i = 0;
+		 if($("#Checkbox1").is(":checked"))Filter[i++] = 1;
+		 if($("#Checkbox2").is(":checked"))Filter[i++] = 2;
+		 if($("#Checkbox3").is(":checked"))Filter[i++] = 3;
+		 if($("#Checkbox4").is(":checked"))Filter[i++] = 4;
+		 if($("#Checkbox5").is(":checked"))Filter[i++] = 5;
+		console.log("Filter ",Filter);
+		 return Filter;
+		}
+		
+	function checkElem(element, Filters) 
+		{
+		for (const param of element.NewParam)
+			{
+				for (const filter of Filters)
+					if(filter == param)return true;
+			}
+			return false;
+		}
+		
 	function getData() 
 		{
-			let CheckArray = new Array();
-			CheckArray[0] = $("#Checkbox3").is(":checked");
-			CheckArray[1] = $("#Checkbox4").is(":checked");
-			CheckArray[2] = $("#Checkbox5").is(":checked");
-			console.log("CheckArray |"+CheckArray[0]+"|"+CheckArray[1]+"|"+CheckArray[2]+"|");
-			
-			let NewArray = new Array();
+			let Filter = getFilter(); 
+			filteredData = new Array();
 			let N = 0;
 			for (const element of mydata) 
-					{
-						let Add = false;
-						element.IsRead = false;
-						let NewParam = element.NewParam;
-						
-						for (const Param of NewParam)
-						{
-							if(Param == 4||Param == 5)Add=true;
-						}
-						
-						if(Add)
-						{
-							NewArray[N]=element;
-							N++;
-						}
-					}
-			console.log("NewArray |",NewArray);
-			console.log("mydata |",mydata);
+				{
+					if(checkElem(element,Filter))filteredData[N++]=element;
+				}
+				
+			console.log("filteredData -", filteredData);
+			console.log("filteredData.length -", filteredData.length);
 		}
 		
     $('#randButton').click(function() 
 		{
-
-			let RandomList = mydata.filter(r => r.IsRead == false);
+			let RandomList = filteredData.filter(r => r.IsRead == false);
 			
 			if(RandomList.length == 0)
 			{
 				console.log("Reloading");
 				SelectedPage = -1;
 				BackPages = new Array();
-				for (const element of mydata) 
+				for (const element of filteredData) 
 					{
 						element.IsRead = false;
 					}
-				RandomList = mydata.filter(r => r.IsRead == false);
+				RandomList = filteredData.filter(r => r.IsRead == false);
 				console.log("RandomList.length ",RandomList.length);
 			}
 			
