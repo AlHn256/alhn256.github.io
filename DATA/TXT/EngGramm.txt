@@ -82,11 +82,20 @@ If I werer you, I'd change teams
 Глаголоприлагательное
 Swimming, reading, thinking, singing, finding, marrying...
 #>
+<#Pr perf simp
+Sub + have/has + verb 3/ed 
+Констатация фактов, достжения, опыт
+I have written 10 books.
+already, just, never 
+yet, ever, recently, always
+I have ALREADY done my HW 
+#>
 <#Pr perf cont
 Процесс, но результат не известен, подчеркнуть длительность процесса
 
 Sub have\has been V + ing
 fore a month \ for ages \ for a day
+for,since, how long
 Глаголы чувств не употрбл в ингв форме
 know\ love\ feel
 #>
