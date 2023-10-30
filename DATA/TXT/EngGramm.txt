@@ -1,3 +1,12 @@
+<#Countable/Uncountable
+Much milk
+Much cheese
+Many sweets 
+Many teeth 
+A lot of milk
+A lot of sweets
+A lot of teeth
+#>
 <#Past perf
 I had V3
 Событие которое произошло раньше другого события в прошлом.
@@ -22,6 +31,20 @@ my room will be ceaned every day
 
 The criminal was caught by the police
 #>
+<#Pr simp
+repeated actions (routines / habits / likes - dislikes)
+present facts
+schedule / timetable
+book / movie plots
+sport commentaries
+
+I brush my teeth three times a day.
+My family lives in the township in Tula.
+My lessons at college start at 9 am on Friday.
+
+#>
+<#
+#>
 <#Pr perf
 has\have 3V
 Констатация факта 
@@ -45,10 +68,19 @@ Sub + will + be + V+ing
 Everone will be watching the film.
 #>
 <#Pr cont
-Sub + be + V+ing
+Pr cont/progresssiv
+Sub + is\are + V+ing
 Длительное настоящее время используется, чтобы говорить о том, что происходит прямо сейчас или временно, в данный период времени.
+action happening now
+temporary action
+future arrangements (certain plans)
+annoying habits
+
 They are drinking tea.
 I am drinking tea.
+He is cooking a dinner for tonight while I am cleaning our appartment.
+I am working at the language center in Tula. Next year I will move to St.Petersburg.
+On Saturday I am going to a conference for teachers.
 #>
 <#Condition 0
 + If Sub pr simp, Sub pr simp
