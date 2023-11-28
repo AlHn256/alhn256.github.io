@@ -7,7 +7,7 @@ A lot of milk
 A lot of sweets
 A lot of teeth
 #>
-<#Past perf
+<#P perf
 I had V3
 Событие которое произошло раньше другого события в прошлом.
 #>
