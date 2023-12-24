@@ -7,10 +7,6 @@ A lot of milk
 A lot of sweets
 A lot of teeth
 #>
-<#P perf
-I had V3
-Событие которое произошло раньше другого события в прошлом.
-#>
 <#Complex subject
 It is reported that the strike ended yesterday
 The strike is reported to have ended yesterday
@@ -42,8 +38,6 @@ I brush my teeth three times a day.
 My family lives in the township in Tula.
 My lessons at college start at 9 am on Friday.
 
-#>
-<#
 #>
 <#Pr perf
 has\have 3V
@@ -114,9 +108,11 @@ If I werer you, I'd change teams
 Глаголоприлагательное
 Swimming, reading, thinking, singing, finding, marrying...
 #>
-<#Pr perf simp
+<#P perf
+
 Sub + have/has + verb 3/ed 
 Констатация фактов, достжения, опыт
+Событие которое произошло раньше другого события в прошлом.
 I have written 10 books.
 already, just, never 
 yet, ever, recently, always
