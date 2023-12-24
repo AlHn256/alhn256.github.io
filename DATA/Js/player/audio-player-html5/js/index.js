@@ -784,7 +784,6 @@ AP.init({
   {'icon': iconImage, 'title': 'Game Of Thrones Theme', 'file': '../Data/GAME OF THRONES THEME.mp4'},
   {'icon': iconImage, 'title': 'Heven', 'file': '../Data/Heven.mp4'},
   {'icon': iconImage, 'title': 'Hey Now Don T Dream It S Over', 'file': '../Data/Hey Now Don t Dream It s Over.mp4'},
-  {'icon': iconImage, 'title': 'High Hopes', 'file': '../Data/High Hopes.mp3'},
   {'icon': iconImage, 'title': 'History Of Artemisia', 'file': '../Data/History Of Artemisia.mp3'},
   {'icon': iconImage, 'title': 'Hitman', 'file': '../Data/Hitman.mp3'},
   {'icon': iconImage, 'title': 'If You Leave Me Now', 'file': '../Data/if_you_leave_me_now.mp3'},
