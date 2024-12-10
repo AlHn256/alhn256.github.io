@@ -22,6 +22,7 @@
      text-align: left;
      font-size: 35px;
      }
+}
     </style>
 </head>
 <body>
@@ -33,7 +34,8 @@
 	<div class="flex-container">
 		<div>
 			<div>
-			<textarea id="textarea" style="height: 1200px; width: 100%;"></textarea>
+			<input id="input" type="range" min="12" max="72" oninput="adjustSize(this);" style="width: 650px;height: 100px;"></BR>
+			<textarea id="textarea" style="height: 1200px; width: 120%;"></textarea>
 			</div>
 			<div>
 				<button class="btn" id='Button1' class="btn" type="button" style="width: 90px;margin-top: 20px;">
@@ -76,6 +78,17 @@
 </div>
  
 <script>
+
+
+
+ function adjustSize(i){
+    var o = document.getElementById('textarea');
+    o.setAttribute("style","height: auto;");
+    var val = i.value;
+    o.style.fontSize = val + 'px';
+    var fontSize = o.style.fontSize;
+    o.setAttribute("style","font-size: " + fontSize + "; height: 1200px; width: 120%;");
+	}
 toastr.options.timeOut = 8000; 
 toastr.options.positionClass = "toast-top-full-width";
 toastr.info('Page Loaded!');
