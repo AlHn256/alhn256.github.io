@@ -37,9 +37,9 @@
 			<table>
 				<tbody>
 				<tr>
-					<td><button style="width: 150px;height: 150px;" class="btn" id='randButton' class="btn" type="button"><h2> - </h2></button></td>
-					<td><input id="input" type="range" min="12" max="72" oninput="adjustSize(this);" style="width: 850px;height: 100px;"></BR></td>
-					<td><button style="width: 150px;height: 150px;" class="btn" id='randButton' class="btn" type="button"><h2> + </h2></button></td>
+					<td><button style="width: 150px;height: 150px;" class="btn" id='decreaseSizeBtn' class="btn" type="button"><h2> - </h2></button></td>
+					<td><input id="inputLine" type="range" min="12" max="72" oninput="adjustSize(this);" style="width: 850px;height: 100px;"></BR></td>
+					<td><button style="width: 150px;height: 150px;" class="btn" id='increaseSizeBtn' class="btn" type="button"><h2> + </h2></button></td>
 				</tr>
 				</tbody>
 			</table>
@@ -89,14 +89,44 @@
 
 
 
- function adjustSize(i){
-    var o = document.getElementById('textarea');
-    o.setAttribute("style","height: auto;");
-    var val = i.value;
-    o.style.fontSize = val + 'px';
-    var fontSize = o.style.fontSize;
-    o.setAttribute("style","font-size: " + fontSize + "; height: 1200px; width: 120%;");
+	
+ function adjustSize(i)
+	{
+		ReSizeText(i.value);
 	}
+	 
+ $('#increaseSizeBtn').click(function() 
+	{
+		increaseSize();
+	});
+		
+ $('#decreaseSizeBtn').click(function() 
+	{
+		decreaseSize();
+	});
+
+ function increaseSize(){
+	var txt = document.getElementById('textarea');
+	if (!txt.style.fontSize)txt.style.fontSize = 14 + 'px';
+	ReSizeText(parseInt(txt.style.fontSize) + 2);
+	}
+
+ function decreaseSize(){
+	var txt = document.getElementById('textarea');
+	if (!txt.style.fontSize)txt.style.fontSize = 12 + 'px';
+	ReSizeText(parseInt(txt.style.fontSize) - 2);
+	}
+	
+function ReSizeText(val){
+	var o = document.getElementById('textarea');
+	console.log("o.style.fontSize ",o.style.fontSize);
+    o.style.fontSize = val + 'px';
+	console.log("o.style.fontSize ",o.style.fontSize);
+	
+	var il = document.getElementById('inputLine').value = parseInt(val);
+	<!-- il.value = parseInt(val); -->
+	}
+	
 toastr.options.timeOut = 8000; 
 toastr.options.positionClass = "toast-top-full-width";
 toastr.info('Page Loaded!');
@@ -124,11 +154,12 @@ $(document).ready(function()
 				{
 				element.IsRead = true;
 				SelectedElement = element;
-				console.log("SelectedElement ",SelectedElement);
 				toastr.success(SelectedElement.Name);
 				}
 			}
 		}
+		
+		
 		
     $('#Button1').click(function() 
 		{
@@ -211,9 +242,6 @@ $(document).ready(function()
 				{
 					if(checkElem(element,Filter))filteredData[N++]=element;
 				}
-				
-			console.log("filteredData -", filteredData);
-			console.log("filteredData.length -", filteredData.length);
 		}
 		
     $('#randButton').click(function() 
